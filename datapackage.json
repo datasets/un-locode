@@ -1,0 +1,197 @@
+{
+  "name": "un-locode",
+  "title": "UN-LOCODE Codelist",
+  "version": "2014.1.0",
+  "license": "PDDL-1.0",
+  "sources": [{
+  "name": "UNECE",
+  "web": "http://www.unece.org/cefact/locode/welcome.html"
+  }],
+  "resources": [
+    {
+      "path": "data/codeList.tsv",
+      "name": "Code list",
+      "mediatype": "text/tab-separated-values",
+      "dialect": {
+          "csvddfVersion": 1.0,
+          "delimiter": "\t",
+          "doubleQuote": true,
+          "lineTerminator": "\n",
+          "quoteChar": "",
+          "skipInitialSpace": true,
+          "header": true
+       },
+      "schema": {
+        "fields": [
+          {
+            "name": "Change",
+            "type": "string",
+            "description": "+ (newly added); X (to be removed); | (changed); # (name changed); = (reference entry); ! (US location with duplicate IATA code)"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "description": "ISO 3166 alpha-2 Country Code, defined in countryCodes.tsv",
+            "pattern": "[A-Z]{2}"
+          },
+          {
+            "name": "Location",
+            "type": "string",
+            "pattern": "[A-Z2-9]{3}"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "NameWoDiacritics",
+            "type": "string"
+          },
+          {
+            "name": "Subdivision",
+            "type": "string",
+            "description": "Defined in subdivisionCodes.tsv"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "description": "Defined in statusIndicators.tsv"
+          },
+          {
+            "name": "Function",
+            "type": "string",
+            "description": "Defined in functionClassifiers.tsv",
+            "pattern": "[01-][2-][3-][4-][5-][6-][7-][B-]"
+          },
+          {
+            "name": "Date",
+            "type": "string",
+            "format": "ym"
+          },
+          {
+            "name": "IATA",
+            "type": "string",
+            "description": "IATA code if different from LOCODE"
+          },
+          {
+            "name": "Coordinates",
+            "type": "string",
+            "format": "DDMM[N/S] DDDMM[W/E]"
+          },
+          {
+            "name": "Remarks",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/countryCodes.tsv",
+      "name": "Country codes",
+      "mediatype": "text/tab-separated-values",
+      "dialect": {
+          "csvddfVersion": 1.0,
+          "delimiter": "\t",
+          "doubleQuote": true,
+          "lineTerminator": "\n",
+          "quoteChar": "",
+          "skipInitialSpace": true,
+          "header": true
+       },
+      "schema": {
+        "fields": [
+          {
+            "name": "CountryCode",
+            "type": "string"
+          },
+          {
+            "name": "CountryName",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/functionClassifiers.tsv",
+      "name": "Function classifiers",
+      "mediatype": "text/tab-separated-values",
+      "dialect": {
+          "csvddfVersion": 1.0,
+          "delimiter": "\t",
+          "doubleQuote": true,
+          "lineTerminator": "\n",
+          "quoteChar": "",
+          "skipInitialSpace": true,
+          "header": true
+       },
+      "schema": {
+        "fields": [
+          {
+            "name": "FunctionCode",
+            "type": "string"
+          },
+          {
+            "name": "FunctionDescription",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/statusIndicators.tsv",
+      "name": "Status indicators",
+      "mediatype": "text/tab-separated-values",
+      "dialect": {
+          "csvddfVersion": 1.0,
+          "delimiter": "\t",
+          "doubleQuote": true,
+          "lineTerminator": "\n",
+          "quoteChar": "",
+          "skipInitialSpace": true,
+          "header": true
+       },
+      "schema": {
+        "fields": [
+          {
+            "name": "STStatus",
+            "type": "string"
+          },
+          {
+            "name": "STDescription",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/subdivisionCodes.tsv",
+      "name": "Subdivision codes",
+      "mediatype": "text/tab-separated-values",
+      "dialect": {
+          "csvddfVersion": 1.0,
+          "delimiter": "\t",
+          "doubleQuote": true,
+          "lineTerminator": "\n",
+          "quoteChar": "",
+          "skipInitialSpace": true,
+          "header": true
+       },
+      "schema": {
+        "fields": [
+          {
+            "name": "SUCountry",
+            "type": "string"
+          },
+          {
+            "name": "SUCode",
+            "type": "string"
+          },
+          {
+            "name": "SUName",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
