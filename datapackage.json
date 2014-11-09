@@ -1,7 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
-  "version": "2014.1.0",
+  "version": "2014.1.1",
   "license": "PDDL-1.0",
   "sources": [{
   "name": "UNECE",
@@ -9,18 +9,9 @@
   }],
   "resources": [
     {
-      "path": "data/codeList.tsv",
+      "path": "data/codeList.csv",
       "name": "Code list",
-      "mediatype": "text/tab-separated-values",
-      "dialect": {
-          "csvddfVersion": 1.0,
-          "delimiter": "\t",
-          "doubleQuote": true,
-          "lineTerminator": "\n",
-          "quoteChar": "",
-          "skipInitialSpace": true,
-          "header": true
-       },
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
@@ -31,7 +22,7 @@
           {
             "name": "Country",
             "type": "string",
-            "description": "ISO 3166 alpha-2 Country Code, defined in countryCodes.tsv",
+            "description": "ISO 3166 alpha-2 Country Code, defined in countryCodes.csv",
             "pattern": "[A-Z]{2}"
           },
           {
@@ -50,17 +41,17 @@
           {
             "name": "Subdivision",
             "type": "string",
-            "description": "Defined in subdivisionCodes.tsv"
+            "description": "Defined in subdivisionCodes.csv"
           },
           {
             "name": "Status",
             "type": "string",
-            "description": "Defined in statusIndicators.tsv"
+            "description": "Defined in statusIndicators.csv"
           },
           {
             "name": "Function",
             "type": "string",
-            "description": "Defined in functionClassifiers.tsv",
+            "description": "Defined in functionClassifiers.csv",
             "pattern": "[01-][2-][3-][4-][5-][6-][7-][B-]"
           },
           {
@@ -86,18 +77,9 @@
       }
     },
     {
-      "path": "data/countryCodes.tsv",
+      "path": "data/countryCodes.csv",
       "name": "Country codes",
-      "mediatype": "text/tab-separated-values",
-      "dialect": {
-          "csvddfVersion": 1.0,
-          "delimiter": "\t",
-          "doubleQuote": true,
-          "lineTerminator": "\n",
-          "quoteChar": "",
-          "skipInitialSpace": true,
-          "header": true
-       },
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
@@ -112,18 +94,9 @@
       }
     },
     {
-      "path": "data/functionClassifiers.tsv",
+      "path": "data/functionClassifiers.csv",
       "name": "Function classifiers",
-      "mediatype": "text/tab-separated-values",
-      "dialect": {
-          "csvddfVersion": 1.0,
-          "delimiter": "\t",
-          "doubleQuote": true,
-          "lineTerminator": "\n",
-          "quoteChar": "",
-          "skipInitialSpace": true,
-          "header": true
-       },
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
@@ -138,18 +111,9 @@
       }
     },
     {
-      "path": "data/statusIndicators.tsv",
+      "path": "data/statusIndicators.csv",
       "name": "Status indicators",
-      "mediatype": "text/tab-separated-values",
-      "dialect": {
-          "csvddfVersion": 1.0,
-          "delimiter": "\t",
-          "doubleQuote": true,
-          "lineTerminator": "\n",
-          "quoteChar": "",
-          "skipInitialSpace": true,
-          "header": true
-       },
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
@@ -164,18 +128,9 @@
       }
     },
     {
-      "path": "data/subdivisionCodes.tsv",
+      "path": "data/subdivisionCodes.csv",
       "name": "Subdivision codes",
-      "mediatype": "text/tab-separated-values",
-      "dialect": {
-          "csvddfVersion": 1.0,
-          "delimiter": "\t",
-          "doubleQuote": true,
-          "lineTerminator": "\n",
-          "quoteChar": "",
-          "skipInitialSpace": true,
-          "header": true
-       },
+      "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
