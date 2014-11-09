@@ -11,5 +11,5 @@ Tools: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.
 
 - List tables ```mdb-tables 2014-1\ UNLOCODE\ CodeList.mdb```
 - Extract from mdb file: ```mdb-export 2014-1\ UNLOCODE\ CodeList.mdb "2014-1 UNLOCODE CodeList" > mdb_codelist.csv```
-- Convert to TSV: ```csvformat -T mdb_subdivisioncodes.csv > mdb_subdivisioncodes.tsv```
+- Clean resulting csv: ```csvclean mdb_subdivisioncodes.csv```
 - Remove country headers in codelist (see script/rmstr.php)

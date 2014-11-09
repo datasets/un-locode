@@ -1,0 +1,15 @@
+STStatus,STDescription
+AA,Approved by competent national government agency
+AC,Approved by Customs Authority
+AF,Approved by national facilitation body
+AI,"Code adopted by international  organisation (IATA, ECLAC, EUROSTAT, etc.)"
+AM,Approved by the UN/LOCODE Maintenance Agency
+AQ,"Entry approved, functions not verified"
+AS,Approved by national standardisation body
+QQ,Original entry not verified since date indicated
+RL,Recognised location - Existence and representation of location name confirmed by check against nominated gazetteer or other reference work
+RN,Request from credible national sources for locations in their own country
+RQ,Request under consideration
+RR,Request rejected
+UR,Entry included on user's request; not officially approved
+XX,Entry that will be removed from the next issue of UN/LOCODE
