@@ -15,9 +15,10 @@ Tools: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.
 - Remove country headers in codelist (see script/rmstr.php)
 
 Tables:
-"2014-2 UNLOCODE CodeList" > codeList.csv
-"CountryCodes" > countryCodes.csv
-"FunctionClassifiers" > functionClassifiers.csv
-"StatusIndicators" > statusIndicators.csv
-"SubdivisionCodes" > subdivisionCodes.csv
- 
+
+- "2014-2 UNLOCODE CodeList" > codeList.csv
+- "CountryCodes" > countryCodes.csv
+- "FunctionClassifiers" > functionClassifiers.csv
+- "StatusIndicators" > statusIndicators.csv
+- "SubdivisionCodes" > subdivisionCodes.csv
+
