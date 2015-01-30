@@ -9,7 +9,16 @@ Data comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html
 ## Build dataset
 Tools: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.com/onyxfish/csvkit).
 
-- List tables ```mdb-tables 2014-1\ UNLOCODE\ CodeList.mdb```
-- Extract from mdb file: ```mdb-export 2014-1\ UNLOCODE\ CodeList.mdb "2014-1 UNLOCODE CodeList" > mdb_codelist.csv```
+- List tables ```mdb-tables 2014-2\ UNLOCODE\ CodeList.mdb```
+- Extract from mdb file: ```mdb-export 2014-2\ UNLOCODE\ CodeList.mdb "2014-2 UNLOCODE CodeList" > mdb_codelist.csv```
 - Clean resulting csv: ```csvclean mdb_subdivisioncodes.csv```
 - Remove country headers in codelist (see script/rmstr.php)
+
+Tables:
+
+- "2014-2 UNLOCODE CodeList" > codeList.csv
+- "CountryCodes" > countryCodes.csv
+- "FunctionClassifiers" > functionClassifiers.csv
+- "StatusIndicators" > statusIndicators.csv
+- "SubdivisionCodes" > subdivisionCodes.csv
+
