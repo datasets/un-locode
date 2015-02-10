@@ -1,6 +1,6 @@
 <?php
 ini_set('memory_limit', '-1');
-$i="codeList_old.csv";
+$i=$argv[1];
 $ed="codeList.csv";
 $row = 1;
     $fc = explode("\n",file_get_contents($i));
