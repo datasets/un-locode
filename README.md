@@ -12,7 +12,7 @@ Tools: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.
 - List tables ```mdb-tables 2014-2\ UNLOCODE\ CodeList.mdb```
 - Extract from mdb file: ```mdb-export 2014-2\ UNLOCODE\ CodeList.mdb "2014-2 UNLOCODE CodeList" > mdb_codelist.csv```
 - Clean resulting csv: ```csvclean mdb_subdivisioncodes.csv```
-- Remove country headers in codelist (see script/rmstr.php)
+- Remove country headers in codelist ```script/rmstr.php old_codeList.csv```
 
 Tables:
 
@@ -21,4 +21,3 @@ Tables:
 - "FunctionClassifiers" > functionClassifiers.csv
 - "StatusIndicators" > statusIndicators.csv
 - "SubdivisionCodes" > subdivisionCodes.csv
-
