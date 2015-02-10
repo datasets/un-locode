@@ -21,7 +21,3 @@ Tables:
 - "FunctionClassifiers" > functionClassifiers.csv
 - "StatusIndicators" > statusIndicators.csv
 - "SubdivisionCodes" > subdivisionCodes.csv
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
