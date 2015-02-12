@@ -1,7 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
-  "version": "2014.2.0",
+  "version": "2014.2.2",
   "license": "PDDL-1.0",
   "sources": [{
   "name": "UNECE",
@@ -9,7 +9,7 @@
   }],
   "resources": [
     {
-      "path": "data/codeList.csv",
+      "path": "data/code-list.csv",
       "name": "Code list",
       "mediatype": "text/csv",
       "schema": {
@@ -77,7 +77,7 @@
       }
     },
     {
-      "path": "data/countryCodes.csv",
+      "path": "data/country-codes.csv",
       "name": "Country codes",
       "mediatype": "text/csv",
       "schema": {
@@ -94,7 +94,7 @@
       }
     },
     {
-      "path": "data/functionClassifiers.csv",
+      "path": "data/function-classifiers.csv",
       "name": "Function classifiers",
       "mediatype": "text/csv",
       "schema": {
@@ -111,7 +111,7 @@
       }
     },
     {
-      "path": "data/statusIndicators.csv",
+      "path": "data/status-indicators.csv",
       "name": "Status indicators",
       "mediatype": "text/csv",
       "schema": {
@@ -128,7 +128,7 @@
       }
     },
     {
-      "path": "data/subdivisionCodes.csv",
+      "path": "data/subdivision-codes.csv",
       "name": "Subdivision codes",
       "mediatype": "text/csv",
       "schema": {
