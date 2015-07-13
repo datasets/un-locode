@@ -48,7 +48,7 @@ AF,URU,Urūzgān
 AF,WAR,Wardak
 AF,ZAB,Zābul
 AG,03,Saint George
-AG,04,Saint John’s
+AG,04,Saint John
 AG,05,Saint Mary
 AG,06,Saint Paul
 AG,07,Saint Peter
@@ -106,10 +106,10 @@ AO,BGO,Bengo
 AO,BGU,Benguela
 AO,BIE,Bié
 AO,CAB,Cabinda
-AO,CCU,Cuando-Cubango
+AO,CCU,Kuando Kubango
 AO,CNN,Cunene
-AO,CNO,Cuanza Norte
-AO,CUS,Cuanza Sul
+AO,CNO,Kwanza Norte
+AO,CUS,Kwanza Sul
 AO,HUA,Huambo
 AO,HUI,Huíla
 AO,LNO,Lunda Norte
@@ -464,6 +464,9 @@ BO,O,Oruro
 BO,P,Potosí
 BO,S,Santa Cruz
 BO,T,Tarija
+BQ,BO,Bonaire
+BQ,SA,Saba
+BQ,SE,Sint Eustatius
 BR,AC,Acre
 BR,AL,Alagoas
 BR,AM,Amazonas
@@ -543,14 +546,21 @@ BT,45,Samdrup Jongkha
 BT,GA,Gasa
 BT,TY,Trashi Yangtse
 BW,CE,Central
+BW,CH,Chobe
+BW,FR,Francistown
+BW,GA,Gaborone
 BW,GH,Ghanzi
+BW,JW,Jwaneng
 BW,KG,Kgalagadi
 BW,KL,Kgatleng
 BW,KW,Kweneng
-BW,NE,North-East
-BW,NW,North-West
-BW,SE,South-East
+BW,LO,Lobatse
+BW,NE,North East
+BW,NW,North West
+BW,SE,South East
 BW,SO,Southern
+BW,SP,Selibe Phikwe
+BW,ST,Sowa Town
 BY,BR,Bresckaja voblasć (be) - Brestskaja oblast' (ru)
 BY,HM,Horad Minsk
 BY,HO,Homyel'skaya voblasts' (be) - Gomel'skaya oblast' (ru)
@@ -576,7 +586,7 @@ CA,ON,Ontario
 CA,PE,Prince Edward Island
 CA,QC,Quebec
 CA,SK,Saskatchewan
-CA,YT,Yukon Territory
+CA,YT,Yukon
 CD,BC,Bas-Congo
 CD,BN,Bandundu
 CD,EQ,Équateur
@@ -610,6 +620,7 @@ CG,12,Pool
 CG,13,Sangha
 CG,14,Plateaux
 CG,15,Cuvette-Ouest
+CG,16,Pointe-Noire
 CG,2,Lékoumou
 CG,5,Kouilou
 CG,7,Likouala
@@ -661,12 +672,12 @@ CI,16,Agnébi (Région de l')
 CI,17,Bafing (Région du)
 CI,18,Fromager (Région du)
 CI,19,Moyen-Cavally (Région du)
-CL,AI,Aisén del General Carlos Ibáñez del Campo
+CL,AI,Aysén
 CL,AN,Antofagasta
 CL,AP,Arica y Parinacota
 CL,AR,Araucanía
 CL,AT,Atacama
-CL,BI,Bío-Bío
+CL,BI,Biobío
 CL,CO,Coquimbo
 CL,LI,Libertador General Bernardo O'Higgins
 CL,LL,Los Lagos
@@ -774,6 +785,8 @@ CU,11,Holguín
 CU,12,Granma
 CU,13,Santiago de Cuba
 CU,14,Guantánamo
+CU,15,Artemisa
+CU,16,Mayabeque
 CU,99,Isla de la Juventud
 CV,BR,Brava
 CV,BV,Boa Vista
@@ -856,12 +869,12 @@ DM,10,Saint Paul
 DM,11,Saint Peter
 DO,01,Distrito Nacional (Santo Domingo)
 DO,02,Azua
-DO,03,Bahoruco
+DO,03,Baoruco
 DO,04,Barahona
 DO,05,Dajabón
 DO,06,Duarte
 DO,07,La Estrelleta [Elías Piña]
-DO,08,El Seybo [El Seibo]
+DO,08,El Seibo
 DO,09,Espaillat
 DO,10,Independencia
 DO,11,La Altagracia
@@ -872,7 +885,7 @@ DO,15,Monte Cristi
 DO,16,Pedernales
 DO,17,Peravia
 DO,18,Puerto Plata
-DO,19,Salcedo
+DO,19,Hermanas Mirabal
 DO,20,Samaná
 DO,21,San Cristóbal
 DO,22,San Juan
@@ -886,6 +899,16 @@ DO,29,Monte Plata
 DO,30,Hato Mayor
 DO,31,San José de Ocoa
 DO,32,Santo Domingo
+DO,33,Cibao Nordeste
+DO,34,Cibao Noroeste
+DO,35,Cibao Norte
+DO,36,Cibao Sur
+DO,37,El Valle
+DO,38,Enriquillo
+DO,39,Higuamo
+DO,40,Ozama
+DO,41,Valdesia
+DO,42,Yuma
 DZ,01,Adrar
 DZ,02,Chlef
 DZ,03,Laghouat
@@ -896,7 +919,7 @@ DZ,07,Biskra
 DZ,08,Béchar
 DZ,09,Blida
 DZ,10,Bouira
-DZ,11,Tamanghasset
+DZ,11,Tamanrasset
 DZ,12,Tébessa
 DZ,13,Tlemcen
 DZ,14,Tiaret
@@ -985,7 +1008,6 @@ EG,DT,Dumyāţ
 EG,FYM,AI Fayyūm
 EG,GH,AI Gharbīyah
 EG,GZ,AI Jīzah
-EG,HU,Ḩulwān
 EG,IS,AI Ismā 'īlīyah
 EG,JS,Janūb Sīnā'
 EG,KB,AI Qalyūbīyah
@@ -999,7 +1021,6 @@ EG,PTS,Būr Sa'īd
 EG,SHG,Sūhāj
 EG,SHR,Ash Sharqīyah
 EG,SIN,Shamāl Sīnā'
-EG,SU,As Sādis min Uktūbar
 EG,SUZ,As Suways
 EG,WAD,AI Wādī al Jadīd
 ER,AN,‘Anseba
@@ -1014,7 +1035,7 @@ ES,AL,Almería
 ES,AV,Ávila
 ES,B,Barcelona  [Barcelona]
 ES,BA,Badajoz
-ES,BI,Vizcaya / Biskaia
+ES,BI,Biskaia
 ES,BU,Burgos
 ES,C,A Coruña  [La Coruña]
 ES,CA,Cádiz
@@ -1050,7 +1071,7 @@ ES,SA,Salamanca
 ES,SE,Sevilla
 ES,SG,Segovia
 ES,SO,Soria
-ES,SS,Guipúzcoa / Gipuzkoa
+ES,SS,Gipuzkoa
 ES,T,Tarragona  [Tarragona]
 ES,TE,Teruel
 ES,TF,Santa Cruz de Tenerife
@@ -1090,6 +1111,20 @@ FI,16,Päijät-Häme
 FI,17,Satakunta
 FI,18,Uusimaa
 FI,19,Varsinais-Suomi
+FJ,01,Ba
+FJ,02,Bua
+FJ,03,Cakaudrove
+FJ,04,Kadavu
+FJ,05,Lau
+FJ,06,Lomaiviti
+FJ,07,Macuata
+FJ,08,Nadroga and Navosa
+FJ,09,Naitasiri
+FJ,10,Namosi
+FJ,11,Ra
+FJ,12,Rewa
+FJ,13,Serua
+FJ,14,Tailevu
 FJ,C,Central
 FJ,E,Eastern
 FJ,N,Northern
@@ -1305,6 +1340,7 @@ GB,HPL,Hartlepool
 GB,HRT,Hertfordshire
 GB,HRW,Harrow
 GB,HRY,Haringey
+GB,IOS,Isles of Scilly
 GB,IOW,Isle of Wight
 GB,ISL,Islington
 GB,IVC,Inverclyde
@@ -1514,7 +1550,7 @@ GQ,CS,Centro Sur
 GQ,KN,Kié‐Ntem
 GQ,LI,Litoral
 GQ,WN,Wele‐Nzas
-GR,01,Aitolia kai Akarnania
+GR,01,Aitoloakarnanía
 GR,03,Voiotia
 GR,04,Evvoia
 GR,05,Evrytania
@@ -1529,7 +1565,7 @@ GR,16,Lakonia
 GR,17,Messinia
 GR,21,Zakynthos
 GR,22,Kerkyra
-GR,23,Kefallonia
+GR,23,Kefallinía
 GR,24,Lefkada
 GR,31,Arta
 GR,32,Thesprotia
@@ -1552,18 +1588,18 @@ GR,61,Pieria
 GR,62,Serres
 GR,63,Florina
 GR,64,Chalkidiki
-GR,69,Agio Oros
+GR,69,Ágion Óros
 GR,71,Evros
 GR,72,Xanthi
 GR,73,Rodopi
-GR,81,Dodekanisos
+GR,81,Dodekánisa
 GR,82,Kyklades
 GR,83,Lesvos
 GR,84,Samos
 GR,85,Chios
 GR,91,Irakleio
 GR,92,Lasithi
-GR,93,Rethymno
+GR,93,Rethýmnis
 GR,94,Chania
 GR,A1,Attiki
 GT,AV,Alta Verapaz
@@ -1715,6 +1751,7 @@ ID,KI,Kalimantan Timur
 ID,KR,Kepulauan Riau
 ID,KS,Kalimantan Selatan
 ID,KT,Kalimantan Tengah
+ID,KU,Kalimantan Utara
 ID,LA,Lampung
 ID,MA,Maluku
 ID,MU,Maluku Utara
@@ -1759,11 +1796,11 @@ IE,WH,Westmeath
 IE,WW,Wicklow
 IE,WX,Wexford
 IL,D,HaDarom
-IL,HA,Hefa
+IL,HA, H̱efa
 IL,JM,Yerushalayim
 IL,M,HaMerkaz
 IL,TA,Tel-Aviv
-IL,Z,HaZafon
+IL,Z,HaTsafon
 IN,AN,Andaman and Nicobar Islands
 IN,AP,Andhra Pradesh
 IN,AR,Arunachal Pradesh
@@ -1789,11 +1826,12 @@ IN,MN,Manipur
 IN,MP,Madhya Pradesh
 IN,MZ,Mizoram
 IN,NL,Nagaland
-IN,OR,Orissa
+IN,OR,Odisha
 IN,PB,Punjab
 IN,PY,Puducherry
 IN,RJ,Rajasthan
 IN,SK,Sikkim
+IN,TG,Telangana
 IN,TN,Tamil Nadu
 IN,TR,Tripura
 IN,UP,Uttar Pradesh
@@ -1808,6 +1846,7 @@ IQ,DA,Dahūk
 IQ,DI,Diyālá
 IQ,DQ,Dhī Qār
 IQ,KA,Karbalā'
+IQ,KI,Kirkūk
 IQ,MA,Maysān
 IQ,MU,AI Muthanná
 IQ,NA,An Najaf
@@ -1815,7 +1854,6 @@ IQ,NI,Nīnawá
 IQ,QA,Al Qādisīyah
 IQ,SD,Şalāh ad Dīn
 IQ,SU,As Sulaymānīyah
-IQ,TS,At Ta'mīm
 IQ,WA,Wāsiţ
 IR,01,ĀZarbāyjān-e Sharqī
 IR,02,ĀZarbāyjān-e Gharbī
@@ -1847,6 +1885,7 @@ IR,28,Qazvīn
 IR,29,Khorāsān-e Janūbī
 IR,30,Khorāsān-e Razavī
 IR,31,Khorāsān-e Shemālī
+IR,32,Alborz
 IS,0,Reykjavík
 IS,1,Höfuðborgarsvæði utan Reykjavíkur
 IS,2,Suðurnes
@@ -2039,17 +2078,57 @@ JP,44,Ôita [Oita]
 JP,45,Miyazaki
 JP,46,Kagosima [Kagoshima]
 JP,47,Okinawa
-KE,110,Nairobi
-KE,200,Central
-KE,300,Coast
-KE,400,Eastern
-KE,500,North-Eastern
-KE,600,Nyanza
-KE,700,Bonde la Ufa
-KE,800,Western
+KE,01,Baringo
+KE,02,Bomet
+KE,03,Bungoma
+KE,04,Busia
+KE,05,Elgeyo/Marakwet
+KE,06,Embu
+KE,07,Garissa
+KE,08,Homa Bay
+KE,09,Isiolo
+KE,10,Kajiado
+KE,11,Kakamega
+KE,12,Kericho
+KE,13,Kiambu
+KE,14,Kilifi
+KE,15,Kirinyaga
+KE,16,Kisii
+KE,17,Kisumu
+KE,18,Kitui
+KE,19,Kwale
+KE,20,Laikipia
+KE,21,Lamu
+KE,22,Machakos
+KE,23,Makueni
+KE,24,Mandera
+KE,25,Marsabit
+KE,26,Meru
+KE,27,Migori
+KE,28,Mombasa
+KE,29,Murang'a
+KE,30,Nairobi City
+KE,31,Nakuru
+KE,32,Nandi
+KE,33,Narok
+KE,34,Nyamira
+KE,35,Nyandarua
+KE,36,Nyeri
+KE,37,Samburu
+KE,38,Siaya
+KE,39,Taita/Taveta
+KE,40,Tana River
+KE,41,Tharaka-Nithi
+KE,42,Trans Nzoia
+KE,43,Turkana
+KE,44,Uasin Gishu
+KE,45,Vihiga
+KE,46,Wajir
+KE,47,West Pokot
 KG,B,Batken
 KG,C,Chü
 KG,GB,Bishkek
+KG,GO,Osh
 KG,J,Jalal-Abad
 KG,N,Naryn
 KG,O,Osh
@@ -2110,7 +2189,7 @@ KP,08,Hamkyeongnamto
 KP,09,Hamkyeongpukto
 KP,10,Yanggang-do
 KP,13,Nasǒn
-KR,11,Seoul Teugbyeolsi [Seoul-T'ŭkpyŏlshi]
+KR,11,Seoul-teukbyeolsi [Seoul]
 KR,26,Busan Gwang'yeogsi [Pusan‐Kwangyǒkshi]
 KR,27,Daegu Gwang'yeogsi [Taegu‐Kwangyǒkshi]
 KR,28,Incheon Gwang'yeogsi [Incheon]
@@ -2125,7 +2204,8 @@ KR,45,Jeonrabugdo [Chŏllabuk-do]
 KR,46,Jeonranamdo [Chŏllanam-do]
 KR,47,Gyeongsangbugdo [Kyŏngsangbuk-do]
 KR,48,Gyeongsangnamdo [Kyŏngsangnam-do]
-KR,49,Jejudo [Cheju-do]
+KR,49,Jeju-teukbyeoljachido [Jeju]
+KR,50,Sejong
 KW,AH,Al Aḩmadī
 KW,FA,Al Farwānīyah
 KW,HA,Ḩawallī
@@ -2164,7 +2244,7 @@ LA,VI,Vientiane
 LA,VT,Vientiane
 LA,XA,Xaignabouli [Sayaboury]
 LA,XE,Xékong [Sékong]
-LA,XI,Xiangkhoang [Xieng Khouang]
+LA,XI,Xiangkhouang [Xieng Khouang]
 LA,XN,Xaisômboun
 LB,AK,Aakkâr
 LB,AS,Liban‐Nord
@@ -2177,14 +2257,13 @@ LB,NA,Nabatîyé
 LC,01,Anse la Raye
 LC,02,Castries
 LC,03,Choiseul
-LC,04,Dauphin
 LC,05,Dennery
 LC,06,Gros Islet
 LC,07,Laborie
 LC,08,Micoud
-LC,09,Praslin
 LC,10,Soufrière
 LC,11,Vieux Fort
+LC,12,Canaries
 LI,01,Balzers
 LI,02,Eschen
 LI,03,Gamprin
@@ -2255,6 +2334,66 @@ LS,G,Quthing
 LS,H,Qacha's Nek
 LS,J,Mokhotlong
 LS,K,Thaba-Tseka
+LT,01,Akmenė
+LT,02,Alytaus miestas
+LT,03,Alytus
+LT,04,Anykščiai
+LT,05,Birštono
+LT,06,Biržai
+LT,07,Druskininkai
+LT,08,Elektrénai
+LT,09,Ignalina
+LT,10,Jonava
+LT,11,Joniškis
+LT,12,Jurbarkas
+LT,13,Kaišiadorys
+LT,14,Kalvarijos
+LT,15,Kauno miestas
+LT,16,Kaunas
+LT,17,Kazlų Rūdos
+LT,18,Kėdainiai
+LT,19,Kelmė
+LT,20,Klaipėdos miestas
+LT,21,Klaipėda
+LT,22,Kretinga
+LT,23,Kupiškis
+LT,24,Lazdijai
+LT,25,Marijampolė
+LT,26,Mažeikiai
+LT,27,Molėtai
+LT,28,Neringa
+LT,29,Pagégiai
+LT,30,Pakruojis
+LT,31,Palangos miestas
+LT,32,Panevėžio miestas
+LT,33,Panevėžys
+LT,34,Pasvalys
+LT,35,Plungė
+LT,36,Prienai
+LT,37,Radviliškis
+LT,38,Raseiniai
+LT,39,Rietavo
+LT,40,Rokiškis
+LT,41,Šakiai
+LT,42,Šalčininkai
+LT,43,Šiaulių miestas
+LT,44,Šiauliai
+LT,45,Šilalė
+LT,46,Šilutė
+LT,47,Širvintos
+LT,48,Skuodas
+LT,49,Švenčionys
+LT,50,Tauragė
+LT,51,Telšiai
+LT,52,Trakai
+LT,53,Ukmergė
+LT,54,Utena
+LT,55,Varėna
+LT,56,Vilkaviškis
+LT,57,Vilniaus miestas
+LT,58,Vilnius
+LT,59,Visaginas
+LT,60,Zarasai
 LT,AL,Alytaus Apskritis
 LT,KL,Klaipėdos apskritis
 LT,KU,Kauno Apskritis
@@ -2428,7 +2567,7 @@ MA,10,Doukhala-Abda
 MA,11,Marrakech-Tensift-Al Haouz
 MA,12,Tadla-Azilal
 MA,13,Sous-Massa-Draa
-MA,14,Guelmim-Es Smara
+MA,14,Guelmim-Es Semara
 MA,15,Laâyoune-Boujdour-Sakia el Hamra
 MA,16,Oued ed Dahab-Lagouira
 MA,AGD,Agadir‐Ida‐Outanane
@@ -2513,7 +2652,7 @@ MC,SR,Saint‐Roman
 MC,VR,Vallon de la Rousse
 MD,AN,Anenii Noi
 MD,BA,Bălţi
-MD,BD,Tighina
+MD,BD,Bender [Tighina]
 MD,BR,Briceni
 MD,BS,Basarabeasca
 MD,CA,Cahul
@@ -2571,6 +2710,8 @@ ME,18,Šavnik
 ME,19,Tivat
 ME,20,Ulcinj
 ME,21,Žabljak
+ME,22,Gusinje
+ME,23,Petnjica
 MG,A,Toamasina
 MG,D,Antsiranana
 MG,F,Fianarantsoa
@@ -2582,10 +2723,10 @@ MH,ALL,Ailinglapalap
 MH,ARN,Arno
 MH,AUR,Aur
 MH,EBO,Ebon
-MH,ENI,Enewetak
+MH,ENI,Enewetak and Ujelang
 MH,JAB,Jabat
 MH,JAL,Jaluit
-MH,KIL,Kili
+MH,KIL,Bikini and Kili
 MH,KWA,Kwajalein
 MH,L,Ralik chain
 MH,LAE,Lae
@@ -2595,12 +2736,12 @@ MH,MAJ,Majuro
 MH,MAL,Maloelap
 MH,MEJ,Mejit
 MH,MIL,Mili
-MH,NMK,Namorik
+MH,NMK,Namdrik
 MH,NMU,Namu
 MH,RON,Rongelap
 MH,T,Ratak chain
 MH,UJA,Ujae
-MH,UTI,Utirik
+MH,UTI,Utrik
 MH,WTH,Wotho
 MH,WTJ,Wotje
 MK,01,Aerodrom *
@@ -2700,9 +2841,9 @@ MM,01,Sagaing
 MM,02,Bago
 MM,03,Magway
 MM,04,Mandalay
-MM,05,Tanintharyi
+MM,05,Taninthayi
 MM,06,Yangon
-MM,07,Ayeyarwady
+MM,07,Ayeyawady
 MM,11,Kachin
 MM,12,Kayah
 MM,13,Kayin
@@ -2710,6 +2851,7 @@ MM,14,Chin
 MM,15,Mon
 MM,16,Rakhine
 MM,17,Shan
+MM,18,Nay Pyi Taw
 MN,035,Orhon
 MN,037,Darhan uul
 MN,039,Hentiy
@@ -2948,15 +3090,16 @@ MZ,P,Cabo Delgado
 MZ,Q,Zambézia
 MZ,S,Sofala
 MZ,T,Tete
-NA,CA,Caprivi
+NA,CA,Zambezi
 NA,ER,Erongo
 NA,HA,Hardap
 NA,KA,Karas
+NA,KE,Kavango East
 NA,KH,Khomas
 NA,KU,Kunene
+NA,KW,Kavango West
 NA,OD,Otjozondjupa
 NA,OH,Omaheke
-NA,OK,Okavango
 NA,ON,Oshana
 NA,OS,Omusati
 NA,OT,Oshikoto
@@ -2994,7 +3137,7 @@ NG,KO,Kogi
 NG,KT,Katsina
 NG,KW,Kwara
 NG,LA,Lagos
-NG,NA,Nassarawa
+NG,NA,Nasarawa
 NG,NI,Niger
 NG,OG,Ogun
 NG,ON,Ondo
@@ -3115,6 +3258,7 @@ OM,WU,AI Wusţa
 OM,ZA,Az Zāhirah
 OM,ZU,Z̧ufār
 PA,1,Bocas del Toro
+PA,10,Panamá Oeste
 PA,2,Coclé
 PA,3,Colón
 PA,4,Chiriquí
@@ -3159,6 +3303,8 @@ PG,EHG,Eastern Highlands
 PG,EPW,Enga
 PG,ESW,East Sepik
 PG,GPK,Gulf
+PG,HLA,Hela
+PG,JWK,Jiwaka
 PG,MBA,Milne Bay
 PG,MPL,Morobe
 PG,MPM,Madang
@@ -3167,11 +3313,12 @@ PG,NCD,National Capital District (Port Moresby)
 PG,NIK,New Ireland
 PG,NPP,Northern
 PG,NSB,Bougainville
-PG,SAN,Sandaun (West Sepik)
+PG,SAN,West Sepik
 PG,SHM,Southern Highlands
 PG,WBK,West New Britain
 PG,WHM,Western Highlands
 PG,WPD,Western
+PH,00,National Capital Région (Manila)
 PH,ABR,Abra
 PH,AGN,Agusan del Norte
 PH,AGS,Agusan del Sur
@@ -3514,14 +3661,14 @@ RW,03,Nord
 RW,04,Ouest
 RW,05,Sud
 SA,01,Ar Riyād
-SA,02,Makkah
-SA,03,AI Madīnah
+SA,02,Makkah al Mukarramah
+SA,03,Al Madīnah al Munawwarah
 SA,04,Ash Sharqīyah
 SA,05,AI Qaşīm
 SA,06,Hā'il
 SA,07,Tabūk
 SA,08,AI Hudūd ash Shamālīyah
-SA,09,Jīzān
+SA,09,Jāzān
 SA,10,Najrān
 SA,11,AI Bāhah
 SA,12,AI Jawf
@@ -3819,6 +3966,7 @@ SI,208,Log-Dragomer
 SI,209,Rečica ob Savinji
 SI,210,Sveti Jurij v Slovenskih Goricah
 SI,211,Šentrupert
+SI,212,Mirna
 SK,BC,Banskobystrický kraj
 SK,BL,Bratislavský kraj
 SK,KI,Košický kraj
@@ -3922,15 +4070,12 @@ SY,RA,Ar Raqqah
 SY,RD,Rīf Dimashq
 SY,SU,As Suwaydā'
 SY,TA,Ţarţūs
-SZ,HH,Hhohho
-SZ,LU,Lubombo
-SZ,MA,Manzini
-SZ,SH,Shiselweni
 TD,BA,Batha
 TD,BG,Baḩr al Ghazāl
 TD,BO,Būrkū
 TD,CB,Chari-Baguirmi
-TD,EN,Innīdī
+TD,EE,Ennedi-Est
+TD,EO,Ennedi-Ouest
 TD,GR,Guéra
 TD,HL,Hadjer Lamis
 TD,KA,Kanem
@@ -4031,6 +4176,7 @@ TH,94,Pattani
 TH,95,Yala
 TH,96,Narathiwat
 TH,S ,Phatthaya
+TJ,DU,Dushanbe
 TJ,GB,Kŭhistoni Badakhshon
 TJ,KT,Khatlon
 TJ,SU,Sughd
@@ -4236,6 +4382,10 @@ TZ,23,Singida
 TZ,24,Tabora
 TZ,25,Tanga
 TZ,26,Manyara
+TZ,27,Geita
+TZ,28,Katavi
+TZ,29,Njombe
+TZ,30,Simiyu
 UA,05,Vinnytska oblast
 UA,07,Volynska oblast
 UA,09,Luhanska oblast
@@ -4249,7 +4399,7 @@ UA,30,Kyiv
 UA,32,Kyivska oblast
 UA,35,Kirovohradska oblast
 UA,40,Sevastopol
-UA,43,Respublika Krym
+UA,43,Avtonomna Respublika Krym
 UA,46,Lvivska oblast
 UA,48,Mykolaivska oblast
 UA,51,Odeska oblast
@@ -4279,6 +4429,14 @@ UG,113,Wakiso
 UG,114,Mityana
 UG,115,Nakaseke
 UG,116,Lyantonde
+UG,117,Buikwe
+UG,118,Bukomansibi
+UG,119,Butambala
+UG,120,Buvuma
+UG,121,Gomba
+UG,122,Kalungu
+UG,123,Kyankwanzi
+UG,124,Lwengo
 UG,201,Bugiri
 UG,202,Busia
 UG,203,Iganga
@@ -4302,6 +4460,14 @@ UG,221,Manafwa
 UG,222,Namutumba
 UG,223,Bududa
 UG,224,Bukedea
+UG,225,Bulambuli
+UG,226,Buyende
+UG,227,Kibuku
+UG,228,Kween
+UG,229,Luuka
+UG,230,Namayingo
+UG,231,Ngora
+UG,232,Serere
 UG,244,Mayuge
 UG,301,Adjumani
 UG,302,Apac
@@ -4343,6 +4509,12 @@ UG,416,Ibanda
 UG,417,Isingiro
 UG,418,Kiruhura
 UG,419,Buliisa
+UG,420,Kiryandongo
+UG,421,Kyegegwa
+UG,422,Mitooma
+UG,423,Ntoroko
+UG,424,Rubirizi
+UG,425,Sheema
 UM,67,Johnston Atoll (ISO reserved code = JT)
 UM,71,Midway Islands (ISO reserved code = I)
 UM,76,Navassa Island (ISO reserved code = NV)
@@ -4474,65 +4646,64 @@ VE,W,Dependencias Federales
 VE,X,vargas
 VE,Y,Delta Amacuro
 VE,Z,Amazonas
-VN,01,Lai Chau
-VN,02,Lao Cai
-VN,03,Ha Giang
-VN,04,Cao Bang
-VN,05,Son La
-VN,06,Yen Bai
-VN,07,Tuyen Quang
-VN,09,Lang Son
-VN,13,Quang Ninh
-VN,14,Hoa Binh
-VN,15,Ha Tay
-VN,18,Ninh Binh
-VN,20,Thai Binh
-VN,21,Thanh Hoa
-VN,22,Nghe An
-VN,23,Ha Tinh
-VN,24,Quang Binh
-VN,25,Quang Tri
-VN,26,Thua Thien-Hue
-VN,27,Quang Nam
+VN,01,Lai Châu
+VN,02,Lào Cai
+VN,03,Hà Giang
+VN,04,Cao Bằng
+VN,05,Sơn La
+VN,06,Yên Bái
+VN,07,Tuyên Quang
+VN,09,Lạng Sơn
+VN,13,Quảng Ninh
+VN,14,Hòa Bình
+VN,18,Ninh Bình
+VN,20,Thái Bình
+VN,21,Thanh Hóa
+VN,22,Nghệ An
+VN,23,Hà Tĩnh
+VN,24,Quảng Bình
+VN,25,Quảng Trị
+VN,26,Thừa Thiên-Huế
+VN,27,Quảng Nam
 VN,28,Kon Tum
-VN,29,Quang Ngai
+VN,29,Quảng Ngãi
 VN,30,Gia Lai
-VN,31,Binh Dinh
-VN,32,Phu Yen
-VN,33,Dak Lak
-VN,34,Khanh Hoa
-VN,35,Lam Dong
-VN,36,Ninh Thuan
-VN,37,Tay Ninh
-VN,39,Dong Nai
-VN,40,Binh Thuan
+VN,31,Bình Định
+VN,32,Phú Yên
+VN,33,Đắk Lắk
+VN,34,Khánh Hòa
+VN,35,Lâm Ðồng
+VN,36,Ninh Thuận
+VN,37,Tây Ninh
+VN,39,Ðồng Nai
+VN,40,Bình Thuận
 VN,41,Long An
-VN,43,Ba Ria-Vung Tau
+VN,43,Bà Rịa - Vũng Tàu
 VN,44,An Giang
-VN,45,Dong Thap
-VN,46,Tien Giang
-VN,47,Kien Giang
-VN,49,Vinh Long
-VN,50,Ben Tre
-VN,51,Tra Vinh
-VN,52,Soc Trang
-VN,53,Bac Kan
-VN,54,Bac Giang
-VN,55,Bac Lieu
-VN,56,Bac Ninh
-VN,57,Binh Duong
-VN,58,Binh Phuoc
-VN,59,Ca Mau
-VN,61,Hai Duong
-VN,63,Ha Nam
-VN,66,Hung Yen
-VN,67,Nam Dinh
-VN,68,Phu Tho
-VN,69,Thai Nguyen
-VN,70,Vinh Phuc
-VN,71,Dien Bien
-VN,72,Dak Nong
-VN,73,Hau Giang
+VN,45,Ðồng Tháp
+VN,46,Tiền Giang
+VN,47,Kiến Giang
+VN,49,Vĩnh Long
+VN,50,Bến Tre
+VN,51,Trà Vinh
+VN,52,Sóc Trăng
+VN,53,Bắc Kạn
+VN,54,Bắc Giang
+VN,55,Bạc Liêu
+VN,56,Bắc Ninh
+VN,57,Bình Dương
+VN,58,Bình Phước
+VN,59,Cà Mau
+VN,61,Hải Dương
+VN,63,Hà Nam
+VN,66,Hưng Yên
+VN,67,Nam Ðịnh
+VN,68,Phú Thọ
+VN,69,Thái Nguyên
+VN,70,Vĩnh Phúc
+VN,71,Điện Biên
+VN,72,Đắk Nông
+VN,73,Hậu Giang
 VN,CT,Can Tho
 VN,DN,"Da Nang, thanh pho"
 VN,HN,Ha Noi
@@ -4571,7 +4742,7 @@ YE,MA,Ma'rib
 YE,MR,Al Mahrah
 YE,MW,Al Maḩwīt
 YE,RA,Raymah
-YE,SA,Şanʻā' [city]
+YE,SA,Amānat al ‘Āşimah [city]
 YE,SD,Sa'dah
 YE,SH,Shabwah
 YE,SN,Şanʻā'
@@ -4594,6 +4765,7 @@ ZM,06,North-Western
 ZM,07,Southern
 ZM,08,Copperbelt
 ZM,09,Lusaka
+ZM,10,Muchinga
 ZW,BU,Bulawayo
 ZW,HA,Harare
 ZW,MA,Manicaland
