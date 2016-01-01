@@ -1,7 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
-  "version": "2015.1.0",
+  "version": "2015.2.0",
   "license": "PDDL-1.0",
   "sources": [{
   "name": "UNECE",
