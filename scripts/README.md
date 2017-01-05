@@ -14,3 +14,5 @@ Tables needed to be exported:
 - "SubdivisionCodes" > subdivision-codes.csv
 
 Note: in the strings above {yyyy} is the full year, {r} is the revision (1 or 2)
+
+The script ```scripts/prepare_edition.sh``` automates the steps above. It needs to be launched from the package root, accepts as an argument the mdb database file name to be processed and outputs the extracted data in the data folder.
