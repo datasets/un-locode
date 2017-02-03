@@ -2,7 +2,9 @@ The United Nations Code for Trade and Transport Locations is a code list mantain
 
 ## Data
 
-Data comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released at least once a year. The files released in this package are extracted from the mdb archive to preserve UTF-8 encoding.
+United Nations Code for Trade and Transport Locations
+
+UN/LOCODE The "United Nations Code for Trade and Transport Locations" is commonly more known as "UN/LOCODE". Although managed and maintained by the UNECE (http://www.unece.org/cefact/locode/welcome.html), it is the product of a wide collaboration in the framework of the joint trade facilitation effort undertaken within the United Nations. The files released in this package are extracted from the mdb archive to preserve UTF-8 encoding.
 
 ## License
 
