@@ -10,7 +10,7 @@
   "resources": [
     {
       "path": "data/code-list.csv",
-      "name": "Code list",
+      "name": "code-list",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -78,7 +78,7 @@
     },
     {
       "path": "data/country-codes.csv",
-      "name": "Country codes",
+      "name": "country-codes",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -95,7 +95,7 @@
     },
     {
       "path": "data/function-classifiers.csv",
-      "name": "Function classifiers",
+      "name": "function-classifiers",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -112,7 +112,7 @@
     },
     {
       "path": "data/status-indicators.csv",
-      "name": "Status indicators",
+      "name": "status-indicators",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -129,7 +129,7 @@
     },
     {
       "path": "data/subdivision-codes.csv",
-      "name": "Subdivision codes",
+      "name": "subdivision-codes",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
