@@ -3,10 +3,13 @@
   "title": "UN-LOCODE Codelist",
   "version": "2017.1.0",
   "license": "PDDL-1.0",
-  "sources": [{
-  "name": "UNECE",
-  "web": "http://www.unece.org/cefact/locode/welcome.html"
-  }],
+  "sources": [
+    {
+      "name": "UNECE",
+      "path": "http://www.unece.org/cefact/locode/welcome.html",
+      "title": "UNECE"
+    }
+  ],
   "resources": [
     {
       "path": "data/code-list.csv",
