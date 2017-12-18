@@ -60,7 +60,7 @@
           {
             "name": "Date",
             "type": "string",
-            "format": "ym"
+            "description": "ym"
           },
           {
             "name": "IATA",
@@ -70,7 +70,7 @@
           {
             "name": "Coordinates",
             "type": "string",
-            "format": "DDMM[N/S] DDDMM[W/E]"
+            "description": "DDMM[N/S] DDDMM[W/E]"
           },
           {
             "name": "Remarks",
