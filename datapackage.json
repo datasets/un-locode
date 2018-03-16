@@ -2,7 +2,13 @@
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
   "version": "2017.2.0",
-  "license": "PDDL-1.0",
+  "licensces": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
   "sources": [
     {
       "name": "UNECE",
