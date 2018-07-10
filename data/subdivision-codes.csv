@@ -308,6 +308,7 @@ BF,BAL,Balé
 BF,BAM,Bam
 BF,BAN,Banwa
 BF,BAZ,"Bazèga
+
 ga"
 BF,BGR,Bougouriba
 BF,BLG,Boulgou
@@ -951,7 +952,7 @@ EC,U,Sucumbíos
 EC,W,Galápagos
 EC,X,Cotopaxi
 EC,Y,Pastaza
-EC,Z,Zamora-Chinchipe
+EC,Z,Zamora Chinchipe
 EE,37,Harjumaa
 EE,39,Hiiumaa
 EE,44,Ida-Virumaa
@@ -1800,7 +1801,7 @@ IR,29,Khorāsān-e Jonūbī
 IR,30,	Khorāsān-e Raẕavī
 IR,31,Khorāsān-e Shomālī
 IR,32,Alborz
-IS,1,Höfuðborgarsvæði utan Reykjavíkur
+IS,1,Höfuðborgarsvæði
 IS,2,Suðurnes
 IS,3,Vesturland
 IS,4,Vestfirðir
@@ -2101,8 +2102,9 @@ KP,06,Hwanghaipukto
 KP,07,Kangweonto
 KP,08,Hamkyeongnamto
 KP,09,Hamkyeongpukto
-KP,10,Yanggang-do
-KP,13,Nasǒn
+KP,10,Ryanggang-do
+KP,13,Rasǒn
+KP,14,Namp’o
 KR,11,Seoul-teukbyeolsi [Seoul]
 KR,26,Busan Gwang'yeogsi [Pusan‐Kwangyǒkshi]
 KR,27,Daegu Gwang'yeogsi [Taegu‐Kwangyǒkshi]
@@ -2143,24 +2145,24 @@ KZ,VOS,Shyghys Qazaqstan oblysy
 KZ,YUZ,Ongtüstik Qazaqstan oblysy
 KZ,ZAP,Batys Qazaqstan oblysy
 KZ,ZHA,Zhambyl oblysy
-LA,AT,Attapu [Attopeu]
+LA,AT,Attapu [Attapeu]
 LA,BK,Bokèo
-LA,BL,Bolikhamxai [Borikhane]
-LA,CH,Champasak [Champassak]
-LA,HO,Houaphan
-LA,KH,Khammouan
-LA,LM,Louang Namtha
-LA,LP,Louangphabang [Louang Prabang)
-LA,OU,Oudômxai [Oudomsai]
-LA,PH,Phôngsali [Phong Saly]
+LA,BL,Bolikhamxai [Borikhamxay]
+LA,CH,Champasak [Champasack]
+LA,HO,Houaphan [Huaphanh]
+LA,KH,Khammouan [Khammuane]
+LA,LM,Louang Namtha [Luangnamtha]
+LA,LP,Louangphabang [Luangprabang]
+LA,OU,Oudômxai [Oudomxay]
+LA,PH,Phôngsali [Phongsaly]
 LA,SL,Salavan [Saravane]
-LA,SV,Savannakhét
+LA,SV,Savannakhét [Savannakhet]
 LA,VI,Vientiane
 LA,VT,Vientiane
-LA,XA,Xaignabouli [Sayaboury]
-LA,XE,Xékong [Sékong]
-LA,XI,Xiangkhouang [Xieng Khouang]
-LA,XS,Xaisômboun
+LA,XA,Xaignabouli [Xayabury]
+LA,XE,Xékong [Sekong]
+LA,XI,Xiangkhouang [Xiengkhuang]
+LA,XS,Xaisômboun [Xaysomboon]
 LB,AK,Aakkâr
 LB,AS,Liban‐Nord
 LB,BA,Beyrouth
@@ -2369,8 +2371,10 @@ LV,035,Ikšķiles novads (Ikšķile)
 LV,036,Ilūkstes novads (Ilūkste)
 LV,037,Inčukalna novads (Inčukalns)
 LV,038,"Jaunjelgavas novads
+
 (Jaunjelgava)"
 LV,039,"Jaunpiebalgas novads
+
 (Jaunpiebalga)"
 LV,040,Jaunpils novads (Jaunpils)
 LV,041,Jelgavas novads (Jelgava)
@@ -2437,6 +2441,7 @@ LV,101,Valkas novads (Valka)
 LV,102,Varakļānu novads (Varakļāni)
 LV,103,Vārkavas novads (Vārkava)
 LV,104,"Vecpiebalgas novads
+
 (Vecpiebalga)"
 LV,105,Vecumnieku novads (Vecumnieki)
 LV,106,Ventspils novads (Ventspils)
@@ -2590,6 +2595,7 @@ MD,ED,Edineţ
 MD,FA,Făleşti
 MD,FL,Floreşti
 MD,GA,"Găgăuzia, Unitatea teritorială
+
 autonomă (UTAG)"
 MD,GL,Glodeni
 MD,HI,Hînceşti
@@ -2639,14 +2645,14 @@ MG,M,Mahajanga
 MG,T,Antananarivo
 MG,U,Toliara
 MH,ALK,Ailuk
-MH,ALL,Ailinglapalap
+MH,ALL,Ailinglaplap
 MH,ARN,Arno
 MH,AUR,Aur
 MH,EBO,Ebon
-MH,ENI,Enewetak and Ujelang
+MH,ENI,Enewetak & Ujelang
 MH,JAB,Jabat
 MH,JAL,Jaluit
-MH,KIL,Bikini and Kili
+MH,KIL,Bikini & Kili
 MH,KWA,Kwajalein
 MH,L,Ralik chain
 MH,LAE,Lae
@@ -2736,6 +2742,7 @@ MK,82,Čučer Sandevo
 MK,83,Štip
 MK,85,Skopje
 ML,1,Kayes
+ML,10,Taoudénit
 ML,2,Koulikoro
 ML,3,Sikasso
 ML,4,Ségou
@@ -2743,6 +2750,7 @@ ML,5,Mopti
 ML,6,Tombouctou
 ML,7,Gao
 ML,8,Kidal
+ML,9,Ménaka
 ML,BKO,Bamako
 MM,01,Sagaing
 MM,02,Bago
@@ -2946,7 +2954,7 @@ MX,BCS,Baja California Sur
 MX,CAM,Campeche
 MX,CHH,Chihuahua
 MX,CHP,Chiapas
-MX,CMX,Ciudad de Mexico
+MX,CMX,Ciudad de México
 MX,COA,Coahuila de Zaragoza
 MX,COL,Colima
 MX,DUR,Durango
@@ -3107,8 +3115,10 @@ NO,18,Nordland
 NO,19,Troms
 NO,20,Finnmark
 NO,21,"Svalbard (Arctic Region) (See
+
 also country code SJ)"
 NO,22,"Jan Mayen (Arctic Region) (See
+
 also country code SJ)"
 NP,BA,Bagmati
 NP,BH,Bheri
@@ -3128,7 +3138,7 @@ NR,01,Aiwo
 NR,02,Anabar
 NR,03,Anetan
 NR,04,Anibare
-NR,05,Baiti
+NR,05,Baitsi
 NR,06,Boe
 NR,07,Buada
 NR,08,Denigomodu
@@ -3177,7 +3187,7 @@ PA,7,Los Santos
 PA,8,Panamá
 PA,9,Veraguas
 PA,EM,Emberá
-PA,KY,Kuna Yala
+PA,KY,Guna Yala
 PA,NB,Ngöbe-Buglé
 PE,AMA,Amazonas
 PE,ANC,Ancash
@@ -3312,7 +3322,7 @@ PH,ZSI,Zamboanga Sibuguey [Zamboanga Sibugay]
 PK,BA,Balochistan
 PK,GB,Gilgit-Baltistan
 PK,IS,Islamabad
-PK,JK,Azad Kashmir
+PK,JK,Azad Jammu and Kashmir
 PK,KP,Khyber Pakhtunkhwa
 PK,PB,Punjab
 PK,SD,Sindh
@@ -3406,6 +3416,7 @@ QA,DA,Ad Dawhah
 QA,KH,Al Khawr wa adh Dhakhīrah
 QA,MS,Ash Shamāl
 QA,RA,Ar Rayyān
+QA,SH,Ash Shīḩānīyah
 QA,US,Umm Şalāl
 QA,WA,Al Wakrah
 QA,ZA,Az̧ Z̧a‘āyin
@@ -3869,6 +3880,7 @@ SI,201,Renèe-Vogrsko
 SI,202,Središče ob Dravi
 SI,203,Straža
 SI,204,"Sveta Trojica v Slovenskih
+
 Goricah"
 SI,205,Sveti Tomaž
 SI,206,Šmarješke Toplice
@@ -4009,7 +4021,7 @@ TG,C,Centrale
 TG,K,Kara
 TG,M,Maritime (Région)
 TG,P,Plateaux
-TG,S,Savannes
+TG,S,Savanes
 TH,10,Krung Thep Maha Nakhon [Bangkok]
 TH,11,Samut Prakan
 TH,12,Nonthaburi
@@ -4091,7 +4103,7 @@ TH,S ,Phatthaya
 TJ,DU,Dushanbe
 TJ,GB,Kŭhistoni Badakhshon
 TJ,KT,Khatlon
-TJ,RA,Nohiyahoi Tobei Jumhurí
+TJ,RA,nohiyahoi tobei jumhurí
 TJ,SU,Sughd
 TL,AL,Aileu
 TL,AN,Ainaro
@@ -4348,6 +4360,7 @@ UG,121,Gomba
 UG,122,Kalungu
 UG,123,Kyankwanzi
 UG,124,Lwengo
+UG,125,Kyotera
 UG,201,Bugiri
 UG,202,Busia
 UG,203,Iganga
@@ -4379,6 +4392,8 @@ UG,229,Luuka
 UG,230,Namayingo
 UG,231,Ngora
 UG,232,Serere
+UG,233,Butebo
+UG,234,Namisindwa
 UG,244,Mayuge
 UG,301,Adjumani
 UG,302,Apac
@@ -4407,6 +4422,8 @@ UG,327,Napak
 UG,328,Nwoya
 UG,329,Otuke
 UG,330,Zombo
+UG,331,Omoro
+UG,332,Pakwach
 UG,401,Bundibugyo
 UG,402,Bushenyi
 UG,403,Hoima
@@ -4433,6 +4450,11 @@ UG,423,Mitooma
 UG,424,Ntoroko
 UG,425,Rubirizi
 UG,426,Sheema
+UG,427,Kagadi
+UG,428,Kakumiro
+UG,429,Rubanda
+UG,430,Bunyangabu
+UG,431,Rukiga
 UM,67,Johnston Atoll (ISO reserved code = JT)
 UM,71,Midway Islands (ISO reserved code = I)
 UM,76,Navassa Island (ISO reserved code = NV)
