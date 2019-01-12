@@ -308,7 +308,6 @@ BF,BAL,Balé
 BF,BAM,Bam
 BF,BAN,Banwa
 BF,BAZ,"Bazèga
-
 ga"
 BF,BGR,Bougouriba
 BF,BLG,Boulgou
@@ -478,6 +477,7 @@ BS,MG,Mayaguana
 BS,MI,Moore's Island
 BS,NE,North Eleuthera
 BS,NO,North Abaco
+BS,NP,New Providence
 BS,NS,North Andros
 BS,RC,Rum Cay
 BS,RI,Ragged Island
@@ -656,6 +656,7 @@ CL,LL,Los Lagos
 CL,LR,Los Ríos
 CL,MA,Magallanes
 CL,ML,Maule
+CL,NB,Ñuble
 CL,RM,Región Metropolitana de Santiago
 CL,TA,Tarapacá
 CL,VS,Valparaíso
@@ -1454,9 +1455,10 @@ GH,TV,Volta
 GH,UE,Upper East
 GH,UW,Upper West
 GH,WP,Western
+GL,AV,Avannaata Kommunia
 GL,KU,Kommune Kujalleq
-GL,QA,Qaasuitsup Kommunia
 GL,QE,Qeqqata Kommunia
+GL,QT,Kommune Qeqertalik
 GL,SM,Kommuneqarfik Sermersooq
 GM,B,Banjul
 GM,L,Lower River
@@ -2057,14 +2059,14 @@ KH,14,Prey Veaeng [Prey Vêng]
 KH,15,Pousaat [Poŭthĭsăt]
 KH,16,Rotanak Kiri [Rôtânôkiri]
 KH,17,Siem Reab [Siĕmréab]
-KH,18,Krong Preah Sihanouk [Krŏng Preăh Sihanouk]
+KH,18,Preah Sihanouk [Preăh Sihanouk]
 KH,19,Stueng Traeng [Stoĕng Trêng]
 KH,2,Baat Dambang [Bătdâmbâng]
 KH,20,Svaay Rieng [Svay Riĕng]
 KH,21,Taakaev [Takêv]
 KH,22,Otdar Mean Chey [Ŏtdâr Méanchey]
-KH,23,Krong Kaeb [Krŏng Kêb]
-KH,24,Krong Pailin [Krŏng Pailĭn]
+KH,23,Keb [Kêb]
+KH,24,Pailin [Pailĭn]
 KH,25,Tbong Khmum
 KH,3,Kampong Chaam [Kâmpóng Cham]
 KH,4,Kampong Chhnang [Kâmpóng Chhnăng]
@@ -2141,8 +2143,9 @@ KZ,KZY,Qyzylorda oblysy
 KZ,MAN,Mangghystaū oblysy
 KZ,PAV,Pavlodar oblysy
 KZ,SEV,Soltüstik Qazaqstan oblysy
+KZ,SHY,Šimkent
 KZ,VOS,Shyghys Qazaqstan oblysy
-KZ,YUZ,Ongtüstik Qazaqstan oblysy
+KZ,YUZ,Türkistan oblysy
 KZ,ZAP,Batys Qazaqstan oblysy
 KZ,ZHA,Zhambyl oblysy
 LA,AT,Attapu [Attapeu]
@@ -2371,10 +2374,8 @@ LV,035,Ikšķiles novads (Ikšķile)
 LV,036,Ilūkstes novads (Ilūkste)
 LV,037,Inčukalna novads (Inčukalns)
 LV,038,"Jaunjelgavas novads
-
 (Jaunjelgava)"
 LV,039,"Jaunpiebalgas novads
-
 (Jaunpiebalga)"
 LV,040,Jaunpils novads (Jaunpils)
 LV,041,Jelgavas novads (Jelgava)
@@ -2441,7 +2442,6 @@ LV,101,Valkas novads (Valka)
 LV,102,Varakļānu novads (Varakļāni)
 LV,103,Vārkavas novads (Vārkava)
 LV,104,"Vecpiebalgas novads
-
 (Vecpiebalga)"
 LV,105,Vecumnieku novads (Vecumnieki)
 LV,106,Ventspils novads (Ventspils)
@@ -2480,58 +2480,63 @@ LY,WA,Al Wāḩāt
 LY,WD,Wādī al Hayāt
 LY,WS,Wādī ash Shāţiʾ
 LY,ZA,Az Zāwiyah
-MA,01,Tanger-Tétouan
-MA,02,Gharb-Chrarda-Beni Hssen
-MA,03,Taza-Al Hoceima-Taounate
-MA,04,L'Oriental
-MA,05,Fès-Boulemane
-MA,06,Meknès-Tafilalet
-MA,07,Rabat-Salé-Zemmour-Zaer
-MA,08,Grand Casablanca
-MA,09,Chaouia-Ouardigha
-MA,10,Doukhala-Abda
-MA,11,Marrakech-Tensift-Al Haouz
-MA,12,Tadla-Azilal
-MA,13,Sous-Massa-Draa
-MA,14,Guelmim-Es Semara
-MA,15,Laâyoune-Boujdour-Sakia el Hamra
-MA,16,Oued ed Dahab-Lagouira
-MA,AGD,Agadir‐Ida‐Outanane
+MA,01,Tanger-Tétouan-Al Hoceïma
+MA,02,	L'Oriental
+MA,03,	Fès- Meknès
+MA,04,Rabat-Salé-Kénitra
+MA,05,Béni Mellal-Khénifra
+MA,06,Casablanca-Settat
+MA,07,Marrakech-Safi
+MA,08,Drâa-Tafilalet
+MA,09,Souss-Massa
+MA,10,Guelmim-Oued Noun (EH-partial)
+MA,11,Laâyoune-Sakia El Hamra (EH-partial)
+MA,12,Dakhla-Oued Ed-Dahab (EH)
+MA,AGD,Agadir-Ida-Ou-Tanane
 MA,AOU,Aousserd
-MA,ASZ,Assa-Zag
+MA,ASZ,Assa-Zag (EH-partial)
 MA,AZI,Azilal
 MA,BEM,Beni Mellal
 MA,BER,Berkane
-MA,BES,Ben Slimane
+MA,BES,Benslimane
 MA,BOD,Boujdour (EH)
 MA,BOM,Boulemane
+MA,BRR,Berrechid
 MA,CAS,Casablanca [Dar el Beïda]*
 MA,CHE,Chefchaouene
 MA,CHI,Chichaoua
 MA,CHT,Chtouka-Ait Baha
+MA,CHT,Chtouka-Ait Baha
+MA,DRI,	Driouch
 MA,ERR,Errachidia
 MA,ESI,Essaouira
-MA,ESM,Es Smara (EH)
-MA,FAH,Fahs-Beni Makada
-MA,FES,Fès‐Dar‐Dbibegh
+MA,ESM,Es-Semara (EH-partial)
+MA,FAH,	Fahs-Anjra
+MA,FES,	Fès
 MA,FIG,Figuig
+MA,FQH,	Fquih Ben Salah
 MA,GUE,Guelmim
+MA,GUF,	Guercif
 MA,HAJ,El Hajeb
 MA,HAO,Al Haouz
 MA,HOC,Al Hoceïma
 MA,IFR,Ifrane
 MA,INE,Inezgane-Ait Melloul
 MA,JDI,El Jadida
-MA,JRA,Jrada
+MA,JRA,	Jerada
 MA,KEN,Kénitra
 MA,KES,Kelaat Sraghna
+MA,KES,	El Kelâa des Sraghna
 MA,KHE,Khemisset
 MA,KHN,Khenifra
 MA,KHO,Khouribga
 MA,LAA,Laâyoune
 MA,LAR,Larache
+MA,MAR,Marrakech
+MA,MDF,M’diq-Fnideq
 MA,MED,Médiouna
 MA,MEK,Meknès*
+MA,MID,	Midelt
 MA,MMD,Marrakech-Medina
 MA,MMN,Marrakech-Menara
 MA,MOH,Mohammadia
@@ -2539,25 +2544,33 @@ MA,MOU,Moulay Yacoub
 MA,NAD,Nador
 MA,NOU,Nouaceur
 MA,OUA,Ouarzazate
-MA,OUD,Oued ed Dahab (EH)
+MA,OUD,	Oued Ed-Dahab (EH)
 MA,OUJ,Oujda‐Angad
+MA,OUZ,Ouezzane
 MA,RAB,Rabat
+MA,REH,Rehamna
 MA,SAF,Safi
 MA,SAL,Salé
 MA,SEF,Sefrou
 MA,SET,Settat
+MA,SIB,Sidi Bennour
+MA,SIF,	Sidi Ifni
 MA,SIK,Sidi Kacem
+MA,SIL,Sidi Slimane
 MA,SKH,Skhirate-Témara
 MA,SYB,Sidi Youssef Ben Ali
+MA,TAF,Tarfaya (EH-partial)
 MA,TAI,Taourirt
 MA,TAO,Taounate
 MA,TAR,Taroudannt
 MA,TAT,Tata
 MA,TAZ,Taza
 MA,TET,Tétouan*
+MA,TIN,Tinghir
 MA,TIZ,Tiznit
 MA,TNG,Tanger‐Assilah
 MA,TNT,Tan-Tan
+MA,YUS,Youssoufia
 MA,ZAG,Zagora
 MC,CL,La Colle
 MC,CO,La Condamine
@@ -2595,7 +2608,6 @@ MD,ED,Edineţ
 MD,FA,Făleşti
 MD,FL,Floreşti
 MD,GA,"Găgăuzia, Unitatea teritorială
-
 autonomă (UTAG)"
 MD,GL,Glodeni
 MD,HI,Hînceşti
@@ -2889,7 +2901,7 @@ MU,RO,Rodrigues Island
 MU,RR,Rivière du Rempart
 MU,SA,Savanne
 MU,VP,Vacoas-Phoenix
-MV,00,Alifu Dhaalu
+MV,00,	Alifu Dhaalu
 MV,01,Seenu
 MV,02,Alifu Alifu
 MV,03,Lhaviyani
@@ -2909,14 +2921,7 @@ MV,26,Kaafu
 MV,27,Gaafu Alifu
 MV,28,Gaafu Dhaalu
 MV,29,Gnaviyani
-MV,CE,Medhu
 MV,MLE,Male
-MV,NC,Medhu-Uthuru
-MV,NO,Uthuru
-MV,SC,Medhu-Dhekunu
-MV,SU,Dhekunu
-MV,UN,Mathi-Uthuru
-MV,US,Mathi-Dhekunu
 MW,BA,Balaka
 MW,BL,Blantyre
 MW,C,Central
@@ -3109,17 +3114,14 @@ NO,11,Rogaland
 NO,12,Hordaland
 NO,14,Sogn og Fjordane
 NO,15,Møre og Romsdal
-NO,16,Sør-Trøndelag
-NO,17,Nord-Trøndelag
 NO,18,Nordland
 NO,19,Troms
 NO,20,Finnmark
 NO,21,"Svalbard (Arctic Region) (See
-
 also country code SJ)"
 NO,22,"Jan Mayen (Arctic Region) (See
-
 also country code SJ)"
+NO,23,Trøndelag
 NP,BA,Bagmati
 NP,BH,Bheri
 NP,DH,Dhawalagiri
@@ -3131,6 +3133,13 @@ NP,LU,Lumbini
 NP,MA,Mahakali
 NP,ME,Mechi
 NP,NA,Narayani
+NP,P1,	Pradesh 1
+NP,P2,Pradesh 2
+NP,P3,Pradesh 3
+NP,P4,Pradesh 4
+NP,P5,Pradesh 5
+NP,P6,Pradesh 6
+NP,P7,Pradesh 7
 NP,RA,Rapti
 NP,SA,Sagarmatha
 NP,SE,Seti
@@ -3327,22 +3336,22 @@ PK,KP,Khyber Pakhtunkhwa
 PK,PB,Punjab
 PK,SD,Sindh
 PK,TA,Federally Administered Tribal Areas
-PL,DS,Dolnośląskie
-PL,KP,Kujawsko-pomorskie
-PL,LB,Lubuskie
-PL,LD,Łódzkie
-PL,LU,Lubelskie
-PL,MA,Małopolskie
-PL,MZ,Mazowieckie
-PL,OP,Opolskie
-PL,PD,Podlaskie
-PL,PK,Podkarpackie
-PL,PM,Pomorskie
-PL,SK,Świętokrzyskie
-PL,SL,Śląskie
-PL,WN,Warmińsko-mazurskie
-PL,WP,Wielkopolskie
-PL,ZP,Zachodniopomorskie
+PL,02,Dolnośląskie
+PL,04,Kujawsko-pomorskie
+PL,06,Lubelskie
+PL,08,Lubuskie
+PL,10,Łódzkie
+PL,12,Małopolskie
+PL,14,Mazowieckie
+PL,16,Opolskie
+PL,18,Podkarpackie
+PL,20,Podlaskie
+PL,22,Pomorskie
+PL,24,Śląskie
+PL,26,Świętokrzyskie
+PL,28,Warmińsko-mazurskie
+PL,30,Wielkopolskie
+PL,32,Zachodniopomorskie
 PS,BTH,Bethlehem
 PS,DEB,Deir El Balah
 PS,GZA,Gaza
@@ -3498,7 +3507,7 @@ RU,AD,"Adygeya, Respublika"
 RU,AL,"Altay, Respublika"
 RU,ALT,Altayskiy kray
 RU,AMU,Amurskaya oblast'
-RU,ARK,"Arkhangel'skaya oblast"
+RU,ARK,"Arkhangel'skaya oblast,"
 RU,AST,Astrakhanskaya oblast'
 RU,BA,"Bashkortostan, Respublika"
 RU,BEL,Belgorodskaya oblast'
@@ -3517,7 +3526,7 @@ RU,KB,Kabardino-Balkarskaya Respublika
 RU,KC,Karachayevo-Cherkesskaya Respublika
 RU,KDA,Krasnodarskiy kray
 RU,KEM,Kemerovskaya oblast'
-RU,KGD,"Kaliningradskaya oblast"
+RU,KGD,"Kaliningradskaya oblast,"
 RU,KGN,Kurganskaya oblast'
 RU,KHA,Khabarovskiy kray
 RU,KHM,Khanty-Mansiyskiy avtonomnyy okrug
@@ -3880,7 +3889,6 @@ SI,201,Renèe-Vogrsko
 SI,202,Središče ob Dravi
 SI,203,Straža
 SI,204,"Sveta Trojica v Slovenskih
-
 Goricah"
 SI,205,Sveti Tomaž
 SI,206,Šmarješke Toplice
@@ -3901,6 +3909,7 @@ SK,TC,Trenčiansky kraj
 SK,ZI,Žilinský kraj
 SL,E,Eastern
 SL,N,Northern
+SL,NW,North Western
 SL,S,Southern
 SL,W,Western Area (Freetown)
 SM,01,Acquaviva      
@@ -4112,11 +4121,11 @@ TL,BO,Bobonaro
 TL,CO,Cova Lima
 TL,DI,Díli
 TL,ER,Ermera
-TL,LA,Lautem
+TL,LA,Lautém
 TL,LI,Liquiça
 TL,MF,Manufahi
 TL,MT,Manatuto
-TL,OE,Oecussi
+TL,OE,	Oé-Cusse Ambeno
 TL,VI,Viqueque
 TM,A,Ahal
 TM,B,Balkan
@@ -4309,6 +4318,7 @@ TZ,27,Geita
 TZ,28,Katavi
 TZ,29,Njombe
 TZ,30,Simiyu
+TZ,31,	Songwe
 UA,05,Vinnytska oblast
 UA,07,Volynska oblast
 UA,09,Luhanska oblast
@@ -4361,6 +4371,7 @@ UG,122,Kalungu
 UG,123,Kyankwanzi
 UG,124,Lwengo
 UG,125,Kyotera
+UG,126,Kasanda
 UG,201,Bugiri
 UG,202,Busia
 UG,203,Iganga
@@ -4394,6 +4405,8 @@ UG,231,Ngora
 UG,232,Serere
 UG,233,Butebo
 UG,234,Namisindwa
+UG,235,Bugweri
+UG,236,Kapelebyong
 UG,244,Mayuge
 UG,301,Adjumani
 UG,302,Apac
@@ -4424,6 +4437,8 @@ UG,329,Otuke
 UG,330,Zombo
 UG,331,Omoro
 UG,332,Pakwach
+UG,333,Kwania
+UG,334,Nabilatuk
 UG,401,Bundibugyo
 UG,402,Bushenyi
 UG,403,Hoima
@@ -4455,6 +4470,7 @@ UG,428,Kakumiro
 UG,429,Rubanda
 UG,430,Bunyangabu
 UG,431,Rukiga
+UG,432,Kikuube
 UM,67,Johnston Atoll (ISO reserved code = JT)
 UM,71,Midway Islands (ISO reserved code = I)
 UM,76,Navassa Island (ISO reserved code = NV)
