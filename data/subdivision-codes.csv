@@ -1834,7 +1834,6 @@ IT,CA,Cagliari
 IT,CB,Campobasso
 IT,CE,Caserta
 IT,CH,Chieti
-IT,CI,Carbonia-Iglesias
 IT,CL,Caltanissetta
 IT,CN,Cuneo
 IT,CO,Como
@@ -1850,7 +1849,6 @@ IT,FI,Firenze
 IT,FM,Fermo
 IT,FR,Frosinone
 IT,GE,Genova
-IT,GO,Gorizia
 IT,GR,Grosseto
 IT,IM,Imperia
 IT,IS,Isernia
@@ -1872,16 +1870,13 @@ IT,MT,Matera
 IT,NA,Napoli
 IT,NO,Novara
 IT,NU,Nuoro
-IT,OG,Ogliastra
 IT,OR,Oristano
-IT,OT,Olbia-Tempio
 IT,PA,Palermo
 IT,PC,Piacenza
 IT,PD,Padova
 IT,PE,Pescara
 IT,PG,Perugia
 IT,PI,Pisa
-IT,PN,Pordenone
 IT,PO,Prato
 IT,PR,Parma
 IT,PT,Pistoia
@@ -1897,6 +1892,7 @@ IT,RM,Roma
 IT,RN,Rimini
 IT,RO,Rovigo
 IT,SA,Salerno
+IT,SD,Sud Sardegna
 IT,SI,Siena
 IT,SO,Sondrio
 IT,SP,La Spezia
@@ -1909,16 +1905,13 @@ IT,TN,Trento
 IT,TO,Torino
 IT,TP,Trapani
 IT,TR,Terni
-IT,TS,Trieste
 IT,TV,Treviso
-IT,UD,Udine
 IT,VA,Varese
 IT,VB,Verbano-Cusio-Ossola
 IT,VC,Vercelli
 IT,VE,Venezia
 IT,VI,Vicenza
 IT,VR,Verona
-IT,VS,Medio Campidano
 IT,VT,Viterbo
 IT,VV,Vibo Valentia
 JM,01,Kingston
@@ -2525,8 +2518,8 @@ MA,INE,Inezgane-Ait Melloul
 MA,JDI,El Jadida
 MA,JRA,	Jerada
 MA,KEN,Kénitra
-MA,KES,Kelaat Sraghna
 MA,KES,	El Kelâa des Sraghna
+MA,KES,Kelaat Sraghna
 MA,KHE,Khemisset
 MA,KHN,Khenifra
 MA,KHO,Khouribga
