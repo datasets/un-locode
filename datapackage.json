@@ -1,7 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
-  "version": "2019.1.0",
+  "version": "2019.2.0",
   "licensces": [
     {
       "name": "ODC-PDDL-1.0",
@@ -66,7 +66,8 @@
           {
             "name": "Date",
             "type": "string",
-            "description": "ym"
+            "description": "ym",
+            "pattern": "[0-9]{4}"
           },
           {
             "name": "IATA",
@@ -76,7 +77,8 @@
           {
             "name": "Coordinates",
             "type": "string",
-            "description": "DDMM[N/S] DDDMM[W/E]"
+            "description": "DDMM[N/S] DDDMM[W/E]",
+            "pattern": "[0-9]{4}[NS] [0-9]{5}[WE]"
           },
           {
             "name": "Remarks",
