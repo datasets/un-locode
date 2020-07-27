@@ -412,7 +412,7 @@ BJ,OU,Ouémé
 BJ,PL,Plateau
 BJ,ZO,Zou
 BN,BE,Belait
-BN,BM,Brunei-Muara
+BN,BM,Brunei dan -Muara
 BN,TE,Temburong
 BN,TU,Tutong
 BO,B,El Beni
@@ -669,40 +669,40 @@ CM,NW,North-West
 CM,OU,West
 CM,SU,South
 CM,SW,South-West
-CN,11,Beijing
-CN,12,Tianjin
-CN,13,Hebei
-CN,14,Shanxi
-CN,15,Nei Mongol (mn)
-CN,21,Liaoning
-CN,22,Jilin
-CN,23,Heilongjiang
-CN,31,Shanghai
-CN,32,Jiangsu
-CN,33,Zhejiang
-CN,34,Anhui
-CN,35,Fujian
-CN,36,Jiangxi
-CN,37,Shandong
-CN,41,Henan
-CN,42,Hubei
-CN,43,Hunan
-CN,44,Guangdong
-CN,45,Guangxi
-CN,46,Hainan
-CN,50,Chongqing
-CN,51,Sichuan
-CN,52,Guizhou
-CN,53,Yunnan
-CN,54,Xizang
-CN,61,Shaanxi
-CN,62,Gansu
-CN,63,Qinghai
-CN,64,Ningxia
-CN,65,Xinjiang
-CN,71,Taiwan
-CN,91,Xianggang
-CN,92,Aomen
+CN,AH,Anhui Sheng
+CN,BJ,Beijing Shi
+CN,CQ,Chongqing Shi
+CN,FJ,Fujian Sheng
+CN,GD,Guangdong Sheng
+CN,GS,Gansu Sheng
+CN,GX,Guangxi Zhuangzu Zizhiqu
+CN,GZ,Guizhou Sheng
+CN,HA,Henan Sheng
+CN,HB,Hubei Sheng
+CN,HE,Hebei Sheng
+CN,HI,Hainan Sheng
+CN,HK,Hong Kong SAR
+CN,HL,Heilongjiang Sheng
+CN,HN,Hunan Sheng
+CN,JL,Jilin Sheng
+CN,JS,Jiangsu Sheng
+CN,JX,Jiangxi Sheng
+CN,LN,Liaoning Sheng
+CN,MO,Macao SAR
+CN,NM,Nei Mongol Zizhiqu
+CN,NX,Ningxia Huizu Zizhiqu
+CN,QH,Qinghai Sheng
+CN,SC,Sichuan Sheng
+CN,SD,Shandong Sheng
+CN,SH,Shanghai Shi
+CN,SN,Shaanxi Sheng
+CN,SX,Shanxi Sheng
+CN,TJ,Tianjin Shi
+CN,TW,Taiwan Sheng
+CN,XJ,Xinjiang Uygur Zizhiqu
+CN,XZ,Xizang Zizhiqu
+CN,YN,Yunnan Sheng
+CN,ZJ,Zhejiang Sheng
 CO,AMA,Amazonas
 CO,ANT,Antioquia
 CO,ARA,Arauca
@@ -788,7 +788,7 @@ CY,03,Larnaka
 CY,04,Ammochostos
 CY,05,Pafos
 CY,06,Keryneia
-CZ,10,"Praha, Hlavní mešto"
+CZ,10,"Praha, Hlavní město"
 CZ,20,Středočeský kraj
 CZ,31,Jihočeský kraj
 CZ,32,Plzeňský kraj
@@ -1445,14 +1445,20 @@ GE,SK,Shida K'art'li
 GE,SZ,Samegrelo-Zemo Svanet'i
 GE,TB,T'bilisi
 GH,AA,Greater Accra
+GH,AF,Ahafo
 GH,AH,Ashanti
-GH,BA,Brong-Ahafo
+GH,BE,Bono East
+GH,BO,Bono
 GH,CP,Central
 GH,EP,Eastern
+GH,NE,North East
 GH,NP,Northern
+GH,OT,Oti
+GH,SV,Savannah
 GH,TV,Volta
 GH,UE,Upper East
 GH,UW,Upper West
+GH,WN,Western North
 GH,WP,Western
 GL,AV,Avannaata Kommunia
 GL,KU,Kommune Kujalleq
@@ -1514,9 +1520,9 @@ GR,F,Ionía Nísia
 GR,G,Dytikí Elláda
 GR,H,Stereá Elláda
 GR,I,Attikí
-GR,J,Peloponnísos
-GR,K,Voreío Aigaío
-GR,L,Notío Aigaío
+GR,J,Pelopónnisos
+GR,K,Vóreio Aigaío
+GR,L,Nótio Aigaío
 GR,M,Kríti
 GT,AV,Alta Verapaz
 GT,BV,Baja Verapaz
@@ -1735,6 +1741,7 @@ IN,JH,Jharkhand
 IN,JK,Jammu and Kashmir
 IN,KA,Karnataka
 IN,KL,Kerala
+IN,LA,Ladakh
 IN,LD,Lakshadweep
 IN,MH,Maharashtra
 IN,ML,Meghalaya
@@ -1813,7 +1820,6 @@ IS,8,Suðurland
 IT,AG,Agrigento
 IT,AL,Alessandria
 IT,AN,Ancona
-IT,AO,Aosta / Aoste (fr)
 IT,AP,Ascoli Piceno
 IT,AQ,L'Aquila
 IT,AR,Arezzo
@@ -2638,6 +2644,7 @@ ME,20,Ulcinj
 ME,21,Žabljak
 ME,22,Gusinje
 ME,23,Petnjica
+ME,24,Tuzi
 MG,A,Toamasina
 MG,D,Antsiranana
 MG,F,Fianarantsoa
@@ -2670,77 +2677,87 @@ MH,UJA,Ujae
 MH,UTI,Utrik
 MH,WTH,Wotho
 MH,WTJ,Wotje
-MK,02,Aračinovo
-MK,03,Berovo
-MK,04,Bitola
-MK,05,Bogdanci
-MK,06,Bogovinje
-MK,07,Bosilovo
-MK,08,Brvenica
-MK,10,Valandovo
-MK,11,Vasilevo
-MK,12,Vevčani
-MK,13,Veles
-MK,14,Vinica
-MK,16,Vrapčište
-MK,18,Gevgelija
-MK,19,Gostivar
-MK,20,Gradsko
-MK,21,Debar
-MK,22,Debarca
-MK,23,Delčevo
-MK,24,Demir Kapija
-MK,25,Demir Hisar
-MK,26,Dojran
-MK,27,Dolneni
-MK,30,Želino
-MK,32,Zelenikovo
-MK,33,Zrnovci
-MK,34,Ilinden
-MK,35,Jegunovce
-MK,36,Kavadarci
-MK,37,Karbinci
-MK,40,Kičevo
-MK,41,Konče
-MK,42,Kočani
-MK,43,Kratovo
-MK,44,Kriva Palanka
-MK,45,Krivogaštani
-MK,46,Kruševo
-MK,47,Kumanovo
-MK,48,Lipkovo
-MK,49,Lozovo
-MK,50,Mavrovo-i-Rostuša
-MK,51,Makedonska Kamenica
-MK,52,Makedonski Brod
-MK,53,Mogila
-MK,54,Negotino
-MK,55,Novaci
-MK,56,Novo Selo
-MK,58,Ohrid
-MK,59,Petrovec
-MK,60,Pehčevo
-MK,61,Plasnica
-MK,62,Prilep
-MK,63,Probištip
-MK,64,Radoviš
-MK,65,Rankovce
-MK,66,Resen
-MK,67,Rosoman
-MK,69,Sveti Nikole
-MK,70,Sopište
-MK,71,Staro Nagoričane
-MK,72,Struga
-MK,73,Strumica
-MK,74,Studeničani
-MK,75,Tearce
-MK,76,Tetovo
-MK,78,Centar Župa
-MK,80,Čaška
-MK,81,Češinovo-Obleševo
-MK,82,Čučer Sandevo
-MK,83,Štip
-MK,85,Skopje
+MK,101,Veles
+MK,102,Gradsko
+MK,103,Demir Kapija
+MK,104,Kavadarci
+MK,105,Lozovo
+MK,106,Negotino
+MK,107,Rosoman
+MK,108,Sveti Nikole
+MK,109,Čaška
+MK,201,Berovo
+MK,202,Vinica
+MK,203,Delčevo
+MK,204,Zrnovci
+MK,205,Karbinci
+MK,205,Karbinci
+MK,206,Kočani
+MK,207,Makedonska Kamenica
+MK,208,Pehčevo
+MK,209,Probištip
+MK,210,Češinovo-Obleševo
+MK,211,Štip
+MK,301,Vevčani
+MK,303,Debar
+MK,304,Debarca
+MK,307,Kičevo
+MK,308,Makedonski Brod
+MK,310,Ohrid
+MK,311,Plasnica
+MK,312,Struga
+MK,313,Centar Župa
+MK,401,Bogdanci
+MK,402,Bosilovo
+MK,403,Valandovo
+MK,404,Vasilevo
+MK,405,Gevgelija
+MK,406,Dojran
+MK,407,Konče
+MK,408,Novo Selo
+MK,409,Radoviš
+MK,410,Strumica
+MK,501,Bitola
+MK,502,Demir Hisar
+MK,503,Dolneni
+MK,504,Krivogaštani
+MK,505,Kruševo
+MK,506,Mogila
+MK,507,Novaci
+MK,508,Prilep
+MK,509,Resen
+MK,601,Bogovinje
+MK,602,Brvenica
+MK,603,Vrapčište
+MK,604,Gostivar
+MK,605,Želino
+MK,606,Jegunovce
+MK,607,Mavrovo-i-Rostuša
+MK,608,Tearce
+MK,609,Tetovo
+MK,701,Kratovo
+MK,702,Kriva Palanka
+MK,703,Kumanovo
+MK,704,Lipkovo
+MK,705,Rankovce
+MK,706,Staro Nagoričane
+MK,801,Aerodrom
+MK,802,Aračinovo
+MK,803,Butel
+MK,804,Gazi Baba
+MK,805,Gjorče Petrov
+MK,806,Zelenikovo
+MK,807,Ilinden
+MK,808,Karpoš
+MK,809,Kisela Voda
+MK,810,Petrovec
+MK,811,Saraj
+MK,812,Sopište
+MK,813,Studeničani
+MK,814,Centar
+MK,815,Čair
+MK,816,Čučer Sandevo
+MK,817,Šuto Orizari
 ML,1,Kayes
 ML,10,Taoudénit
 ML,2,Koulikoro
@@ -3321,7 +3338,6 @@ PK,JK,Azad Jammu and Kashmir
 PK,KP,Khyber Pakhtunkhwa
 PK,PB,Punjab
 PK,SD,Sindh
-PK,TA,Federally Administered Tribal Areas
 PL,02,Dolnośląskie
 PL,04,Kujawsko-pomorskie
 PL,06,Lubelskie
@@ -3988,6 +4004,10 @@ SY,RA,Ar Raqqah
 SY,RD,Rīf Dimashq
 SY,SU,As Suwaydā'
 SY,TA,Ţarţūs
+SZ,HH,Hhohho
+SZ,LU,Lubombo
+SZ,MA,Manzini
+SZ,SH,Shiselweni
 TD,BA,Batha
 TD,BG,Baḩr al Ghazāl
 TD,BO,Būrkū
@@ -4691,11 +4711,11 @@ YE,SU,Arkhabīl Suquţrá
 YE,TA,Ta'izz
 ZA,EC,Eastern Cape
 ZA,FS,Free State
-ZA,GT,Gauteng
+ZA,GP,Gauteng
+ZA,KZN,Kwazulu-Natal
 ZA,LP,Limpopo
 ZA,MP,Mpumalanga
 ZA,NC,Northern Cape
-ZA,NL,Kwazulu-Natal
 ZA,NW,North-West
 ZA,WC,Western Cape
 ZM,01,Western
