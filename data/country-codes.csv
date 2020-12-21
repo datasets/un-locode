@@ -1,6 +1,6 @@
 CountryCode,CountryName
 AD,Andorra
-AE,United Arab Emirates
+AE,United Arab Emirates (the)
 AF,Afghanistan
 AG,Antigua and Barbuda
 AI,Anguilla
@@ -49,7 +49,9 @@ CU,Cuba
 CV,Cape Verde
 CX,Christmas Island
 CY,Cyprus
-CZ,Czech Republic
+CZ,"Czechia
+
+Czechia"
 DE,Germany
 DJ,Djibouti
 DK,Denmark
@@ -131,13 +133,13 @@ MA,Morocco
 MC,Monaco
 MD,"Moldova, Republic of"
 MG,Madagascar
-MH,Marshall Islands
-MK,"Macedonia, The former Yugoslav Republic of"
+MH,Marshall Islands (the)
+MK,North Macedonia
 ML,Mali
 MM,Myanmar
 MN,Mongolia
 MO,Macao
-MP,Northern Mariana Islands
+MP,Northern Mariana Islands (the)
 MQ,Martinique
 MR,Mauritania
 MS,Montserrat
@@ -165,7 +167,7 @@ PA,Panama
 PE,Peru
 PF,French Polynesia
 PG,Papua New Guinea
-PH,Philippines
+PH,Philippines (the)
 PK,Pakistan
 PL,Poland
 PM,Saint Pierre and Miquelon
@@ -178,12 +180,12 @@ PY,Paraguay
 QA,Qatar
 RE,Réunion
 RO,Romania
-RU,Russian Federation
+RU,Russian Federation (the)
 RW,Rwanda
 SA,Saudi Arabia
 SB,Solomon Islands
 SC,Seychelles
-SD,Sudan
+SD,Sudan (the)
 SE,Sweden
 SG,Singapore
 SH,"Saint Helena, Ascension and Tristan Da Cunha"
@@ -197,9 +199,9 @@ SO,Somalia
 SR,Suriname
 ST,Sao Tome and Principe
 SV,El Salvador
-SY,Syrian Arab Republic
+SY,Syrian Arab Republic (the)
 SZ,Eswatini
-TC,Turks and Caicos Islands
+TC,Turks and Caicos Islands (the)
 TD,Chad
 TF,French Southern Territories
 TG,Togo
@@ -213,19 +215,19 @@ TL,Timor-Leste
 TR,Turkey
 TT,Trinidad and Tobago
 TV,Tuvalu
-TW,"Taiwan, Province of China"
+TW,Taiwan (Province of China)
 TZ,"Tanzania, United Republic of"
 UA,Ukraine
 UG,Uganda
 UM,United States Minor Outlying Islands
-US,United States
+US,United States of America (the)
 UY,Uruguay
 UZ,Uzbekistan
 VA,Holy See (Vatican City State)
 VC,Saint Vincent and the Grenadines
-VE,Venezuela
-VG,"Virgin Islands, British"
-VI,"Virgin Islands, U.S."
+VE,Venezuela (Bolivarian Republic of)
+VG,Virgin Islands (British)
+VI,Virgin Islands (U.S.)
 VN,Viet Nam
 VU,Vanuatu
 WF,Wallis and Futuna
