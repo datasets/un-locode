@@ -1061,6 +1061,7 @@ ET,DD,Dirē Dawa
 ET,GA,Gambēla Hizboch
 ET,HA,Hārerī Hizb
 ET,OR,Oromīya
+ET,SI,Sīdama
 ET,SN,YeDebub Bihēroch Bihēreseboch na Hizboch
 ET,SO,Sumalē
 ET,TI,Tigray
@@ -1172,12 +1173,14 @@ FR,66,Pyrénées-Orientales
 FR,67,Bas-Rhin
 FR,68,Haut-Rhin
 FR,69,Rhône
+FR,69M,Métropole de Lyon
+FR,6AE,Alsace
 FR,70,Haute-Saône
 FR,71,Saône-et-Loire
 FR,72,Sarthe
 FR,73,Savoie
 FR,74,Haute-Savoie
-FR,75,Paris
+FR,75C,Paris
 FR,76,Seine-Maritime
 FR,77,Seine-et-Marne
 FR,78,Yvelines
@@ -1198,6 +1201,7 @@ FR,92,Hauts-de-Seine
 FR,93,Seine-Saint-Denis
 FR,94,Val-de-Marne
 FR,95,Val-d'Oise
+FR,H,Corse
 GA,1,Estuaire
 GA,2,Haut-Ogooué
 GA,3,Moyen-Ogooué
@@ -1523,28 +1527,28 @@ GR,J,Pelopónnisos
 GR,K,Vóreio Aigaío
 GR,L,Nótio Aigaío
 GR,M,Kríti
-GT,AV,Alta Verapaz
-GT,BV,Baja Verapaz
-GT,CM,Chimaltenango
-GT,CQ,Chiquimula
-GT,ES,Escuintla
-GT,GU,Guatemala
-GT,HU,Huehuetenango
-GT,IZ,Izabal
-GT,JA,Jalapa
-GT,JU,Jutiapa
-GT,PE,Petén
-GT,PR,El Progreso
-GT,QC,Quiché
-GT,QZ,Quetzaltenango
-GT,RE,Retalhuleu
-GT,SA,Sacatepéquez
-GT,SM,San Marcos
-GT,SO,Sololá
-GT,SR,Santa Rosa
-GT,SU,Suchitepéquez
-GT,TO,Totonicapán
-GT,ZA,Zacapa
+GT,01,Guatemala
+GT,02,El Progreso
+GT,03,Sacatepéquez
+GT,04,Chimaltenango
+GT,05,Escuintla
+GT,06,Santa Rosa
+GT,07,Sololá
+GT,08,Totonicapán
+GT,09,Quetzaltenango
+GT,10,Suchitepéquez
+GT,11,Retalhuleu
+GT,12,San Marcos
+GT,13,Huehuetenango
+GT,14,Quiché
+GT,15,Baja Verapaz
+GT,16,Alta Verapaz
+GT,17,Petén
+GT,18,Izabal
+GT,19,Zacapa
+GT,20,Chiquimula
+GT,21,Jalapa
+GT,22,Jutiapa
 GW,BA,Bafatá
 GW,BL,Bolama/Bijagós
 GW,BM,Biombo
@@ -1619,7 +1623,7 @@ HU,BE,Békés
 HU,BK,Bács-Kiskun
 HU,BU,Budapest
 HU,BZ,Borsod-Abaúj-Zemplén
-HU,CS,Csongrád
+HU,CS,Csongrád‐Csanád
 HU,DE,Debrecen
 HU,DU,Dunaújváros
 HU,EG,Eger
@@ -2052,7 +2056,7 @@ KG,N,Naryn
 KG,O,Osh
 KG,T,Talas
 KG,Y,Ysyk-Köl
-KH,1,Banteay Mean Choăy [Bântéay Méanchey]
+KH,1,Banteay Mean Choăy [Bântéay Méan Choăy]
 KH,10,Kracheh [Krâchéh]
 KH,11,Mondol Kiri [Môndól Kiri]
 KH,12,Phnom Penh [Phnum Pénh]
@@ -2259,7 +2263,7 @@ LT,01,Akmenė
 LT,02,Alytaus miestas
 LT,03,Alytus
 LT,04,Anykščiai
-LT,05,Birštono
+LT,05,Birštonas
 LT,06,Biržai
 LT,07,Druskininkai
 LT,08,Elektrénai
@@ -2268,7 +2272,7 @@ LT,10,Jonava
 LT,11,Joniškis
 LT,12,Jurbarkas
 LT,13,Kaišiadorys
-LT,14,Kalvarijos
+LT,14,Kalvarija
 LT,15,Kauno miestas
 LT,16,Kaunas
 LT,17,Kazlų Rūdos
@@ -2293,7 +2297,7 @@ LT,35,Plungė
 LT,36,Prienai
 LT,37,Radviliškis
 LT,38,Raseiniai
-LT,39,Rietavo
+LT,39,Rietavas
 LT,40,Rokiškis
 LT,41,Šakiai
 LT,42,Šalčininkai
@@ -2337,125 +2341,48 @@ LU,RD,Redange
 LU,RM,Remich
 LU,VD,Vianden
 LU,WI,Wiltz
-LV,001,Aglonas novads (Aglona)
 LV,002,Aizkraukles novads (Aizkraukle)
-LV,003,Aizputes novads (Aizpute)
-LV,004,Aknīstes novads (Aknīste)
-LV,005,Alojas novads (Aloja)
-LV,006,Alsungas novads (Alsunga)
 LV,007,Alūksnes novads (Alūksne)
-LV,008,Amatas novads (Amata)
-LV,009,Apes novads (Ape)
-LV,010,Auces novads (Auce)
 LV,011,Ādažu novads (Ādaži)
-LV,012,Babītes novads (Babīte)
-LV,013,Baldones novads (Baldone)
-LV,014,Baltinavas novads (Baltinava)
 LV,015,Balvu novads (Balvi)
 LV,016,Bauskas novads (Bauska)
-LV,017,Beverīnas novads (Beverīna)
-LV,018,Brocēnu novads (Brocēni)
-LV,019,Burtnieku novads (Burtnieki)
-LV,020,Carnikavas novads (Carnikava)
-LV,021,Cesvaines novads (Cesvaine)
 LV,022,Cēsu novads (Cēsis)
-LV,023,Ciblas novads (Cibla)
-LV,024,Dagdas novads (Dagda)
-LV,025,Daugavpils novads (Daugavpils)
 LV,026,Dobeles novads (Dobele)
-LV,027,Dundagas novads (Dundaga)
-LV,028,Durbes novads (Durbe)
-LV,029,Engures novads (Engure)
-LV,030,Ērgļu novads (Ērgļi)
-LV,031,Garkalnes novads (Garkalne)
-LV,032,Grobiņas novads (Grobiņa)
 LV,033,Gulbenes novads (Gulbene)
-LV,034,Iecavas novads (Iecava)
-LV,035,Ikšķiles novads (Ikšķile)
-LV,036,Ilūkstes novads (Ilūkste)
-LV,037,Inčukalna novads (Inčukalns)
-LV,038,"Jaunjelgavas novads (Jaunjelgava)"
-LV,039,"Jaunpiebalgas novads (Jaunpiebalga)"
-LV,040,Jaunpils novads (Jaunpils)
 LV,041,Jelgavas novads (Jelgava)
 LV,042,Jēkabpils novads (Jēkabpils)
-LV,043,Kandavas novads (Kandava)
-LV,044,Kārsavas novads (Kārsava)
-LV,045,Kocēnu novads (Kocēni)
-LV,046,Kokneses novads (Koknese)
 LV,047,Kraslavas novads (Krāslava)
-LV,048,Krimuldas novads (Krimulda)
-LV,049,Krustpils novads (Krustpils)
 LV,050,Kuldīgas novads (Kuldīga)
-LV,051,Ķeguma novads (Ķegums)
 LV,052,Ķekavas novads (Ķekava)
-LV,053,Lielvārdes novads (Lielvārde)
 LV,054,Limbažu novads (Limbaži)
-LV,055,Līgatnes novads (Līgatne)
 LV,056,Līvānu novads (Līvāni)
-LV,057,Lubanas novads (Lubāna)
 LV,058,Ludzas novads (Ludza)
 LV,059,Madonas novads (Madona)
-LV,060,Mazsalacas novads (Mazsalaca)
-LV,061,Mālpils novads (Mālpils)
 LV,062,Mārupes novads (Mārupe)
-LV,063,Mērsraga novads (Mērsrags)
-LV,064,Naukšēnu novads (Naukšēni)
-LV,065,Neretas novads (Nereta)
-LV,066,Nīcas novads (Nīca)
 LV,067,Ogres novads (Ogre)
 LV,068,Olaines novads (Olaine)
-LV,069,Ozolnieku novads (Ozolnieki)
-LV,070,Pārgaujas novads (Pārgauja)
-LV,071,Pāvilostas novads (Pāvilosta)
-LV,072,Pļaviņu novads (Pļaviņas)
 LV,073,Preilu novads (Preiļi)
-LV,074,Priekules novads (Priekule)
-LV,075,Priekuļu novads (Priekuļi)
-LV,076,Raunas novads (Rauna)
 LV,077,Rēzeknes novads (Rēzekne)
-LV,078,Riebiņu novads (Riebiņi)
-LV,079,Rojas novads (Roja)
 LV,080,Ropažu novads (Ropaži)
-LV,081,Rucavas novads (Rucava)
-LV,082,Rugāju novads (Rugāji)
-LV,083,Rundāles novads (Rundāle)
-LV,084,Rūjienas novads (Rūjiena)
-LV,085,Salas novads (Sala)
-LV,086,Salacgrīvas novads (Salacgrīva)
 LV,087,Salaspils novads (Salaspils)
 LV,088,Saldus novads (Saldus)
 LV,089,Saulkrastu novads (Saulkrasti)
-LV,090,Sējas novads (Sēja)
 LV,091,Siguldas novads (Sigulda)
-LV,092,Skrīveru novads (Skrīveri)
-LV,093,Skrundas novads (Skrunda)
 LV,094,Smiltenes novads (Smiltene)
-LV,095,Stopiņu novads (Stopiņi)
-LV,096,Strenču novads (Strenči)
 LV,097,Talsu novads (Talsi)
-LV,098,Tērvetes novads (Tērvete)
 LV,099,Tukuma novads (Tukums)
-LV,100,Vaiņodes novads (Vaiņode)
 LV,101,Valkas novads (Valka)
-LV,102,Varakļānu novads (Varakļāni)
-LV,103,Vārkavas novads (Vārkava)
-LV,104,"Vecpiebalgas novads (Vecpiebalga)"
-LV,105,Vecumnieku novads (Vecumnieki)
 LV,106,Ventspils novads (Ventspils)
-LV,107,Viesītes novads (Viesīte)
-LV,108,Viļakas novads (Viļaka)
-LV,109,Viļānu novads (Viļāni)
-LV,110,Zilupes novads (Zilupe)
+LV,111,Augšdaugavas novads (Augšdaugava)
+LV,112,Dienvidkurzemes novads (Dienvidkurzeme)
+LV,113,Valmieras novads (Valmiera)
 LV,DGV,Daugavpils
 LV,JEL,Jelgava
-LV,JKB,Jēkabpils
 LV,JUR,Jūrmala
 LV,LPX,Liepāja
 LV,REZ,Rēzekne
 LV,RIX,Rīga
 LV,VEN,Ventspils
-LV,VMR,Valmiera
 LY,BA,Banghāzī
 LY,BU,Al Buţnān
 LY,DR,Darnah
@@ -3131,7 +3058,7 @@ NP,P1, Pradesh 1
 NP,P2,Pradesh 2
 NP,P3,Bāgmatī
 NP,P4,Gandaki
-NP,P5,Pradesh 5
+NP,P5,Lumbini
 NP,P6,Karnali
 NP,P7,Sudūr Pashchim
 NP,RA,Rapti
@@ -3192,6 +3119,7 @@ PA,9,Veraguas
 PA,EM,Emberá
 PA,KY,Guna Yala
 PA,NB,Ngöbe-Buglé
+PA,NT,Naso Tjër Di
 PE,AMA,Amazonas
 PE,ANC,Ancash
 PE,APU,Apurímac
