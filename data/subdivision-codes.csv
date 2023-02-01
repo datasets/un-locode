@@ -929,6 +929,16 @@ DZ,45,Naama
 DZ,46,Aïn Témouchent
 DZ,47,Ghardaïa
 DZ,48,Relizane
+DZ,49,Timimoun
+DZ,50,Bordj Badji Mokhtar
+DZ,51,Ouled Djellal
+DZ,52,Béni Abbès
+DZ,53,In Salah
+DZ,54,In Guezzam
+DZ,55,Touggourt
+DZ,56,Djanet
+DZ,57,El Meghaier
+DZ,58,El Meniaa
 EC,A,Azuay
 EC,B,Bolívar
 EC,C,Carchi
@@ -1064,6 +1074,7 @@ ET,OR,Oromīya
 ET,SI,Sīdama
 ET,SN,YeDebub Bihēroch Bihēreseboch na Hizboch
 ET,SO,Sumalē
+ET,SW,YeDebub M‘irab Ītyop’iya Hizboch
 ET,TI,Tigray
 FI,01,Ahvenanmaan maakunta
 FI,02,Etelä-Karjala
@@ -1344,8 +1355,8 @@ GB,NGM,Nottingham
 GB,NLK,North Lanarkshire
 GB,NLN,North Lincolnshire
 GB,NMD,"Newry, Mourne and Down"
+GB,NNH,North Northamptonshire
 GB,NSM,North Somerset
-GB,NTH,Northamptonshire
 GB,NTL,Neath Port Talbot [Castell-nedd Port Talbot GB-CTL]
 GB,NTT,Nottinghamshire
 GB,NTY,North Tyneside
@@ -1417,6 +1428,7 @@ GB,WLL,Walsall
 GB,WLN,West Lothian
 GB,WLV,Wolverhampton
 GB,WND,Wandsworth
+GB,WNH,West Northamptonshire
 GB,WNM,Windsor and Maidenhead
 GB,WOK,Wokingham
 GB,WOR,Worcestershire
@@ -1684,6 +1696,9 @@ ID,NB,Nusa Tenggara Barat
 ID,NT,Nusa Tenggara Timur
 ID,PA,Papua
 ID,PB,Papua Barat
+ID,PE,Papua Pengunungan
+ID,PS,Papua Selatan
+ID,PT,Papua Tengah
 ID,RI,Riau
 ID,SA,Sulawesi Utara
 ID,SB,Sumatera Barat
@@ -2113,6 +2128,7 @@ KP,09,Hamkyeongpukto
 KP,10,Ryanggang-do
 KP,13,Rasǒn
 KP,14,Namp’o
+KP,15,Kaeseong
 KR,11,Seoul-teukbyeolsi [Seoul]
 KR,26,Busan Gwang'yeogsi [Pusan‐Kwangyǒkshi]
 KR,27,Daegu Gwang'yeogsi [Taegu‐Kwangyǒkshi]
@@ -2136,23 +2152,26 @@ KW,HA,Ḩawallī
 KW,JA,Al Jahrā’
 KW,KU, Al ‘Āşimah
 KW,MU,Mubārak al Kabīr
-KZ,AKM,Aqmola oblysy
-KZ,AKT,Aqtöbe oblysy
-KZ,ALA,Almaty
-KZ,ALM,Almaty oblysy
-KZ,AST,Nur‐Sultan
-KZ,ATY,Atyraū oblysy
-KZ,KAR,Qaraghandy oblysy
-KZ,KUS,Qostanay oblysy
-KZ,KZY,Qyzylorda oblysy
-KZ,MAN,Mangghystaū oblysy
-KZ,PAV,Pavlodar oblysy
-KZ,SEV,Soltüstik Qazaqstan oblysy
-KZ,SHY,Šimkent
-KZ,VOS,Shyghys Qazaqstan oblysy
-KZ,YUZ,Türkistan oblysy
-KZ,ZAP,Batys Qazaqstan oblysy
-KZ,ZHA,Zhambyl oblysy
+KZ,10,Abay oblysy
+KZ,11,Aqmola oblysy
+KZ,15,Aqtöbe oblysy
+KZ,19,Almaty oblysy
+KZ,23,Atyraū oblysy
+KZ,27,Batys Qazaqstan oblysy
+KZ,31,Zhambyl oblysy
+KZ,33,Zhetisū oblysy
+KZ,35,Qaraghandy oblysy
+KZ,39,Qostanay oblysy
+KZ,43,Qyzylorda oblysy
+KZ,47,Mangghystaū oblysy
+KZ,55,Pavlodar oblysy
+KZ,59,Soltüstik Qazaqstan oblysy
+KZ,61,Türkistan oblysy
+KZ,62,Ulytaū oblysy
+KZ,63,Shyghys Qazaqstan oblysy
+KZ,71,Nur‐Sultan
+KZ,75,Almaty
+KZ,79,Šimkent
 LA,AT,Attapu [Attapeu]
 LA,BK,Bokèo
 LA,BL,Bolikhamxai [Borikhamxay]
@@ -3043,27 +3062,13 @@ NO,42,Agder
 NO,46,Vestland
 NO,50,Trøndelag
 NO,54,Troms og Finnmark
-NP,BA,Bagmati
-NP,BH,Bheri
-NP,DH,Dhawalagiri
-NP,GA,Gandaki
-NP,JA,Janakpur
-NP,KA,Karnali
-NP,KO,Kosi [Koshi]
-NP,LU,Lumbini
-NP,MA,Mahakali
-NP,ME,Mechi
-NP,NA,Narayani
 NP,P1, Pradesh 1
-NP,P2,Pradesh 2
-NP,P3,Bāgmatī
+NP,P2,Madhesh
+NP,P3,Bagmati
 NP,P4,Gandaki
 NP,P5,Lumbini
 NP,P6,Karnali
-NP,P7,Sudūr Pashchim
-NP,RA,Rapti
-NP,SA,Sagarmatha
-NP,SE,Seti
+NP,P7,Sudurpashchim
 NR,01,Aiwo
 NR,02,Anabar
 NR,03,Anetan
@@ -3118,7 +3123,7 @@ PA,8,Panamá
 PA,9,Veraguas
 PA,EM,Emberá
 PA,KY,Guna Yala
-PA,NB,Ngöbe-Buglé
+PA,NB,Ngäbe‐Buglé
 PA,NT,Naso Tjër Di
 PE,AMA,Amazonas
 PE,ANC,Ancash
@@ -3652,7 +3657,7 @@ SI,040,Izola
 SI,041,Jesenice
 SI,042,Juršinci
 SI,043,Kamnik
-SI,044,Kanal
+SI,044,Kanal ob Soči
 SI,045,Kidričevo
 SI,046,Kobarid
 SI,047,Kobilje
@@ -3804,7 +3809,7 @@ SI,193,Žužemberk
 SI,194,Šmartno pri Litiji
 SI,195,Apače
 SI,196,Cirkulane
-SI,197,Kosanjevica na Krki
+SI,197,Kostanjevica na Krki
 SI,198,Makole
 SI,199,Mokronog-Trebelno
 SI,200,Poljčane
