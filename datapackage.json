@@ -1,7 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
-  "version": "2023.2.1",
+  "version": "2023.2.2",
   "licenses": [
     {
       "name": "ODC-PDDL-1.0",
@@ -154,6 +154,27 @@
           },
           {
             "name": "SUName",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/alias.csv",
+      "name": "alias",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "NameWoDiacritics",
             "type": "string"
           }
         ]
