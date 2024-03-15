@@ -5,6 +5,7 @@ import pandas as pd
 from titlecase import titlecase
 import csv
 
+
 def process(extracted_files):
 
     # Process CSV files
@@ -33,30 +34,35 @@ def process(extracted_files):
                     if current_entry:
                         writer.writerow(current_entry)
 
-                df = pd.read_csv('tmpsub.csv', encoding='cp1252', dtype=str)
+                df = pd.read_csv('tmpsub.csv', encoding='cp1252',
+                                 dtype=str, header=None, na_filter=False)
                 df.columns = ['SUCountry', 'SUCode', 'SUName', 'SUType']
-                df_base = pd.read_csv(f"data/subdivision-codes.csv", dtype=str)
-                print("Columns in df:", df.columns)
-                print("Columns in df_base:", df_base.columns)
-                merged_df = pd.merge(df_base, df[['SUCountry', 'SUCode', 'SUType']], on=['SUCountry', 'SUCode'], how='left')
+                df_base = pd.read_csv(
+                    f"data/subdivision-codes.csv", dtype=str, na_filter=False)
+                merged_df = pd.merge(df_base, df[['SUCountry', 'SUCode', 'SUType']], on=[
+                                     'SUCountry', 'SUCode'], how='left')
+                merged_df = merged_df.drop_duplicates()
                 merged_df.to_csv(f"data/subdivision-codes.csv", index=False)
                 print(f"Processed {file_name}")
                 continue
 
-            unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
+            unlocode_df = pd.read_csv(
+                file_name, encoding='cp1252', header=None, dtype=str)
             unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
-                        'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
+                                   'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
 
             for index, row in unlocode_df.iterrows():
                 if pd.isna(row['Location']) or row['Location'] == '':
-                    if row['Change'] == '=': #alias row
-                        alias_df.loc[len(alias_df.index)] = row[['Country', 'Name', 'NameWoDiacritics']]
+                    if row['Change'] == '=':  # alias row
+                        alias_df.loc[len(alias_df.index)] = row[[
+                            'Country', 'Name', 'NameWoDiacritics']]
                     continue
             print(f"Processed {file_name}")
 
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
     return
+
 
 if __name__ == "__main__":
 
@@ -79,7 +85,7 @@ if __name__ == "__main__":
             os.remove(file_name)
             print(f"Removed {file_name}")
         os.remove('tmpsub.csv')
-    #except Exception as e:
-    #    print(f"Error extracting {zip_path}: {e}")
+    except Exception as e:
+        print(f"Error extracting {zip_path}: {e}")
     finally:
         None

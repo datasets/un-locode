@@ -1,5 +1,5 @@
 SUCountry,SUCode,SUName,SUType
-AD,02,Canillo,
+AD,02,Canillo,Parish
 AD,03,Encamp,Parish
 AD,04,La Massana,Parish
 AD,05,Ordino,Parish
@@ -172,7 +172,7 @@ AZ,LAN,Lənkəran,Rayon
 AZ,LER,Lerik,Rayon
 AZ,MAS,Masallı,Rayon
 AZ,MI,Mingəçevir,Municipality
-AZ,,Naftalan,Municipality
+AZ,NA,Naftalan,Municipality
 AZ,NEF,Neftçala,Rayon
 AZ,NV,Naxçıvan,Municipality
 AZ,NX,Naxçıvan,Autonomous republic
@@ -1043,7 +1043,7 @@ ES,M,Madrid,Province
 ES,MA,Málaga,Province
 ES,ML,Melilla,Autonomous city in North Africa
 ES,MU,Murcia,Province
-ES,,Navarra / Nafarroa,Province
+ES,NA,Navarra / Nafarroa,Province
 ES,O,Asturias,Province
 ES,OR,Ourense [Orense],Province
 ES,P,Palencia,Province
@@ -1758,7 +1758,6 @@ IN,HP,Himāchal Pradesh,State
 IN,HR,Haryāna,State
 IN,JH,Jhārkhand,State
 IN,JK,Jammu and Kashmīr,Union territory
-IN,JK,Jammu and Kashmīr,Union territory
 IN,KA,Karnātaka,State
 IN,KL,Kerala,State
 IN,LA,Ladākh,Union territory
@@ -1792,7 +1791,7 @@ IQ,KA,Karbalā',Governorate
 IQ,KI,Kirkūk,Governorate
 IQ,MA,Maysān,Governorate
 IQ,MU,AI Muthanná,Governorate
-IQ,,An Najaf,Governorate
+IQ,NA,An Najaf,Governorate
 IQ,NI,Nīnawá,Governorate
 IQ,QA,Al Qādisīyah,Governorate
 IQ,SD,Şalāh ad Dīn,Governorate
@@ -1894,7 +1893,7 @@ IT,MN,Mantova,Province
 IT,MO,Modena,Province
 IT,MS,Massa-Carrara,Province
 IT,MT,Matera,Province
-IT,,Napoli,Metropolitan City
+IT,NA,Napoli,Metropolitan City
 IT,NO,Novara,Province
 IT,NU,Nuoro,Province
 IT,OR,Oristano,Province
@@ -2199,7 +2198,7 @@ LB,BH,Baalbek-Hermel,Governorate
 LB,BI,El Béqaa,Governorate
 LB,JA,Liban‐Sud,Governorate
 LB,JL,Mont‐Liban,Governorate
-LB,,Nabatîyé,Governorate
+LB,NA,Nabatîyé,Governorate
 LC,01,Anse la Raye,District
 LC,02,Castries,District
 LC,03,Choiseul,District
@@ -2452,7 +2451,6 @@ MA,CAS,Casablanca [Dar el Beïda]*,Prefecture
 MA,CHE,Chefchaouene,Province
 MA,CHI,Chichaoua,Province
 MA,CHT,Chtouka-Ait Baha,Province
-MA,CHT,Chtouka-Ait Baha,Province
 MA,DRI, Driouch,Province
 MA,ERR,Errachidia,Province
 MA,ESI,Essaouira,Province
@@ -2472,8 +2470,6 @@ MA,JDI,El Jadida,Province
 MA,JRA, Jerada,Province
 MA,KEN,Kénitra,Province
 MA,KES, El Kelâa des Sraghna,Province
-MA,KES, El Kelâa des Sraghna,Province
-MA,KES,Kelaat Sraghna,Province
 MA,KES,Kelaat Sraghna,Province
 MA,KHE,Khémisset,Province
 MA,KHN,Khénifra,Province
@@ -2643,7 +2639,6 @@ MK,201,Berovo,Municipality
 MK,202,Vinica,Municipality
 MK,203,Delčevo,Municipality
 MK,204,Zrnovci,Municipality
-MK,205,Karbinci,Municipality
 MK,205,Karbinci,Municipality
 MK,206,Kočani,Municipality
 MK,207,Makedonska Kamenica,Municipality
@@ -2965,20 +2960,20 @@ MZ,P,Cabo Delgado,Province
 MZ,Q,Zambézia,Province
 MZ,S,Sofala,Province
 MZ,T,Tete,Province
-,CA,Zambezi,Region
-,ER,Erongo,Region
-,HA,Hardap,Region
-,KA,//Karas,Region
-,KE,Kavango East,Region
-,KH,Khomas,Region
-,KU,Kunene,Region
-,KW,Kavango West,
-,OD,Otjozondjupa,Region
-,OH,Omaheke,Region
-,ON,Oshana,Region
-,OS,Omusati,Region
-,OT,Oshikoto,Region
-,OW,Ohangwena,Region
+NA,CA,Zambezi,Region
+NA,ER,Erongo,Region
+NA,HA,Hardap,Region
+NA,KA,//Karas,Region
+NA,KE,Kavango East,Region
+NA,KH,Khomas,Region
+NA,KU,Kunene,Region
+NA,KW,Kavango West,
+NA,OD,Otjozondjupa,Region
+NA,OH,Omaheke,Region
+NA,ON,Oshana,Region
+NA,OS,Omusati,Region
+NA,OT,Oshikoto,Region
+NA,OW,Ohangwena,Region
 NE,1,Agadez,Region
 NE,2,Diffa,Region
 NE,3,Dosso,Region
@@ -3012,7 +3007,7 @@ NG,KO,Kogi,State
 NG,KT,Katsina,State
 NG,KW,Kwara,State
 NG,LA,Lagos,State
-NG,,Nasarawa,State
+NG,NA,Nasarawa,State
 NG,NI,Niger,State
 NG,OG,Ogun,State
 NG,ON,Ondo,State
