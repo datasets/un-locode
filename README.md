@@ -2,7 +2,13 @@ The United Nations Code for Trade and Transport Locations is a code list mantain
 
 ## Data
 
-Data comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released at least once a year.
+Data comes from the [UNECE page](https://unece.org/trade/uncefact/unlocode), released at least once a year.
+
+## Workflow
+Github automated script to run on 1st day of each month.
+
+## Local setup
+Currently all the setup is explained inside `scripts/README.md` file
 
 ## License
 

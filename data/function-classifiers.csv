@@ -1,11 +1,10 @@
 FunctionCode,FunctionDescription
-0,"Function not known, to be specified"
-1,"Port, as defined in Rec 16"
-2,Rail Terminal
-3,Road Terminal
-4,Airport
-5,Postal Exchange Office
-6,"Multimodal Functions (ICDs, etc.)"
-7,Fixed Transport Functions (e.g. Oil platform)
-8,Inland Port
-B,Border Crossing
+0,0 A value "0" in the first position specifies that the functional use of a location is not known and is to be specified.
+1,1 Specifies that the location is a Port as defined in UN/ECE Recommendation 16.
+2,2 Specifies that the location is a Rail terminal.
+3,3 Specifies that the location is a Road terminal.
+4,4 Specifies that the location is an Airport.
+5,5 Specifies that the location is a Postal exchange office.
+6,6 Value reserved for multimodal functions ICDs etc.
+7,7 Value reserved for fixed transport functions (e.g. oil platform).
+B,B Specifies that the location is Border crossing.
