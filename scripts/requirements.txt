@@ -1,0 +1,5 @@
+pandas==2.2.3
+bs4==0.0.2
+pycountry==24.6.1
+requests==2.32.3
+chardet==5.2.0
