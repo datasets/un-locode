@@ -1,7 +1,9 @@
-import zipfile
-import sys
 import os
+import re
+import sys
+import zipfile
 import pandas as pd
+
 from titlecase import titlecase
 
 def process(extracted_files):
@@ -16,12 +18,7 @@ def process(extracted_files):
     for file_name in extracted_files:
         if file_name.endswith('.csv'):
             if 'SubdivisionCodes' in file_name:
-                year_term = file_name.split(' ')[0]
-                print(f"Edition {year_term}")
-                df = pd.read_csv(file_name, encoding='cp1252', dtype=str)
-                df.columns = ['SUCountry', 'SUCode', 'SUName', 'SUType']
-                df.to_csv(f"data/subdivision-codes.csv", index=False)
-                print(f"Processed {file_name}")
+                ## Skip SubdivisionCodes.csv file getting source from mdb file instead
                 continue
 
             unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
@@ -52,12 +49,17 @@ def process(extracted_files):
     return
 
 if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(script_dir, '..'))
+    # Search for loc zip file
+    pattern = re.compile(r'loc\d+csv\.zip')
 
-    if len(sys.argv) != 2:
-        print("Usage: python extract_zip.py <zip_file_path>")
-        sys.exit(1)
-
-    zip_path = sys.argv[1]
+    zip_path = ''
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            # Check if the file name matches the pattern
+            if pattern.match(file):
+                zip_path = os.path.join(root, file)
 
     try:
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
