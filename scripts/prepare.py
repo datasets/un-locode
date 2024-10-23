@@ -9,6 +9,30 @@ from titlecase import titlecase
 
 data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
+def fix_multiline_csv(file_path):
+    with open(file_path, 'r', encoding='utf-8') as infile:
+        lines = infile.readlines()
+    
+    merged_lines = []
+    temp_line = ''
+    inside_quotes = False
+
+    for line in lines:
+        if line.count('"') % 2 == 1:
+            inside_quotes = not inside_quotes
+        
+        if inside_quotes:
+            temp_line += line.strip()
+        else:
+            if temp_line:
+                merged_lines.append(temp_line + ' ' + line.strip())
+                temp_line = ''
+            else:
+                merged_lines.append(line.strip())
+
+    with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
+        outfile.write('\n'.join(merged_lines) + '\n')
+
 def remove_double_quotes(file_path):
     # Read the CSV file and process it row by row
     with open(file_path, 'r', encoding='utf-8') as infile:
@@ -111,3 +135,5 @@ if __name__ == "__main__":
     # Loop over the file paths and call remove_double_quotes for each
     for file_path in file_paths:
         remove_double_quotes(file_path)
+
+    fix_multiline_csv(data_file_path)
