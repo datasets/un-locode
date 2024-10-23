@@ -6,8 +6,17 @@ import pandas as pd
 
 from titlecase import titlecase
 
-def process(extracted_files):
+data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
+def remove_double_quotes(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = file.read()
+        data = data.replace('"', '')
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(data)
+    return
+
+def process(extracted_files):
     # Process CSV files
     codelist_df = pd.DataFrame(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks'])
@@ -17,25 +26,33 @@ def process(extracted_files):
 
     for file_name in extracted_files:
         if file_name.endswith('.csv'):
-            if 'SubdivisionCodes' in file_name:
-                ## Skip SubdivisionCodes.csv file getting source from mdb file instead
-                continue
+            if 'subdivisioncodes' in file_name.lower():
+                subdivision_df = pd.read_csv(file_name, encoding='cp1252', dtype=str, usecols=[0, 1, 2, 3], names=['SUCountry', 'SUCode', 'SUName', 'SUType'])
+                subdivision_df_main = pd.read_csv(data_file_path, dtype=str)  
+                subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']],
+                               on=['SUCountry', 'SUCode'], how='left')
+                subdivision_df_main.to_csv(data_file_path, index=False)
+            else:    
+                unlocode_df_test = pd.read_csv(file_name, encoding='cp1252', nrows=1, dtype=str)
 
-            unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
-            unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
-                        'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
+                if all(unlocode_df_test.iloc[0].str.isalpha()):
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', dtype=str)
+                else:
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
+                    unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
+                                        'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
 
-            for index, row in unlocode_df.iterrows():
-                if pd.isna(row['Location']) or row['Location'] == '':
-                    if row['Change'] == '=': #alias row
-                        alias_df.loc[len(alias_df.index)] = row[['Country', 'Name', 'NameWoDiacritics']]
-                    #else: #country name row
-                    #    row['Name'] = str(row['Name']).replace('.', '')
-                    #    row['Name'] = titlecase(row['Name'])
-                    #    country_df.loc[len(country_df.index)] = row[['Country', 'Name']]
-                    continue
-                #codelist_df.loc[len(codelist_df)] = row
-                codelist_list.append(row)
+                for index, row in unlocode_df.iterrows():
+                    if pd.isna(row['Location']) or row['Location'] == '':
+                        if row['Change'] == '=': #alias row
+                            alias_df.loc[len(alias_df.index)] = row[['Country', 'Name', 'NameWoDiacritics']]
+                        #else: #country name row
+                        #    row['Name'] = str(row['Name']).replace('.', '')
+                        #    row['Name'] = titlecase(row['Name'])
+                        #    country_df.loc[len(country_df.index)] = row[['Country', 'Name']]
+                        continue
+                    #codelist_df.loc[len(codelist_df)] = row
+                    codelist_list.append(row)
             print(f"Processed {file_name}")
 
     # Save the merged DataFrame back to a CSV file
@@ -76,3 +93,17 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"Error extracting {zip_path}: {e}")
+
+
+    file_paths = [
+        os.path.join('data', 'code-list.csv'),
+        os.path.join('data', 'alias.csv'),
+        os.path.join('data', 'subdivision-codes.csv'),
+        os.path.join('data', 'country-codes.csv'),
+        os.path.join('data', 'function-classifiers.csv'),
+        os.path.join('data', 'status-indicators.csv')
+    ]
+
+    # Loop over the file paths and call remove_double_quotes for each
+    for file_path in file_paths:
+        remove_double_quotes(file_path)

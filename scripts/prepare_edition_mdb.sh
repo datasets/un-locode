@@ -39,13 +39,14 @@ if [ -f "mdb_SubdivisionCodes.csv" ]; then
     sed -i '' 's/\t/ /g' subdivision-codes.tmp.csv > /dev/null 2>&1
     uniq subdivision-codes.tmp.csv > subdivision-codes.tmp2.csv
     mv subdivision-codes.tmp2.csv data/subdivision-codes.csv
+    csvformat -U 1 data/subdivision-codes.csv > data/subdivision-codes-cleaned.csv && mv data/subdivision-codes-cleaned.csv data/subdivision-codes.csv
     echo "Done processing SubdivisionCodes table"
 fi
 
 # Handle remaining tables
-[ -f "mdb_StatusIndicators.csv" ] && { mv "mdb_StatusIndicators.csv" data/status-indicators.csv; echo "Done processing StatusIndicators table"; }
-[ -f "mdb_FunctionClassifiers.csv" ] && { mv "mdb_FunctionClassifiers.csv" data/function-classifiers.csv; echo "Done processing FunctionClassifiers table"; }
-[ -f "mdb_CountryCodes.csv" ] && { mv "mdb_CountryCodes.csv" data/country-codes.csv; echo "Done processing CountryCodes table"; }
+[ -f "mdb_StatusIndicators.csv" ] && { mv "mdb_StatusIndicators.csv" data/status-indicators.csv; csvformat -U 1 data/status-indicators.csv > data/status-indicators-cleaned.csv && mv data/status-indicators-cleaned.csv data/status-indicators.csv; echo "Done processing StatusIndicators table"; }
+[ -f "mdb_FunctionClassifiers.csv" ] && { mv "mdb_FunctionClassifiers.csv" data/function-classifiers.csv; csvformat -U 1 data/function-classifiers.csv > data/function-classifiers-cleaned.csv && mv data/function-classifiers-cleaned.csv data/function-classifiers.csv; echo "Done processing FunctionClassifiers table"; }
+[ -f "mdb_CountryCodes.csv" ] && { mv "mdb_CountryCodes.csv" data/country-codes.csv; csvformat -U 1 data/country-codes.csv > data/country-codes-cleaned.csv && mv data/country-codes-cleaned.csv data/country-codes.csv; echo "Done processing CountryCodes table"; }
 
 # Process UNLOCODE CodeList from MDB
 if [ -f "$file" ]; then
@@ -54,6 +55,7 @@ if [ -f "$file" ]; then
     csvgrep -c 3 -r "^$" -i code-list.tmp.csv > code-list.tmp2.csv > /dev/null 2>&1
     (head -n 1 code-list.tmp2.csv && tail -n +2 code-list.tmp2.csv | LC_ALL=C sort -t, -k2,2 -k4,4 --ignore-case) > code-list.csv
     mv code-list.csv data/code-list.csv
+    csvformat -U 1 data/code-list.csv > data/code-list-cleaned.csv && mv data/code-list-cleaned.csv data/code-list.csv
     echo "Done processing UNLOCODE CodeList table"
 fi
 
