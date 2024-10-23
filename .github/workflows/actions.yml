@@ -1,0 +1,64 @@
+name: UNLOCODE Data Processing
+
+on:
+  # Schedule to run on the 1st day of each month
+  schedule:
+    - cron: '0 0 1 * *'
+
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install Python dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install --upgrade pip
+        pip install -r scripts/requirements.txt
+
+    - name: Install other tools (e.g., mdbtools, csvkit)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y mdbtools csvkit
+          
+    - name: Run Makefile
+      run: |
+        source venv/bin/activate
+        make
+
+    - name: Clean from .zip files
+      run: |
+        source venv/bin/activate
+        make clean
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v7
+      with:
+          add-paths: data/*.csv
+          commit-message: "Automated commit"
+          branch: automated-update-branch
+          title: "Automated Data Update"
+          body: "Automated changes by [create-pull-request](https://github.com/datasets/un-locode/pulls) GitHub action"
+          author: "actions@github.com <actions@users.noreply.github.com>"
+          labels: "automated update"
