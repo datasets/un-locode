@@ -216,8 +216,8 @@ AZ,ZAN,Zəngilan,Rayon
 AZ,ZAQ,Zaqatala,Rayon
 AZ,ZAR,Zərdab,Rayon
 BA,BIH,Federacija Bosne i Hercegovine,Entity
-BA,BRC,Brčko distrikt,District with special
-status
+BA,BRC,Brčko distrikt,"District with special
+status"
 BA,SRP,Republika Srpska,Entity
 BB,01,Christ Church,Parish
 BB,02,Saint Andrew,Parish
@@ -294,7 +294,7 @@ BD,61,Sunamganj,District
 BD,62,Shariatpur,District
 BD,63,Tangail,District
 BD,64,Thakurgaon,District
-BE,BRU,Bruxelles-Capitale, Région de,Region
+BE,BRU,"Bruxelles-Capitale, Région de",Region
 BE,VAN,Antwerpen,Province
 BE,VBR,Vlaams Brabant,Province
 BE,VLI,Limburg,Province
@@ -731,7 +731,7 @@ CO,PUT,Putumayo,Department
 CO,QUI,Quindío,Department
 CO,RIS,Risaralda,Department
 CO,SAN,Santander,Department
-CO,SAP,San Andrés, Providencia y Santa Catalina,Department
+CO,SAP,"San Andrés, Providencia y Santa Catalina",Department
 CO,SUC,Sucre,Department
 CO,TOL,Tolima,Department
 CO,VAC,Valle del Cauca,Department
@@ -789,7 +789,7 @@ CY,03,Larnaka,District
 CY,04,Ammochostos,District
 CY,05,Pafos,District
 CY,06,Keryneia,District
-CZ,10,Praha, Hlavní město,Region
+CZ,10,"Praha, Hlavní město",Region
 CZ,20,Středočeský kraj,Region
 CZ,31,Jihočeský kraj,Region
 CZ,32,Plzeňský kraj,Region
@@ -1185,8 +1185,8 @@ FR,66,Pyrénées-Orientales,Metropolitan department
 FR,67,Bas-Rhin,Metropolitan department
 FR,68,Haut-Rhin,Metropolitan department
 FR,69,Rhône,Metropolitan department
-FR,69M,Métropole de Lyon,Metropolitan collectivity with
-special status
+FR,69M,Métropole de Lyon,"Metropolitan collectivity with
+special status"
 FR,6AE,Alsace,European collectivity
 FR,70,Haute-Saône,Metropolitan department
 FR,71,Saône-et-Loire,Metropolitan department
@@ -1224,7 +1224,7 @@ GA,6,Ogooué-Ivindo,Province
 GA,7,Ogooué-Lolo,Province
 GA,8,Ogooué-Maritime,Province
 GA,9,Woleu-Ntem,Province
-GB,ABC, Armagh City, Banbridge and Craigavon,district
+GB,ABC," Armagh City, Banbridge and Craigavon",district
 GB,ABD,Aberdeenshire,Council area
 GB,ABE,Aberdeen City,Council area
 GB,AGB,Argyll and Bute,Council area
@@ -1234,7 +1234,7 @@ GB,ANN,Antrim and Newtownabbey,district
 GB,ANS,Angus,Council area
 GB,BAS,Bath and North East Somerset,Unitary authority
 GB,BBD,Blackburn with Darwen,Unitary authority
-GB,BCP,Bournemouth, Christchurch and Poole,unitary authority
+GB,BCP,"Bournemouth, Christchurch and Poole",unitary authority
 GB,BDF,Bedford,Council area
 GB,BDG,Barking and Dagenham,London borough
 GB,BEN,Brent,Council area
@@ -1252,7 +1252,7 @@ GB,BPL,Blackpool,Unitary authority
 GB,BRC,Bracknell Forest,Unitary authority
 GB,BRD,Bradford,Council area
 GB,BRY,Bromley,Council area
-GB,BST,Bristol, City of,Unitary authority
+GB,BST,"Bristol, City of",Unitary authority
 GB,BUR,Bury,Council area
 GB,CAM,Cambridgeshire,County
 GB,CAY,Caerphilly [Caerffili GB-CAF],Unitary authority
@@ -1282,10 +1282,10 @@ GB,DND,Dundee City,Council area
 GB,DOR,Dorset,County
 GB,DRS, Derry and Strabane,district
 GB,DUD,Dudley,Council area
-GB,DUR, Durham, County,Unitary authority
+GB,DUR," Durham, County",Unitary authority
 GB,EAL,Ealing,Council area
 GB,EAY,East Ayrshire,Council area
-GB,EDH,Edinburgh, City of,Council area
+GB,EDH,"Edinburgh, City of",Council area
 GB,EDU,East Dunbartonshire,Council area
 GB,ELN,East Lothian,Council area
 GB,ELS,Eilean Siar,Council area
@@ -1335,7 +1335,7 @@ GB,LEC,Leicestershire,County
 GB,LEW,Lewisham,Council area
 GB,LIN,Lincolnshire,County
 GB,LIV,Liverpool,Council area
-GB,LND,London, City of,City Corporation
+GB,LND,"London, City of",City Corporation
 GB,LUT,Luton,Unitary authority
 GB,MAN,Manchester,Council area
 GB,MDB,Middlesbrough,Unitary authority
@@ -1356,7 +1356,7 @@ GB,NFK,Norfolk,County
 GB,NGM,Nottingham,Unitary authority
 GB,NLK,North Lanarkshire,Council area
 GB,NLN,North Lincolnshire,Unitary authority
-GB,NMD,Newry, Mourne and Down,district
+GB,NMD,"Newry, Mourne and Down",district
 GB,NNH,North Northamptonshire,unitary authority
 GB,NSM,North Somerset,Unitary authority
 GB,NTL,Neath Port Talbot [Castell-nedd Port Talbot GB-CTL],Unitary authority
@@ -1418,7 +1418,7 @@ GB,TOB,Torbay,Unitary authority
 GB,TOF,Torfaen [Tor-faen],Unitary authority
 GB,TRF,Trafford,Council area
 GB,TWH,Tower Hamlets,Council area
-GB,VGL,Vale of Glamorgan, The [Bro Morgannwg GB-BMG],Unitary authority
+GB,VGL,"Vale of Glamorgan, The [Bro Morgannwg GB-BMG]",Unitary authority
 GB,WAR,Warwickshire,County
 GB,WBK,West Berkshire,Unitary authority
 GB,WDU,West Dunbartonshire,Council area
@@ -2555,7 +2555,7 @@ MD,DU,Dubăsari,District
 MD,ED,Edineţ,District
 MD,FA,Făleşti,District
 MD,FL,Floreşti,District
-MD,GA,Găgăuzia, Unitatea teritorială autonomă (UTAG),Autonomous territory unit
+MD,GA,"Găgăuzia, Unitatea teritorială autonomă (UTAG)",Autonomous territory unit
 MD,GL,Glodeni,District
 MD,HI,Hînceşti,District
 MD,IA,Ialoveni,District
@@ -2567,7 +2567,7 @@ MD,RE,Rezina,District
 MD,RI,Rîşcani,District
 MD,SD,Şoldăneşti,District
 MD,SI,Sîngerei,District
-MD,SN,Stînga Nistrului, unitatea teritorială din,Territorial unit
+MD,SN,"Stînga Nistrului, unitatea teritorială din",Territorial unit
 MD,SO,Soroca,District
 MD,ST,Străşeni,District
 MD,SV,Ştefan Vodă,District
@@ -3433,21 +3433,21 @@ RS,28,Kosovsko‐Mitrovački okrug,District
 RS,29,Kosovsko‐Pomoravski okrug,District
 RS,KM,Kosovo-Metohija,Autonomous province
 RS,VO,Vojvodina,Autonomous province
-RU,AD,Adygeya, Respublika,Republic
-RU,AL,Altay, Respublika,Republic
+RU,AD,"Adygeya, Respublika",Republic
+RU,AL,"Altay, Respublika",Republic
 RU,ALT,Altayskiy kray,Administrative territory
 RU,AMU,Amurskaya oblast',Administrative region
-RU,ARK,Arkhangel'skaya oblast,,Administrative region
+RU,ARK,"Arkhangel'skaya oblast,",Administrative region
 RU,AST,Astrakhanskaya oblast',Administrative region
-RU,BA,Bashkortostan, Respublika,Republic
+RU,BA,"Bashkortostan, Respublika",Republic
 RU,BEL,Belgorodskaya oblast',Administrative region
 RU,BRY,Bryanskaya oblast',Administrative region
-RU,BU,Buryatiya, Respublika,Republic
+RU,BU,"Buryatiya, Respublika",Republic
 RU,CE,Chechenskaya Respublika,Republic
 RU,CHE,Chelyabinskaya oblast',Administrative region
 RU,CHU,Chukotskiy avtonomnyy okrug,Autonomous district
 RU,CU,Chuvashskaya Respublika,Republic
-RU,DA,Dagestan, Respublika,Republic
+RU,DA,"Dagestan, Respublika",Republic
 RU,IN,Ingushskaya Respublika [Respublika Ingushetiya],Republic
 RU,IRK,Irkutskaya oblast',Administrative region
 RU,IVA,Ivanovskaya oblast',Administrative region
@@ -3456,24 +3456,24 @@ RU,KB,Kabardino-Balkarskaya Respublika,Republic
 RU,KC,Karachayevo-Cherkesskaya Respublika,Republic
 RU,KDA,Krasnodarskiy kray,Administrative territory
 RU,KEM,Kemerovskaya oblast',Administrative region
-RU,KGD,Kaliningradskaya oblast,,Administrative region
+RU,KGD,"Kaliningradskaya oblast,",Administrative region
 RU,KGN,Kurganskaya oblast',Administrative region
 RU,KHA,Khabarovskiy kray,Administrative territory
 RU,KHM,Khanty-Mansiyskiy avtonomnyy okrug,Autonomous district
 RU,KIR,Kirovskaya oblast',Administrative region
-RU,KK,Khakasiya, Respublika,Republic
-RU,KL,Kalmykiya, Respublika,Republic
+RU,KK,"Khakasiya, Respublika",Republic
+RU,KL,"Kalmykiya, Respublika",Republic
 RU,KLU,Kaluzhskaya oblast',Administrative region
-RU,KO,Komi, Respublika,Republic
+RU,KO,"Komi, Respublika",Republic
 RU,KOS,Kostromskaya oblast',Administrative region
-RU,KR,Kareliya, Respublika,Republic
+RU,KR,"Kareliya, Respublika",Republic
 RU,KRS,Kurskaya oblast',Administrative region
 RU,KYA,Krasnoyarskiy kray,Administrative territory
 RU,LEN,Leningradskaya oblast',Administrative region
 RU,LIP,Lipetskaya oblast',Administrative region
 RU,MAG,Magadanskaya oblast',Administrative region
-RU,ME,Mariy El, Respublika,Republic
-RU,MO,Mordoviya, Respublika,Republic
+RU,ME,"Mariy El, Respublika",Republic
+RU,MO,"Mordoviya, Respublika",Republic
 RU,MOS,Moskovskaya oblast',Administrative region
 RU,MOW,Moskva,Autonomous city
 RU,MUR,Murmanskaya oblast',Administrative region
@@ -3490,21 +3490,21 @@ RU,PRI,Primorskiy kray,Administrative territory
 RU,PSK,Pskovskaya oblast',Administrative region
 RU,ROS,Rostovskaya oblast',Administrative region
 RU,RYA,Ryazanskaya oblast',Administrative region
-RU,SA,Sakha, Respublika [Yakutiya],Republic
+RU,SA,"Sakha, Respublika [Yakutiya]",Republic
 RU,SAK,Sakhalinskaya oblast',Administrative region
 RU,SAM,Samarskaya oblast',Administrative region
 RU,SAR,Saratovskaya oblast',Administrative region
-RU,SE,Severnaya Osetiya, Respublika Alaniya] [Respublika Severnaya Osetiya-Alaniya],Republic
+RU,SE,"Severnaya Osetiya, Respublika Alaniya] [Respublika Severnaya Osetiya-Alaniya]",Republic
 RU,SMO,Smolenskaya oblast',Administrative region
 RU,SPE,Sankt-Peterburg,Autonomous city
 RU,STA,Stavropol'skiy kray,Administrative territory
 RU,SVE,Sverdlovskaya oblast',Administrative region
-RU,TA,Tatarstan, Respublika,Republic
+RU,TA,"Tatarstan, Respublika",Republic
 RU,TAM,Tambovskaya oblast',Administrative region
 RU,TOM,Tomskaya oblast',Administrative region
 RU,TUL,Tul'skaya oblast',Administrative region
 RU,TVE,Tverskaya oblast',Administrative region
-RU,TY,Tyva, Respublika [Tuva],Republic
+RU,TY,"Tyva, Respublika [Tuva]",Republic
 RU,TYU,Tyumenskaya oblast',Administrative region
 RU,UD,Udmurtskaya Respublika,Republic
 RU,ULY,Ul'yanovskaya oblast',Administrative region
@@ -4048,8 +4048,8 @@ TH,93,Phatthalung,Province
 TH,94,Pattani,Province
 TH,95,Yala,Province
 TH,96,Narathiwat,Province
-TH,S ,Phatthaya,special administrative
-Special administrative city
+TH,S ,Phatthaya,"special administrative
+Special administrative city"
 TJ,DU,Dushanbe,Capital territory
 TJ,GB,Kŭhistoni Badakhshon,Autonomous region
 TJ,KT,Khatlon,Region

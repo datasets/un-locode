@@ -25,7 +25,7 @@ BD,Bangladesh
 BJ,Benin
 BM,Bermuda
 BN,Brunei Darussalam
-BO,Bolivia, Plurinational State of
+BO,"Bolivia, Plurinational State of"
 BR,Brazil
 BS,Bahamas
 BT,Bhutan
@@ -34,7 +34,7 @@ BY,Belarus
 BZ,Belize
 CA,Canada
 CC,Cocos (Keeling) Islands
-CD,Congo, The Democratic Republic of the
+CD,"Congo, The Democratic Republic of the"
 CF,Central African Republic
 CG,Congo
 CH,Switzerland
@@ -66,7 +66,7 @@ ET,Ethiopia
 FI,Finland
 FJ,Fiji
 FK,Falkland Islands (Malvinas)
-FM,Micronesia, Federated States of
+FM,"Micronesia, Federated States of"
 FO,Faroe Islands
 FR,France
 GA,Gabon
@@ -99,7 +99,7 @@ IL,Israel
 IN,India
 IO,British Indian Ocean Territory
 IQ,Iraq
-IR,Iran, Islamic Republic of
+IR,"Iran, Islamic Republic of"
 IS,Iceland
 IT,Italy
 JM,Jamaica
@@ -111,8 +111,8 @@ KH,Cambodia
 KI,Kiribati
 KM,Comoros
 KN,Saint Kitts and Nevis
-KP,Korea, Democratic People's Republic of
-KR,Korea, Republic of
+KP,"Korea, Democratic People's Republic of"
+KR,"Korea, Republic of"
 KW,Kuwait
 KY,Cayman Islands
 KZ,Kazakhstan
@@ -129,7 +129,7 @@ LV,Latvia
 LY,Libya
 MA,Morocco
 MC,Monaco
-MD,Moldova, Republic of
+MD,"Moldova, Republic of"
 MG,Madagascar
 MH,Marshall Islands (the)
 MK,North Macedonia
@@ -171,7 +171,7 @@ PL,Poland
 PM,Saint Pierre and Miquelon
 PN,Pitcairn
 PR,Puerto Rico
-PS,Palestine, State of
+PS,"Palestine, State of"
 PT,Portugal
 PW,Palau
 PY,Paraguay
@@ -186,7 +186,7 @@ SC,Seychelles
 SD,Sudan (the)
 SE,Sweden
 SG,Singapore
-SH,Saint Helena, Ascension and Tristan Da Cunha
+SH,"Saint Helena, Ascension and Tristan Da Cunha"
 SI,Slovenia
 SJ,Svalbard and Jan Mayen
 SK,Slovakia
@@ -214,7 +214,7 @@ TR,Türkiye
 TT,Trinidad and Tobago
 TV,Tuvalu
 TW,Taiwan (Province of China)
-TZ,Tanzania, United Republic of
+TZ,"Tanzania, United Republic of"
 UA,Ukraine
 UG,Uganda
 UM,United States Minor Outlying Islands
@@ -243,7 +243,7 @@ GG,Guernsey
 IM,Isle of Man
 AX,Åland Islands
 CW,Curaçao
-BQ,Bonaire, Sint Eustatius and Saba
+BQ,"Bonaire, Sint Eustatius and Saba"
 BL,Saint Barthélemy
 MF,Saint Martin (French Part)
 SX,Sint Maarten (Dutch Part)

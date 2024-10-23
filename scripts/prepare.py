@@ -1,6 +1,7 @@
 import os
 import re
 import sys
+import csv
 import zipfile
 import pandas as pd
 
@@ -9,12 +10,15 @@ from titlecase import titlecase
 data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
 def remove_double_quotes(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        data = file.read()
-        data = data.replace('"', '')
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(data)
-    return
+    # Read the CSV file and process it row by row
+    with open(file_path, 'r', encoding='utf-8') as infile:
+        reader = csv.reader(infile)
+        rows = [row for row in reader]  # Read all rows
+        
+    # Write the CSV back with minimal quoting (preserving quotes where necessary)
+    with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
+        writer = csv.writer(outfile, quoting=csv.QUOTE_MINIMAL)
+        writer.writerows(rows)
 
 def process(extracted_files):
     # Process CSV files
