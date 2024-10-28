@@ -1,13 +1,41 @@
 import os
 import re
-import sys
 import csv
+import glob
 import zipfile
 import pandas as pd
 
 from titlecase import titlecase
 
 data_file_path = os.path.join('data', 'subdivision-codes.csv')
+
+def convert_to_decimal(coord):
+    # Format coordinates to DDMM[N/S] DDDMM[W/E] pattern
+    if not isinstance(coord, str) or ' ' not in coord:
+        return None # Invalid format
+
+    def part_to_decimal(part):
+        # Extract direction and separate degrees and minutes
+        direction = part[-1]
+        deg_min = part[:-1]
+
+        if '.' in deg_min:
+            decimal = float(deg_min)
+        else:
+            degrees = int(deg_min[:-2])
+            minutes = int(deg_min[-2:])
+            decimal = degrees + minutes / 60
+
+        # Adjust sign for South and West directions
+        if direction in ['S', 'W']:
+            decimal = -decimal
+        return decimal
+
+    lat_part, lon_part = coord.split()
+    latitude = part_to_decimal(lat_part)
+    longitude = part_to_decimal(lon_part)
+    
+    return f"{latitude:.6f}, {longitude:.6f}"
 
 def fix_multiline_csv(file_path):
     with open(file_path, 'r', encoding='utf-8') as infile:
@@ -87,8 +115,8 @@ def process(extracted_files):
     codelist_df  = pd.DataFrame(codelist_list) #)=pd.concat(codelist_list)
     codelist_df = codelist_df.reindex(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
+    codelist_df['Coordinates'] = codelist_df['Coordinates'].apply(convert_to_decimal)
     codelist_df.to_csv(f"data/code-list.csv", index=False)
-    #country_df.to_csv(f"data/country-codes.csv", index=False)
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
     return
@@ -96,9 +124,12 @@ def process(extracted_files):
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.abspath(os.path.join(script_dir, '..'))
+
+    cleaned_files = glob.glob('data/*-cleaned.csv')
+
     # Search for loc zip file
     pattern = re.compile(r'loc\d+csv\.zip')
-
+    
     zip_path = ''
     for root, dirs, files in os.walk(root_dir):
         for file in files:
@@ -137,3 +168,6 @@ if __name__ == "__main__":
         remove_double_quotes(file_path)
 
     fix_multiline_csv(data_file_path)
+    
+    for file_path in cleaned_files:
+        os.remove(file_path)
