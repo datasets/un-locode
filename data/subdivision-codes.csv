@@ -216,8 +216,7 @@ AZ,ZAN,Zəngilan,Rayon
 AZ,ZAQ,Zaqatala,Rayon
 AZ,ZAR,Zərdab,Rayon
 BA,BIH,Federacija Bosne i Hercegovine,Entity
-BA,BRC,Brčko distrikt,"District with special
-status"
+BA,BRC,Brčko distrikt,"District with special status"
 BA,SRP,Republika Srpska,Entity
 BB,01,Christ Church,Parish
 BB,02,Saint Andrew,Parish
@@ -632,7 +631,7 @@ CH,ZG,Zug (de),Canton
 CH,ZH,Zürich (de),Canton
 CI,AB,Abidjan,autonomous district
 CI,BS,Bas-Sassandra,district
-CI,CM, Comoé,district
+CI,CM,Comoé,district
 CI,DN,Denguélé,district
 CI,GD,Gôh-Djiboua,district
 CI,LC,Lacs,district
@@ -1185,8 +1184,7 @@ FR,66,Pyrénées-Orientales,Metropolitan department
 FR,67,Bas-Rhin,Metropolitan department
 FR,68,Haut-Rhin,Metropolitan department
 FR,69,Rhône,Metropolitan department
-FR,69M,Métropole de Lyon,"Metropolitan collectivity with
-special status"
+FR,69M,Métropole de Lyon,"Metropolitan collectivity with special status"
 FR,6AE,Alsace,European collectivity
 FR,70,Haute-Saône,Metropolitan department
 FR,71,Saône-et-Loire,Metropolitan department
@@ -1224,7 +1222,7 @@ GA,6,Ogooué-Ivindo,Province
 GA,7,Ogooué-Lolo,Province
 GA,8,Ogooué-Maritime,Province
 GA,9,Woleu-Ntem,Province
-GB,ABC," Armagh City, Banbridge and Craigavon",district
+GB,ABC,"Armagh City, Banbridge and Craigavon",district
 GB,ABD,Aberdeenshire,Council area
 GB,ABE,Aberdeen City,Council area
 GB,AGB,Argyll and Bute,Council area
@@ -1280,9 +1278,9 @@ GB,DGY,Dumfries and Galloway,Council area
 GB,DNC,Doncaster,Council area
 GB,DND,Dundee City,Council area
 GB,DOR,Dorset,County
-GB,DRS, Derry and Strabane,district
+GB,DRS,Derry and Strabane,district
 GB,DUD,Dudley,Council area
-GB,DUR," Durham, County",Unitary authority
+GB,DUR,"Durham, County",Unitary authority
 GB,EAL,Ealing,Council area
 GB,EAY,East Ayrshire,Council area
 GB,EDH,"Edinburgh, City of",Council area
@@ -1297,7 +1295,7 @@ GB,ESX,East Sussex,County
 GB,FAL,Falkirk,Council area
 GB,FIF,Fife,Council area
 GB,FLN,Flintshire [Sir y Fflint GB-FFL],Unitary authority
-GB,FMO, Fermanagh and Omagh,district
+GB,FMO,Fermanagh and Omagh,district
 GB,GAT,Gateshead,Council area
 GB,GLG,Glasgow City,Council area
 GB,GLS,Gloucestershire,County
@@ -1532,7 +1530,7 @@ GR,A,Anatolikí Makedonía kai Thráki,Administrative region
 GR,B,Kentrikí Makedonía,Administrative region
 GR,C,Dytiki Makedonia,Administrative region
 GR,D,Ípeiros,Administrative region
-GR,E, Thessalía,Administrative region
+GR,E,Thessalía,Administrative region
 GR,F,Ionía Nísia,Administrative region
 GR,G,Dytikí Elláda,Administrative region
 GR,H,Stereá Elláda,Administrative region
@@ -1541,28 +1539,28 @@ GR,J,Pelopónnisos,Administrative region
 GR,K,Vóreio Aigaío,Administrative region
 GR,L,Nótio Aigaío,Administrative region
 GR,M,Kríti,Administrative region
-GT,01,Guatemala, Department
-GT,02,El Progreso, Department
-GT,03,Sacatepéquez, Department
-GT,04,Chimaltenango, Department
-GT,05,Escuintla, Department
-GT,06,Santa Rosa, Department
-GT,07,Sololá, Department
-GT,08,Totonicapán, Department
-GT,09,Quetzaltenango, Department
-GT,10,Suchitepéquez, Department
-GT,11,Retalhuleu, Department
-GT,12,San Marcos, Department
-GT,13,Huehuetenango, Department
-GT,14,Quiché, Department
-GT,15,Baja Verapaz, Department
-GT,16,Alta Verapaz, Department
-GT,17,Petén, Department
-GT,18,Izabal, Department
-GT,19,Zacapa, Department
-GT,20,Chiquimula, Department
-GT,21,Jalapa, Department
-GT,22,Jutiapa, Department
+GT,01,Guatemala,Department
+GT,02,El Progreso,Department
+GT,03,Sacatepéquez,Department
+GT,04,Chimaltenango,Department
+GT,05,Escuintla,Department
+GT,06,Santa Rosa,Department
+GT,07,Sololá,Department
+GT,08,Totonicapán,Department
+GT,09,Quetzaltenango,Department
+GT,10,Suchitepéquez,Department
+GT,11,Retalhuleu,Department
+GT,12,San Marcos,Department
+GT,13,Huehuetenango,Department
+GT,14,Quiché,Department
+GT,15,Baja Verapaz,Department
+GT,16,Alta Verapaz,Department
+GT,17,Petén,Department
+GT,18,Izabal,Department
+GT,19,Zacapa,Department
+GT,20,Chiquimula,Department
+GT,21,Jalapa,Department
+GT,22,Jutiapa,Department
 GW,BA,Bafatá,Region
 GW,BL,Bolama/Bijagós,Region
 GW,BM,Biombo,Region
@@ -1758,6 +1756,7 @@ IN,HP,Himāchal Pradesh,State
 IN,HR,Haryāna,State
 IN,JH,Jhārkhand,State
 IN,JK,Jammu and Kashmīr,Union territory
+IN,JK,Jammu and Kashmīr,Union territory
 IN,KA,Karnātaka,State
 IN,KL,Kerala,State
 IN,LA,Ladākh,Union territory
@@ -1806,7 +1805,7 @@ IR,05,Kermānshāh,Province
 IR,06,Khūzestān,Province
 IR,07,Fārs,Province
 IR,08,Kermān,Province
-IR,09, Khorāsān-e Raẕavī,Province
+IR,09,Khorāsān-e Raẕavī,Province
 IR,10,Eşfahān,Province
 IR,11,Sīstān va Balūchestān,Province
 IR,12,Kordestān,Province
@@ -1957,9 +1956,9 @@ JM,11,Saint Elizabeth,Partish
 JM,12,Manchester,Partish
 JM,13,Clarendon,Partish
 JM,14,Saint Catherine,Partish
-JO,AJ, ‘Ajlūn,Governorate
+JO,AJ,‘Ajlūn,Governorate
 JO,AM,Al ‘A̅şimah,Governorate
-JO,AQ, Al ‘Aqabah,Governorate
+JO,AQ,Al ‘Aqabah,Governorate
 JO,AT,Aţ Ţafīlah,Governorate
 JO,AZ,Az Zarqā’,Governorate
 JO,BA,Al Balqā’,Governorate
@@ -2151,7 +2150,7 @@ KW,AH,Al Aḩmadī,Governorate
 KW,FA,Al Farwānīyah,Governorate
 KW,HA,Ḩawallī,Governorate
 KW,JA,Al Jahrā’,Governorate
-KW,KU, Al ‘Āşimah,Governorate
+KW,KU,Al ‘Āşimah,Governorate
 KW,MU,Mubārak al Kabīr,Governorate
 KZ,10,Abay oblysy,Region
 KZ,11,Aqmola oblysy,Region
@@ -2267,7 +2266,7 @@ LR,MO,Montserrado,County
 LR,MY,Maryland,County
 LR,NI,Nimba,County
 LR,RG,River Gee,County
-LR,RI, River Cess,County
+LR,RI,River Cess,County
 LR,SI,Sinoe,County
 LS,A,Maseru,District
 LS,B,Botha-Bothe,District
@@ -2426,8 +2425,8 @@ LY,WD,Wādī al Hayāt,Popularate
 LY,WS,Wādī ash Shāţiʾ,Popularate
 LY,ZA,Az Zāwiyah,Popularate
 MA,01,Tanger-Tétouan-Al Hoceïma,Region
-MA,02, L'Oriental,Region
-MA,03, Fès- Meknès,Region
+MA,02,L'Oriental,Region
+MA,03,Fès- Meknès,Region
 MA,04,Rabat-Salé-Kénitra,Region
 MA,05,Béni Mellal-Khénifra,Region
 MA,06,Casablanca-Settat,Region
@@ -2451,25 +2450,28 @@ MA,CAS,Casablanca [Dar el Beïda]*,Prefecture
 MA,CHE,Chefchaouene,Province
 MA,CHI,Chichaoua,Province
 MA,CHT,Chtouka-Ait Baha,Province
-MA,DRI, Driouch,Province
+MA,CHT,Chtouka-Ait Baha,Province
+MA,DRI,Driouch,Province
 MA,ERR,Errachidia,Province
 MA,ESI,Essaouira,Province
 MA,ESM,Es-Semara (EH-partial),Province
-MA,FAH, Fahs-Anjra,Prefecture
-MA,FES, Fès,Prefecture
+MA,FAH,Fahs-Anjra,Prefecture
+MA,FES,Fès,Prefecture
 MA,FIG,Figuig,Province
-MA,FQH, Fquih Ben Salah,Province
+MA,FQH,Fquih Ben Salah,Province
 MA,GUE,Guelmim,Province
-MA,GUF, Guercif,Province
+MA,GUF,Guercif,Province
 MA,HAJ,El Hajeb,Province
 MA,HAO,Al Haouz,Province
 MA,HOC,Al Hoceïma,Province
 MA,IFR,Ifrane,Province
 MA,INE,Inezgane-Ait Melloul,Prefecture
 MA,JDI,El Jadida,Province
-MA,JRA, Jerada,Province
+MA,JRA,Jerada,Province
 MA,KEN,Kénitra,Province
-MA,KES, El Kelâa des Sraghna,Province
+MA,KES,El Kelâa des Sraghna,Province
+MA,KES,El Kelâa des Sraghna,Province
+MA,KES,Kelaat Sraghna,Province
 MA,KES,Kelaat Sraghna,Province
 MA,KHE,Khémisset,Province
 MA,KHN,Khénifra,Province
@@ -2480,7 +2482,7 @@ MA,MAR,Marrakech,Prefecture
 MA,MDF,M’diq-Fnideq,Prefecture
 MA,MED,Médiouna,Province
 MA,MEK,Meknès*,Prefecture
-MA,MID, Midelt,Province
+MA,MID,Midelt,Province
 MA,MMD,Marrakech-Medina,Prefecture
 MA,MMN,Marrakech-Menara,Prefecture
 MA,MOH,Mohammadia,Prefecture
@@ -2488,7 +2490,7 @@ MA,MOU,Moulay Yacoub,Province
 MA,NAD,Nador,Province
 MA,NOU,Nouaceur,Province
 MA,OUA,Ouarzazate,Province
-MA,OUD, Oued Ed-Dahab (EH),Province
+MA,OUD,Oued Ed-Dahab (EH),Province
 MA,OUJ,Oujda‐Angad,Prefecture
 MA,OUZ,Ouezzane,Province
 MA,RAB,Rabat,Prefecture
@@ -2498,7 +2500,7 @@ MA,SAL,Salé,Prefecture
 MA,SEF,Sefrou,Province
 MA,SET,Settat,Province
 MA,SIB,Sidi Bennour,Province
-MA,SIF, Sidi Ifni,Province
+MA,SIF,Sidi Ifni,Province
 MA,SIK,Sidi Kacem,Province
 MA,SIL,Sidi Slimane,Province
 MA,SKH,Skhirate-Témara,Prefecture
@@ -2639,6 +2641,7 @@ MK,201,Berovo,Municipality
 MK,202,Vinica,Municipality
 MK,203,Delčevo,Municipality
 MK,204,Zrnovci,Municipality
+MK,205,Karbinci,Municipality
 MK,205,Karbinci,Municipality
 MK,206,Kočani,Municipality
 MK,207,Makedonska Kamenica,Municipality
@@ -2849,7 +2852,7 @@ MU,PW,Plaines wilhems,District
 MU,RO,Rodrigues Island,Dependency
 MU,RR,Rivière du Rempart,District
 MU,SA,Savanne,District
-MV,00, Alifu Dhaalu,Administrative atoll
+MV,00,Alifu Dhaalu,Administrative atoll
 MV,01,Seenu,City
 MV,02,Alifu Alifu,Administrative atoll
 MV,03,Lhaviyani,Administrative atoll
@@ -2960,20 +2963,20 @@ MZ,P,Cabo Delgado,Province
 MZ,Q,Zambézia,Province
 MZ,S,Sofala,Province
 MZ,T,Tete,Province
-NA,CA,Zambezi,Region
-NA,ER,Erongo,Region
-NA,HA,Hardap,Region
-NA,KA,//Karas,Region
-NA,KE,Kavango East,Region
-NA,KH,Khomas,Region
-NA,KU,Kunene,Region
-NA,KW,Kavango West,
-NA,OD,Otjozondjupa,Region
-NA,OH,Omaheke,Region
-NA,ON,Oshana,Region
-NA,OS,Omusati,Region
-NA,OT,Oshikoto,Region
-NA,OW,Ohangwena,Region
+,CA,Zambezi,Region
+,ER,Erongo,Region
+,HA,Hardap,Region
+,KA,//Karas,Region
+,KE,Kavango East,Region
+,KH,Khomas,Region
+,KU,Kunene,Region
+,KW,Kavango West,
+,OD,Otjozondjupa,Region
+,OH,Omaheke,Region
+,ON,Oshana,Region
+,OS,Omusati,Region
+,OT,Oshikoto,Region
+,OW,Ohangwena,Region
 NE,1,Agadez,Region
 NE,2,Diffa,Region
 NE,3,Dosso,Region
@@ -3061,7 +3064,7 @@ NO,42,Agder,County
 NO,46,Vestland,County
 NO,50,Trøndelag,County
 NO,54,Troms og Finnmark,County
-NP,P1, Pradesh 1,Province
+NP,P1,Pradesh 1,Province
 NP,P2,Madhesh,Province
 NP,P3,Bagmati,Province
 NP,P4,Gandaki,Province
@@ -3090,11 +3093,11 @@ NZ,GIS,Gisborne,region
 NZ,HKB,Hawkes's Bay,Region
 NZ,MBH,Marlborough,region
 NZ,MWT,Manawatu-Wanganui,Region
-NZ,NSN, Nelson,region
+NZ,NSN,Nelson,region
 NZ,NTL,Northland,Region
 NZ,OTA,Otago,Region
 NZ,STL,Southland,Region
-NZ,TAS, Tasman,Region
+NZ,TAS,Tasman,Region
 NZ,TKI,Taranaki,Region
 NZ,WGN,Wellington,Region
 NZ,WKO,Waikato,Region
@@ -3282,7 +3285,7 @@ PS,DEB,Deir El Balah,Governorate
 PS,GZA,Gaza,Governorate
 PS,HBN,Hebron,Governorate
 PS,JEM,Jerusalem,Governorate
-PS,JRH, Jericho and Al Aghwar,Governorate
+PS,JRH,Jericho and Al Aghwar,Governorate
 PS,KYS,Khan Yunis,Governorate
 PS,NBS,Nablus,Governorate
 PS,NGZ,North Gaza,Governorate
@@ -3847,7 +3850,7 @@ SM,06,Borgo Maggiore,Municipality
 SM,07,Città di SanMarino,Municipality
 SM,08,Montegiardino,Municipality
 SM,09,Serravalle,Municipality
-SN,DB ,Diourbel,Region
+SN,DB,Diourbel,Region
 SN,DK,Dakar,Region
 SN,FK,Fatick,Region
 SN,KA,Kaffrine,Region
@@ -3867,7 +3870,7 @@ SO,BN,Banaadir,Region
 SO,BR,Bari,Region
 SO,BY,Bay,Region
 SO,GA,Galguduud,Region
-SO,GE ,Gedo,Region
+SO,GE,Gedo,Region
 SO,HI,Hiiraan,Region
 SO,JD,Jubbada Dhexe,Region
 SO,JH,Jubbada Hoose,Region
@@ -4043,8 +4046,7 @@ TH,93,Phatthalung,Province
 TH,94,Pattani,Province
 TH,95,Yala,Province
 TH,96,Narathiwat,Province
-TH,S ,Phatthaya,"special administrative
-Special administrative city"
+TH,S,Phatthaya,"special administrative Special administrative city"
 TJ,DU,Dushanbe,Capital territory
 TJ,GB,Kŭhistoni Badakhshon,Autonomous region
 TJ,KT,Khatlon,Region
@@ -4061,7 +4063,7 @@ TL,LA,Lautém,Municipality
 TL,LI,Liquiça,Municipality
 TL,MF,Manufahi,Municipality
 TL,MT,Manatuto,Municipality
-TL,OE, Oé-Cusse Ambeno,Special administrative region
+TL,OE,Oé-Cusse Ambeno,Special administrative region
 TL,VI,Viqueque,Municipality
 TM,A,Ahal,Region
 TM,B,Balkan,Region
@@ -4089,7 +4091,7 @@ TN,53,Mahdia,Governorate
 TN,61,Sfax,Governorate
 TN,71,Gafsa,Governorate
 TN,72,Tozeur,Governorate
-TN,73, Kébili,Governorate
+TN,73,Kébili,Governorate
 TN,81,Gabès,Governorate
 TN,82,Médenine,Governorate
 TN,83,Tataouine,Governorate
@@ -4254,7 +4256,7 @@ TZ,27,Geita,Region
 TZ,28,Katavi,Region
 TZ,29,Njombe,Region
 TZ,30,Simiyu,Region
-TZ,31, Songwe,Region
+TZ,31,Songwe,Region
 UA,05,Vinnytska oblast,Region
 UA,07,Volynska oblast,Region
 UA,09,Luhanska oblast,Region
@@ -4628,7 +4630,7 @@ YE,AB,Abyan,Governorate
 YE,AD,‘Adan,Governorate
 YE,AM,‘Amrān,Governorate
 YE,BA,Al Bayḑā’,Governorate
-YE,DA, Aḑ Ḑāli‘,Governorate
+YE,DA,Aḑ Ḑāli‘,Governorate
 YE,DH,Dhamār,Governorate
 YE,HD,Ḩaḑramawt,Governorate
 YE,HJ,Ḩajjah,Governorate

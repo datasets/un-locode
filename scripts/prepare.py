@@ -1,11 +1,50 @@
-import zipfile
-import sys
 import os
+import re
+import csv
+import glob
+import zipfile
 import pandas as pd
+
 from titlecase import titlecase
 
-def process(extracted_files):
+data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
+def fix_multiline_csv(file_path):
+    with open(file_path, 'r', encoding='utf-8') as infile:
+        lines = infile.readlines()
+    
+    merged_lines = []
+    temp_line = ''
+    inside_quotes = False
+
+    for line in lines:
+        if line.count('"') % 2 == 1:
+            inside_quotes = not inside_quotes
+        
+        if inside_quotes:
+            temp_line += line.strip()
+        else:
+            if temp_line:
+                merged_lines.append(temp_line + ' ' + line.strip())
+                temp_line = ''
+            else:
+                merged_lines.append(line.strip())
+
+    with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
+        outfile.write('\n'.join(merged_lines) + '\n')
+
+def remove_double_quotes(file_path):
+    # Read the CSV file and process it row by row
+    with open(file_path, 'r', encoding='utf-8') as infile:
+        reader = csv.reader(infile)
+        rows = [row for row in reader]  # Read all rows
+        
+    # Write the CSV back with minimal quoting (preserving quotes where necessary)
+    with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
+        writer = csv.writer(outfile, quoting=csv.QUOTE_MINIMAL)
+        writer.writerows(rows)
+
+def process(extracted_files):
     # Process CSV files
     codelist_df = pd.DataFrame(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks'])
@@ -15,30 +54,37 @@ def process(extracted_files):
 
     for file_name in extracted_files:
         if file_name.endswith('.csv'):
-            if 'SubdivisionCodes' in file_name:
-                year_term = file_name.split(' ')[0]
-                print(f"Edition {year_term}")
-                df = pd.read_csv(file_name, encoding='cp1252', dtype=str)
-                df.columns = ['SUCountry', 'SUCode', 'SUName', 'SUType']
-                df.to_csv(f"data/subdivision-codes.csv", index=False)
-                print(f"Processed {file_name}")
-                continue
+            if 'subdivisioncodes' in file_name.lower():
+                subdivision_df = pd.read_csv(file_name, encoding='cp1252', dtype=str, 
+                                             usecols=[0, 1, 2, 3], names=['SUCountry', 'SUCode', 'SUName', 'SUType'])
+                subdivision_df_main = pd.read_csv(data_file_path, dtype=str)  
+                subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']],
+                               on=['SUCountry', 'SUCode'], how='left')
+                subdivision_df_main['SUCode'] = subdivision_df_main['SUCode'].fillna("NA")
+                # Trimming whitespaces from the SUName column
+                subdivision_df_main = subdivision_df_main.map(lambda x: x.strip() if isinstance(x, str) else x)
+                subdivision_df_main.to_csv(data_file_path, index=False)
+            else:    
+                unlocode_df_test = pd.read_csv(file_name, encoding='cp1252', nrows=1, dtype=str)
 
-            unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
-            unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
-                        'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
+                if all(unlocode_df_test.iloc[0].str.isalpha()):
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', dtype=str)
+                else:
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str)
+                    unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
+                                        'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
 
-            for index, row in unlocode_df.iterrows():
-                if pd.isna(row['Location']) or row['Location'] == '':
-                    if row['Change'] == '=': #alias row
-                        alias_df.loc[len(alias_df.index)] = row[['Country', 'Name', 'NameWoDiacritics']]
-                    #else: #country name row
-                    #    row['Name'] = str(row['Name']).replace('.', '')
-                    #    row['Name'] = titlecase(row['Name'])
-                    #    country_df.loc[len(country_df.index)] = row[['Country', 'Name']]
-                    continue
-                #codelist_df.loc[len(codelist_df)] = row
-                codelist_list.append(row)
+                for index, row in unlocode_df.iterrows():
+                    if pd.isna(row['Location']) or row['Location'] == '':
+                        if row['Change'] == '=': #alias row
+                            alias_df.loc[len(alias_df.index)] = row[['Country', 'Name', 'NameWoDiacritics']]
+                        #else: #country name row
+                        #    row['Name'] = str(row['Name']).replace('.', '')
+                        #    row['Name'] = titlecase(row['Name'])
+                        #    country_df.loc[len(country_df.index)] = row[['Country', 'Name']]
+                        continue
+                    #codelist_df.loc[len(codelist_df)] = row
+                    codelist_list.append(row)
             print(f"Processed {file_name}")
 
     # Save the merged DataFrame back to a CSV file
@@ -46,18 +92,25 @@ def process(extracted_files):
     codelist_df = codelist_df.reindex(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
     codelist_df.to_csv(f"data/code-list.csv", index=False)
-    #country_df.to_csv(f"data/country-codes.csv", index=False)
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
     return
 
 if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(script_dir, '..'))
 
-    if len(sys.argv) != 2:
-        print("Usage: python extract_zip.py <zip_file_path>")
-        sys.exit(1)
+    cleaned_files = glob.glob('data/*-cleaned.csv')
 
-    zip_path = sys.argv[1]
+    # Search for loc zip file
+    pattern = re.compile(r'loc\d+csv\.zip')
+    
+    zip_path = ''
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            # Check if the file name matches the pattern
+            if pattern.match(file):
+                zip_path = os.path.join(root, file)
 
     try:
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
@@ -74,3 +127,22 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"Error extracting {zip_path}: {e}")
+
+
+    file_paths = [
+        os.path.join('data', 'code-list.csv'),
+        os.path.join('data', 'alias.csv'),
+        os.path.join('data', 'subdivision-codes.csv'),
+        os.path.join('data', 'country-codes.csv'),
+        os.path.join('data', 'function-classifiers.csv'),
+        os.path.join('data', 'status-indicators.csv')
+    ]
+
+    # Loop over the file paths and call remove_double_quotes for each
+    for file_path in file_paths:
+        remove_double_quotes(file_path)
+
+    fix_multiline_csv(data_file_path)
+
+    for file_path in cleaned_files:
+        os.remove(file_path)
