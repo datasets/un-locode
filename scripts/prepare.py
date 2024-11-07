@@ -91,7 +91,10 @@ def process(extracted_files):
     codelist_df  = pd.DataFrame(codelist_list) #)=pd.concat(codelist_list)
     codelist_df = codelist_df.reindex(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
+    # Keep only rows where 'Country' values are empty, 1 character, or exactly 2 characters
+    codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
     codelist_df.to_csv(f"data/code-list.csv", index=False)
+
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
     return
