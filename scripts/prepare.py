@@ -33,6 +33,15 @@ def fix_multiline_csv(file_path):
     with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
         outfile.write('\n'.join(merged_lines) + '\n')
 
+def correct_swapped_function_status(codelist_df):
+    function_pattern = r'^[-\d]+$'
+    status_pattern = r'^[A-Z]{2}$'
+    
+    mask = codelist_df['Function'].str.match(status_pattern) & codelist_df['Status'].str.match(function_pattern)
+    codelist_df.loc[mask, ['Function', 'Status']] = codelist_df.loc[mask, ['Status', 'Function']].values
+
+    return codelist_df
+
 def remove_double_quotes(file_path):
     # Read the CSV file and process it row by row
     with open(file_path, 'r', encoding='utf-8') as infile:
@@ -93,8 +102,8 @@ def process(extracted_files):
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
     # Keep only rows where 'Country' values are empty, 1 character, or exactly 2 characters
     codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
+    codelist_df = correct_swapped_function_status(codelist_df)
     codelist_df.to_csv(f"data/code-list.csv", index=False)
-
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
     return
