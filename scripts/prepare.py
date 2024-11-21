@@ -113,6 +113,7 @@ def process(extracted_files):
     codelist_df = codelist_df.reindex(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
     # Keep only rows where 'Country' values are empty, 1 character, or exactly 2 characters
+    codelist_df['Country'] = codelist_df['Country'].fillna('NA')
     codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
     codelist_df = correct_swapped_function_status(codelist_df)
     codelist_df = clean_extra_rows(codelist_df)
