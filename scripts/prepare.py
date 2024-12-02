@@ -34,12 +34,24 @@ def fix_multiline_csv(file_path):
         outfile.write('\n'.join(merged_lines) + '\n')
 
 def correct_swapped_function_status(codelist_df):
-    function_pattern = r'^[-\d]+$'
+    function_pattern = r'^[-\dA-Z]+$'
     status_pattern = r'^[A-Z]{2}$'
     
-    mask = codelist_df['Function'].str.match(status_pattern) & codelist_df['Status'].str.match(function_pattern)
+    mask = (
+        codelist_df['Function'].str.match(status_pattern, na=False) & codelist_df['Status'].str.match(function_pattern, na=False)
+    ) | (
+        codelist_df['Function'].str.match(function_pattern, na=False) & (codelist_df['Status'].isna() | codelist_df['Status'].eq(''))
+    ) | (
+        codelist_df['Status'].str.match(function_pattern, na=False) & codelist_df['Function'].isna()
+    )
+    
     codelist_df.loc[mask, ['Function', 'Status']] = codelist_df.loc[mask, ['Status', 'Function']].values
+    return codelist_df
 
+def clean_extra_rows(codelist_df):
+    codelist_df.dropna(how="all", inplace=True)
+    codelist_df.drop_duplicates(subset=['Country', 'Location', 'Name', 'Subdivision', 'Date', 'Coordinates'], inplace=True)
+    
     return codelist_df
 
 def remove_double_quotes(file_path):
@@ -101,8 +113,10 @@ def process(extracted_files):
     codelist_df = codelist_df.reindex(columns=['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                         'Status', 'Function', 'Date', 'IATA', 'Coordinates', 'Remarks'])
     # Keep only rows where 'Country' values are empty, 1 character, or exactly 2 characters
+    codelist_df['Country'] = codelist_df['Country'].fillna('NA')
     codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
     codelist_df = correct_swapped_function_status(codelist_df)
+    codelist_df = clean_extra_rows(codelist_df)
     codelist_df.to_csv(f"data/code-list.csv", index=False)
     alias_df.to_csv(f"data/alias.csv", index=False)
     print("Processed and saved UNLOCODE files")
