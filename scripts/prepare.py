@@ -9,13 +9,19 @@ from titlecase import titlecase
 
 data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
-def fix_crlf(csv_file, output_file):
-    # Read the CSV file and replace \r\n with \n
-    with open(csv_file, "rb") as f:
-        content = f.read().replace(b"\r\n", b"\n")
+def fix_empty_quotes(file):
+    with open(file, mode="r", encoding="utf-8") as infile:
+        reader = csv.reader(infile)
+        rows = []
 
-    with open(output_file, "wb") as f:
-        f.write(content)
+        for row in reader:
+            if row and len(row) > 1 and (row[-1] == '""' or row[-1].endswith(('\n', '\r'))):
+                row[-1] = ''
+            rows.append(row)
+
+    with open(file, mode="w", encoding="utf-8", newline="") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerows(rows)
 
 def fix_multiline_csv(file_path):
     with open(file_path, 'r', encoding='utf-8') as infile:
@@ -176,8 +182,10 @@ if __name__ == "__main__":
     # Loop over the file paths and call remove_double_quotes for each
     for file_path in file_paths:
         remove_double_quotes(file_path)
-        fix_crlf(file_path, file_path)
+
     fix_multiline_csv(data_file_path)
+    # Code-list fix for empty quotes
+    fix_empty_quotes('data/code-list.csv')
 
     for file_path in cleaned_files:
         os.remove(file_path)
