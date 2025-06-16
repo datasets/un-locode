@@ -1,49 +1,8 @@
 Country,Name,NameWoDiacritics
-GL,Christianshaab = Qasigiannguit (Christianshaab),Christianshaab = Qasigiannguit (Christianshaab)
-GL,Fredrikshaab = Paamiut,Fredrikshaab = Paamiut
-GL,Godhavn = Qeqertarsuaq,Godhavn = Qeqertarsuaq
-GL,Gronnedal = Kangilinguit,Gronnedal = Kangilinguit
-GL,Holsteinsborg = Sisimiut,Holsteinsborg = Sisimiut
-GL,Jakobshavn = Ilulissat,Jakobshavn = Ilulissat
-GL,Julianehaab = Qaqortoq,Julianehaab = Qaqortoq
-GL,Scoresbysund = Illorqortoormiut,Scoresbysund = Illorqortoormiut
-GL,Sondre Stromfjord = Kangerlussua,Sondre Stromfjord = Kangerlussua
-GL,Sukkertoppen = Manitsoq,Sukkertoppen = Manitsoq
-GL,Thule = Pituffik,Thule = Pituffik
-GR,Athens = Athínai,Athens = Athinai
-HR,Kardeljevo = Ploce,Kardeljevo = Ploce
-IN,Bombay = Mumbai (ex Bombay),Bombay = Mumbai (ex Bombay)
-IN,Calcutta = Kolkata (ex Calcutta),Calcutta = Kolkata (ex Calcutta)
-IN,Madras = Chennai (ex Madras),Madras = Chennai (ex Madras)
-IT,Florence = Firenze,Florence = Firenze
-IT,Leghorn = Livorno,Leghorn = Livorno
-IT,Milan = Milano,Milan = Milano
-IT,Turin = Torino,Turin = Torino
-KG,Frunze = Bishkek,Frunze = Bishkek
-KH,Sihanoukville = Kâmpóng Saôm,Sihanoukville = Kampong Saom
-MG,Diego Suarez = Antsiranana,Diego Suarez = Antsiranana
-MM,Rangoon = Yangon,Rangoon = Yangon
-MM,Sandoway = Thandwe,Sandoway = Thandwe
-MY,Butterworth = Bagan Luar,Butterworth = Bagan Luar
-NL,Flushing = Vlissingen,Flushing = Vlissingen
-PG,Admiralty Island = Manus Island,Admiralty Island = Manus Island
-PH,Dadiangas = General Santos,Dadiangas = General Santos
-PT,Lisbon = Lisboa,Lisbon = Lisboa
-PT,Oporto = Porto,Oporto = Porto
-RO,Bucharest = Bucuresti,Bucharest = Bucuresti
-RU,Gorkiy = Nizhny Novgorod,Gorkiy = Nizhny Novgorod
-RU,Kuibyshev = Samara,Kuibyshev = Samara
-RU,Leningrad = Saint Petersburg,Leningrad = Saint Petersburg
-RU,Moscow = Moskva,Moscow = Moskva
-SA,Medina = Madinah,Medina = Madinah
-SE,Gothenburg = Göteborg,Gothenburg = Goteborg
-TT,Brighton = La Brea,Brighton = La Brea
-UA,Zhdanov = Mariupol,Zhdanov = Mariupol
-US,Adak = Adak Island,Adak = Adak Island
-AO,Novo Redondo = Sumbe,Novo Redondo = Sumbe
 AE,Ruwais = Ar Ruways,Ruwais = Ar Ruways
+AO,Novo Redondo = Sumbe,Novo Redondo = Sumbe
 AO,San Antonio do Zaire = Soyo,San Antonio do Zaire = Soyo
-AT,Vienna = Wien,Vienna = Wien
+AT,Vienna = Wein,Vienna = Wein
 BE,Antwerp = Antwerpen,Antwerp = Antwerpen
 CA,Three Rivers = Trois-Rivières,Three Rivers = Trois-Rivieres
 CH,Geneva = Genève,Geneva = Geneve
@@ -85,3 +44,44 @@ FI,Sipoonlahti (Sibboviken) = Sibbo (Sipoo),Sipoonlahti (Sibboviken) = Sibbo (Si
 FI,Vaarala = Vanda (Vantaa),Vaarala = Vanda (Vantaa)
 FM,Truk = Chuuk,Truk = Chuuk
 FO,Fuglefjord = Fuglafirdi,Fuglefjord = Fuglafirdi
+GL,Christianshaab = Qasigiannguit (Christianshaab),Christianshaab = Qasigiannguit (Christianshaab)
+GL,Fredrikshaab = Paamiut,Fredrikshaab = Paamiut
+GL,Godhavn = Qeqertarsuaq,Godhavn = Qeqertarsuaq
+GL,Gronnedal = Kangilinguit,Gronnedal = Kangilinguit
+GL,Holsteinsborg = Sisimiut,Holsteinsborg = Sisimiut
+GL,Jakobshavn = Ilulissat,Jakobshavn = Ilulissat
+GL,Julianehaab = Qaqortoq,Julianehaab = Qaqortoq
+GL,Scoresbysund = Illorqortoormiut,Scoresbysund = Illorqortoormiut
+GL,Sondre Stromfjord = Kangerlussua,Sondre Stromfjord = Kangerlussua
+GL,Sukkertoppen = Manitsoq,Sukkertoppen = Manitsoq
+GL,Thule = Pituffik,Thule = Pituffik
+GR,Athens = Athínai,Athens = Athinai
+HR,Kardeljevo = Ploce,Kardeljevo = Ploce
+IN,Bombay = Mumbai (ex Bombay),Bombay = Mumbai (ex Bombay)
+IN,Calcutta = Kolkata (ex Calcutta),Calcutta = Kolkata (ex Calcutta)
+IN,Madras = Chennai (ex Madras),Madras = Chennai (ex Madras)
+IT,Florence = Firenze,Florence = Firenze
+IT,Leghorn = Livorno,Leghorn = Livorno
+IT,Milan = Milano,Milan = Milano
+IT,Turin = Torino,Turin = Torino
+KG,Frunze = Bishkek,Frunze = Bishkek
+KH,Sihanoukville = Kâmpóng Saôm,Sihanoukville = Kampong Saom
+MG,Diego Suarez = Antsiranana,Diego Suarez = Antsiranana
+MM,Rangoon = Yangon,Rangoon = Yangon
+MM,Sandoway = Thandwe,Sandoway = Thandwe
+MY,Butterworth = Bagan Luar,Butterworth = Bagan Luar
+NL,Flushing = Vlissingen,Flushing = Vlissingen
+PG,Admiralty Island = Manus Island,Admiralty Island = Manus Island
+PH,Dadiangas = General Santos,Dadiangas = General Santos
+PT,Lisbon = Lisboa,Lisbon = Lisboa
+PT,Oporto = Porto,Oporto = Porto
+RO,Bucharest = Bucuresti,Bucharest = Bucuresti
+RU,Gorkiy = Nizhny Novgorod,Gorkiy = Nizhny Novgorod
+RU,Kuibyshev = Samara,Kuibyshev = Samara
+RU,Leningrad = Saint Petersburg,Leningrad = Saint Petersburg
+RU,Moscow = Moskva,Moscow = Moskva
+SA,Medina = Madinah,Medina = Madinah
+SE,Gothenburg = Göteborg,Gothenburg = Goteborg
+TT,Brighton = La Brea,Brighton = La Brea
+UA,Zhdanov = Mariupol,Zhdanov = Mariupol
+US,Adak = Adak Island,Adak = Adak Island
