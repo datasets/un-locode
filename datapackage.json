@@ -85,7 +85,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Complete UN/LOCODE code list with location codes, names, country, subdivision, function classifiers, status, IATA codes, and coordinates for ports, rail terminals, airports, and other transport locations worldwide."
     },
     {
       "path": "data/country-codes.csv",
@@ -102,7 +103,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Lookup table mapping ISO 3166-1 alpha-2 country codes to country names, used as a reference for the UN/LOCODE code list."
     },
     {
       "path": "data/function-classifiers.csv",
@@ -119,7 +121,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Reference table of UN/LOCODE function classifier codes and their descriptions, indicating the type of transport function (port, rail, road, airport, etc.) at each location."
     },
     {
       "path": "data/status-indicators.csv",
@@ -136,7 +139,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Reference table of UN/LOCODE status indicator codes and their descriptions, indicating the approval authority for each location entry."
     },
     {
       "path": "data/subdivision-codes.csv",
@@ -157,7 +161,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Reference table of country subdivision codes and names used in the UN/LOCODE system, based on ISO 3166-2 subdivision codes."
     },
     {
       "path": "data/alias.csv",
@@ -178,7 +183,8 @@
             "type": "string"
           }
         ]
-      }
+      },
+      "description": "Alternative names and aliases for locations in the UN/LOCODE code list, including versions without diacritical characters."
     }
   ],
   "collection": "logistics-data"
