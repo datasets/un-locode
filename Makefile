@@ -1,17 +1,18 @@
-all: prepare process
+all: requirements download prepare process 
+
+requirements:
+	pip install -r scripts/requirements.txt
+
+download:
+	python scripts/download_loc.py
 
 prepare:
-	@test -d release || (echo "Error: release/ not found. Download from https://unece.org/trade/cefact/UNLOCODE-Download and extract here."; exit 1)
-	zip -j loc_mdb.zip "release/UNLOCODE CodeList.mdb"
-	bash scripts/prepare_edition_mdb.sh loc_mdb.zip
-	rm -f loc_mdb.zip
+	bash scripts/prepare_edition_mdb.sh $(shell find . -maxdepth 1 -name "loc*[0-9]*mdb.zip" -print -quit)
 
 process:
-	zip -j loc0csv.zip release/csv/*.csv
-	python3 scripts/prepare.py
-	rm -f loc0csv.zip
+	python scripts/prepare.py
 
 clean:
 	find . -maxdepth 1 -name "*.zip" -exec rm -f {} +
 
-.PHONY: all prepare process clean
+.PHONY: clean

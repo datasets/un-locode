@@ -8,28 +8,28 @@ Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefa
 
 ## Preparation
 
-Data is updated automatically via GitHub Actions on the first of each month. The workflow fetches the latest release from the [UNICC GitLab repository](https://opensource.unicc.org/un/unece/uncefact/vocab-locode), processes it, and commits the result.
+As the original release files have encoding problems, we need to process both the mdb and the csv release.
+To build the dataset we use the csv version of the current edition.
 
-To run locally, tools needed: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.com/onyxfish/csvkit).
+Tools needed: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.com/onyxfish/csvkit).
+Download the current edition from [UNECE](https://unece.org/trade/cefact/UNLOCODE-Download) and put it into the root directory.
+Then execute `bash scripts/prepare_edition_mdb.sh loc{ed}mdb.zip`, where `{ed}` identify the release.
 
-1. Go to [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download), find the edition you want, and click its **Download** link. Extract the zip into a `release/` folder in the repo root so it has this structure:
+To integrate the data from the csv then run the python file
 
-```
-release/
-  UNLOCODE CodeList.mdb
-  csv/
-    SubdivisionCodes.csv
-    UNLOCODE CodeListPart1.csv
-    UNLOCODE CodeListPart2.csv
-    UNLOCODE CodeListPart3.csv
-```
-
-2. Install Python dependencies and run the pipeline:
+Prerequisites:
 
 ```
-pip install -r scripts/requirements.txt
-make
+pip install pandas titlecase
 ```
+
+Run:
+
+```
+python scripts/integrate.py loc232csv.zip
+```
+
+The provided `prepare.py` file would work alone when the original csv file will be fixed upstream.
 
 ## License
 

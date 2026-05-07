@@ -88,10 +88,9 @@ def process(extracted_files):
     for file_name in extracted_files:
         if file_name.endswith('.csv'):
             if 'subdivisioncodes' in file_name.lower():
-                subdivision_df = pd.read_csv(file_name, encoding='utf-8', dtype=str,
+                subdivision_df = pd.read_csv(file_name, encoding='cp1252', dtype=str,
                                              usecols=[0, 1, 2, 3], names=['SUCountry', 'SUCode', 'SUName', 'SUType'])
                 subdivision_df_main = pd.read_csv(data_file_path, dtype=str)
-                subdivision_df_main = subdivision_df_main[['SUCountry', 'SUCode', 'SUName']]
                 subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']],
                                on=['SUCountry', 'SUCode'], how='left')
                 subdivision_df_main['SUCode'] = subdivision_df_main['SUCode'].fillna("NA")
@@ -100,12 +99,12 @@ def process(extracted_files):
                 subdivision_df_main = subdivision_df_main.map(lambda x: x.strip() if isinstance(x, str) else x)
                 subdivision_df_main.to_csv(data_file_path, index=False)
             else:
-                unlocode_df_test = pd.read_csv(file_name, encoding='utf-8', nrows=1, dtype=str)
+                unlocode_df_test = pd.read_csv(file_name, encoding='cp1252', nrows=1, dtype=str)
 
                 if all(unlocode_df_test.iloc[0].str.isalpha()):
-                    unlocode_df = pd.read_csv(file_name, encoding='utf-8', dtype=str, keep_default_na=False)
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', dtype=str, keep_default_na=False)
                 else:
-                    unlocode_df = pd.read_csv(file_name, encoding='utf-8', header=None, dtype=str, keep_default_na=False)
+                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str, keep_default_na=False)
                     unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                                         'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
 
