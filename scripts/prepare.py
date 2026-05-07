@@ -154,21 +154,23 @@ if __name__ == "__main__":
             if pattern.match(file):
                 zip_path = os.path.join(root, file)
 
+    extracted_files = []
     try:
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall('.')
+            extracted_files = zip_ref.namelist()
         print(f"Successfully extracted {zip_path}")
 
-        extracted_files = zip_ref.namelist()
         process(extracted_files)
 
-        # Remove the extracted files
-        for file_name in extracted_files:
-            os.remove(file_name)
-            print(f"Removed {file_name}")
-
     except Exception as e:
-        print(f"Error extracting {zip_path}: {e}")
+        print(f"Error: {e}")
+        raise
+    finally:
+        for file_name in extracted_files:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+                print(f"Removed {file_name}")
 
 
     file_paths = [

@@ -10,24 +10,16 @@ Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefa
 
 Data is updated automatically via GitHub Actions on the first of each month. The workflow fetches the latest release from the [UNICC GitLab repository](https://opensource.unicc.org/un/unece/uncefact/vocab-locode), processes it, and commits the result.
 
-To run locally, tools needed: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.com/onyxfish/csvkit).
-
-1. Go to [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download), find the edition you want, and click its **Download** link. Extract the zip into a `release/` folder in the repo root so it has this structure:
+To run locally, install the required tools — on macOS:
 
 ```
-release/
-  UNLOCODE CodeList.mdb
-  csv/
-    SubdivisionCodes.csv
-    UNLOCODE CodeListPart1.csv
-    UNLOCODE CodeListPart2.csv
-    UNLOCODE CodeListPart3.csv
-```
-
-2. Install Python dependencies and run the pipeline:
-
-```
+brew install mdbtools csvkit gawk
 pip install -r scripts/requirements.txt
+```
+
+Then run the full pipeline (downloads the latest release automatically):
+
+```
 make
 ```
 
