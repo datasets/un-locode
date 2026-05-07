@@ -32,13 +32,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y mdbtools csvkit
 
+      - name: Download latest UNLOCODE release
+        run: |
+          LATEST_TAG=$(curl -sL "https://opensource.unicc.org/api/v4/projects/un%2Funece%2Funcefact%2Fvocab-locode/repository/tags?per_page=1" | python3 -c "import json,sys; print(json.load(sys.stdin)[0]['name'])")
+          echo "Downloading UNLOCODE release: $LATEST_TAG"
+          curl -L -o release.zip "https://opensource.unicc.org/un/unece/uncefact/vocab-locode/-/jobs/artifacts/${LATEST_TAG}/download?job=package-release"
+          unzip -o release.zip
+          rm release.zip
+
       - name: Run Makefile
         run: |
           source venv/bin/activate
           make
-
-      - name: Clean zip files
-        run: make clean
 
       - name: Commit and push changes
         run: |
