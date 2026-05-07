@@ -8,7 +8,7 @@ prepare:
 
 process:
 	zip -j loc0csv.zip release/csv/*.csv
-	python3 scripts/prepare.py
+	.venv/bin/python3.12 scripts/prepare.py
 	rm -f loc0csv.zip
 
 clean:
