@@ -17,7 +17,7 @@ brew install mdbtools csvkit gawk
 pip install -r scripts/requirements.txt
 ```
 
-Run the pipeline — it downloads the latest edition automatically and regenerates all data files:
+Download the latest edition from [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download) — click the **Download** link on the new release row. Extract the zip into a `release/` folder in the repo root, then run:
 
 ```
 make
