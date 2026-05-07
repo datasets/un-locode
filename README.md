@@ -4,7 +4,7 @@ The United Nations Code for Trade and Transport Locations is a code list maintai
 
 ## Data
 
-Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefact/UNLOCODE-Download), released at least twice a year.
+Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefact/UNLOCODE-Download), released at least once a year.
 
 ## Preparation
 
