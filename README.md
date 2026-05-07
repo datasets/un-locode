@@ -6,21 +6,29 @@ The United Nations Code for Trade and Transport Locations is a code list maintai
 
 Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefact/UNLOCODE-Download), released at least once a year.
 
-## Preparation
+## Updating the data
 
-Data is updated automatically via GitHub Actions on the first of each month. The workflow fetches the latest release from the [UNICC GitLab repository](https://opensource.unicc.org/un/unece/uncefact/vocab-locode), processes it, and commits the result.
+When UNECE publishes a new edition, update the data by running the pipeline locally and committing the result.
 
-To run locally, install the required tools — on macOS:
+Install the required tools (macOS):
 
 ```
 brew install mdbtools csvkit gawk
 pip install -r scripts/requirements.txt
 ```
 
-Then run the full pipeline (downloads the latest release automatically):
+Run the pipeline — it downloads the latest edition automatically and regenerates all data files:
 
 ```
 make
+```
+
+Then commit the updated files:
+
+```
+git add data/
+git commit -m "Update to edition YYYY-N"
+git push
 ```
 
 ## License
