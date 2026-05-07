@@ -1,6 +1,7 @@
 {
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
+  "description": "UN/LOCODE is a geographic coding scheme developed and maintained by the United Nations Economic Commission for Europe (UNECE). It provides codes for locations used in international trade and transport, covering ports, airports, rail terminals, road terminals, and other transport-related locations worldwide.",
   "version": "2024.2.0",
   "licenses": [
     {
@@ -12,14 +13,15 @@
   "sources": [
     {
       "name": "UNECE",
-      "path": "http://www.unece.org/cefact/locode/welcome.html",
-      "title": "UNECE"
+      "path": "https://unece.org/trade/cefact/UNLOCODE-Download",
+      "title": "UN/LOCODE Download page (UNECE)"
     }
   ],
   "resources": [
     {
       "path": "data/code-list.csv",
       "name": "code-list",
+      "description": "Main UN/LOCODE codelist. Each row is a location entry identified by a 2-letter country code and a 3-character location code. Rows with an empty Location field are country-name header rows or alias rows and are excluded from this file.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -31,58 +33,62 @@
           {
             "name": "Country",
             "type": "string",
-            "description": "ISO 3166 alpha-2 Country Code, defined in countryCodes.csv",
+            "description": "ISO 3166 alpha-2 country code. Defined in country-codes.csv.",
             "pattern": "[A-Z]{2}"
           },
           {
             "name": "Location",
             "type": "string",
+            "description": "3-character location code (letters and digits 2–9). Combined with Country it forms the full 5-character UN/LOCODE.",
             "pattern": "[A-Z2-9]{3}"
           },
           {
             "name": "Name",
-            "type": "string"
+            "type": "string",
+            "description": "Official name of the location, may include diacritics."
           },
           {
             "name": "NameWoDiacritics",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the location with diacritics replaced by their ASCII equivalents."
           },
           {
             "name": "Subdivision",
             "type": "string",
-            "description": "Defined in subdivisionCodes.csv"
+            "description": "ISO 3166-2 subdivision code for the location. Defined in subdivision-codes.csv. May be empty."
           },
           {
             "name": "Status",
             "type": "string",
-            "description": "Defined in statusIndicators.csv"
+            "description": "Approval/verification status of the entry. Defined in status-indicators.csv."
           },
           {
             "name": "Function",
             "type": "string",
-            "description": "Defined in functionClassifiers.csv",
+            "description": "8-character function classifier string indicating which transport functions the location serves. Each position corresponds to a function code defined in function-classifiers.csv; a digit means the function is present, a dash means absent.",
             "pattern": "[01-][2-][3-][4-][5-][6-][7-][B-]"
           },
           {
             "name": "Date",
             "type": "string",
-            "description": "ym",
+            "description": "Edition date in YYMM format (2-digit year + 2-digit month, e.g. 0601 = June 2006, 1407 = July 2014). May be empty for some entries.",
             "pattern": "[0-9]{4}"
           },
           {
             "name": "IATA",
             "type": "string",
-            "description": "IATA code if different from LOCODE"
+            "description": "IATA airport code, present only when it differs from the UN/LOCODE location code. May be empty."
           },
           {
             "name": "Coordinates",
             "type": "string",
-            "description": "DDMM[N/S] DDDMM[W/E]",
+            "description": "Geographic coordinates in DDMM[N/S] DDDMM[W/E] format (degrees and minutes). May be empty.",
             "pattern": "[0-9]{4}[NS] [0-9]{5}[WE]"
           },
           {
             "name": "Remarks",
-            "type": "string"
+            "type": "string",
+            "description": "Free-text remarks or notes about the location entry. May be empty."
           }
         ]
       }
@@ -90,16 +96,19 @@
     {
       "path": "data/country-codes.csv",
       "name": "country-codes",
+      "description": "Lookup table mapping ISO 3166 alpha-2 country codes to country names, as used in the UN/LOCODE codelist.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
             "name": "CountryCode",
-            "type": "string"
+            "type": "string",
+            "description": "ISO 3166 alpha-2 country code (2 uppercase letters)."
           },
           {
             "name": "CountryName",
-            "type": "string"
+            "type": "string",
+            "description": "Official English name of the country."
           }
         ]
       }
@@ -107,16 +116,19 @@
     {
       "path": "data/function-classifiers.csv",
       "name": "function-classifiers",
+      "description": "Lookup table defining the meaning of each position in the Function field of the code-list. Each code corresponds to a transport or logistics function.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
             "name": "FunctionCode",
-            "type": "string"
+            "type": "string",
+            "description": "Single-character function code (0–8 or B) used in the Function field of code-list.csv."
           },
           {
             "name": "FunctionDescription",
-            "type": "string"
+            "type": "string",
+            "description": "Human-readable description of the transport or logistics function."
           }
         ]
       }
@@ -124,16 +136,19 @@
     {
       "path": "data/status-indicators.csv",
       "name": "status-indicators",
+      "description": "Lookup table defining the meaning of the Status field in the code-list. Status codes indicate the approval or verification level of each location entry.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
             "name": "STStatus",
-            "type": "string"
+            "type": "string",
+            "description": "2-letter status code used in the Status field of code-list.csv."
           },
           {
             "name": "STDescription",
-            "type": "string"
+            "type": "string",
+            "description": "Human-readable description of the approval or verification status."
           }
         ]
       }
@@ -141,20 +156,29 @@
     {
       "path": "data/subdivision-codes.csv",
       "name": "subdivision-codes",
+      "description": "Lookup table of ISO 3166-2 subdivision codes (states, provinces, regions, etc.) referenced by the Subdivision field of the code-list.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
             "name": "SUCountry",
-            "type": "string"
+            "type": "string",
+            "description": "ISO 3166 alpha-2 country code for the subdivision."
           },
           {
             "name": "SUCode",
-            "type": "string"
+            "type": "string",
+            "description": "ISO 3166-2 subdivision code (without the country prefix)."
           },
           {
             "name": "SUName",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the subdivision (state, province, region, etc.)."
+          },
+          {
+            "name": "SUType",
+            "type": "string",
+            "description": "Type of the administrative subdivision (e.g. Province, State, Region, Emirate). May be empty for some entries."
           }
         ]
       }
@@ -162,20 +186,24 @@
     {
       "path": "data/alias.csv",
       "name": "alias",
+      "description": "Alternative names (aliases) for countries, extracted from UN/LOCODE source files. These are rows in the source data with Change code '=' and no location code.",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
           {
             "name": "Country",
-            "type": "string"
+            "type": "string",
+            "description": "ISO 3166 alpha-2 country code the alias applies to."
           },
           {
             "name": "Name",
-            "type": "string"
+            "type": "string",
+            "description": "Alternative country or region name, may include diacritics."
           },
           {
             "name": "NameWoDiacritics",
-            "type": "string"
+            "type": "string",
+            "description": "Alternative name with diacritics replaced by ASCII equivalents."
           }
         ]
       }
