@@ -17,7 +17,21 @@ brew install mdbtools csvkit gawk
 pip install -r scripts/requirements.txt
 ```
 
-Download the latest edition from [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download) — click the **Download** link on the new release row. Extract the zip into a `release/` folder in the repo root, then run:
+Download the latest edition from [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download) — click the **Download** link on the new release row. Extract the zip into a `release/` folder in the repo root so it has this structure:
+
+```
+release/
+  UNLOCODE CodeList.mdb
+  csv/
+    SubdivisionCodes.csv
+    UNLOCODE CodeListPart1.csv
+    UNLOCODE CodeListPart2.csv
+    UNLOCODE CodeListPart3.csv
+```
+
+> **Note:** the scripts assume this folder structure and file naming. If UNECE changes the release packaging in a future edition, the scripts may need to be adjusted before running.
+
+Then run:
 
 ```
 make
