@@ -98,6 +98,7 @@ def process(extracted_files):
                 subdivision_df_main['SUCountry'] = subdivision_df_main['SUCountry'].fillna("NA")
                 # Trimming whitespaces from the SUName column
                 subdivision_df_main = subdivision_df_main.map(lambda x: x.strip() if isinstance(x, str) else x)
+                subdivision_df_main = subdivision_df_main.sort_values(['SUCountry', 'SUCode'], ignore_index=True)
                 subdivision_df_main.to_csv(data_file_path, index=False)
             else:
                 unlocode_df_test = pd.read_csv(file_name, encoding='utf-8', nrows=1, dtype=str)
@@ -131,6 +132,7 @@ def process(extracted_files):
     codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
     codelist_df = correct_swapped_function_status(codelist_df)
     codelist_df = clean_extra_rows(codelist_df)
+    codelist_df = codelist_df.sort_values(['Country', 'Location'], ignore_index=True)
     codelist_df.to_csv(f"data/code-list.csv", index=False)
 
     alias_df.drop_duplicates(inplace=True)
