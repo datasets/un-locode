@@ -42,7 +42,7 @@ def process(extracted_files):
                 merged_df = pd.merge(df_base, df[['SUCountry', 'SUCode', 'SUType']], on=[
                                      'SUCountry', 'SUCode'], how='left')
                 merged_df = merged_df.drop_duplicates()
-                merged_df.to_csv(f"data/subdivision-codes.csv", index=False)
+                merged_df.to_csv(f"data/subdivision-codes.csv", index=False, lineterminator='\n')
                 print(f"Processed {file_name}")
                 continue
 
@@ -59,7 +59,7 @@ def process(extracted_files):
                     continue
             print(f"Processed {file_name}")
 
-    alias_df.to_csv(f"data/alias.csv", index=False)
+    alias_df.to_csv(f"data/alias.csv", index=False, lineterminator='\n')
     print("Processed and saved UNLOCODE files")
     return
 
