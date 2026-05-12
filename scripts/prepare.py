@@ -88,23 +88,24 @@ def process(extracted_files):
     for file_name in extracted_files:
         if file_name.endswith('.csv'):
             if 'subdivisioncodes' in file_name.lower():
-                subdivision_df = pd.read_csv(file_name, encoding='cp1252', dtype=str,
+                subdivision_df = pd.read_csv(file_name, encoding='utf-8', dtype=str,
                                              usecols=[0, 1, 2, 3], names=['SUCountry', 'SUCode', 'SUName', 'SUType'])
                 subdivision_df_main = pd.read_csv(data_file_path, dtype=str)
+                subdivision_df_main = subdivision_df_main[['SUCountry', 'SUCode', 'SUName']]
                 subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']],
                                on=['SUCountry', 'SUCode'], how='left')
                 subdivision_df_main['SUCode'] = subdivision_df_main['SUCode'].fillna("NA")
                 subdivision_df_main['SUCountry'] = subdivision_df_main['SUCountry'].fillna("NA")
                 # Trimming whitespaces from the SUName column
                 subdivision_df_main = subdivision_df_main.map(lambda x: x.strip() if isinstance(x, str) else x)
-                subdivision_df_main.to_csv(data_file_path, index=False)
+                subdivision_df_main.to_csv(data_file_path, index=False, lineterminator='\n')
             else:
-                unlocode_df_test = pd.read_csv(file_name, encoding='cp1252', nrows=1, dtype=str)
+                unlocode_df_test = pd.read_csv(file_name, encoding='utf-8', nrows=1, dtype=str)
 
                 if all(unlocode_df_test.iloc[0].str.isalpha()):
-                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', dtype=str, keep_default_na=False)
+                    unlocode_df = pd.read_csv(file_name, encoding='utf-8', dtype=str, keep_default_na=False)
                 else:
-                    unlocode_df = pd.read_csv(file_name, encoding='cp1252', header=None, dtype=str, keep_default_na=False)
+                    unlocode_df = pd.read_csv(file_name, encoding='utf-8', header=None, dtype=str, keep_default_na=False)
                     unlocode_df.columns = ['Change', 'Country', 'Location', 'Name', 'NameWoDiacritics', 'Subdivision',
                                         'Function', 'Status', 'Date', 'IATA', 'Coordinates', 'Remarks']
 
@@ -130,10 +131,10 @@ def process(extracted_files):
     codelist_df = codelist_df[codelist_df['Country'].str.len().fillna(0).between(0, 2)]
     codelist_df = correct_swapped_function_status(codelist_df)
     codelist_df = clean_extra_rows(codelist_df)
-    codelist_df.to_csv(f"data/code-list.csv", index=False)
+    codelist_df.to_csv(f"data/code-list.csv", index=False, lineterminator='\n')
 
     alias_df.drop_duplicates(inplace=True)
-    alias_df.to_csv(f"data/alias.csv", index=False)
+    alias_df.to_csv(f"data/alias.csv", index=False, lineterminator='\n')
     print("Processed and saved UNLOCODE files")
     return
 
@@ -153,21 +154,23 @@ if __name__ == "__main__":
             if pattern.match(file):
                 zip_path = os.path.join(root, file)
 
+    extracted_files = []
     try:
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall('.')
+            extracted_files = zip_ref.namelist()
         print(f"Successfully extracted {zip_path}")
 
-        extracted_files = zip_ref.namelist()
         process(extracted_files)
 
-        # Remove the extracted files
-        for file_name in extracted_files:
-            os.remove(file_name)
-            print(f"Removed {file_name}")
-
     except Exception as e:
-        print(f"Error extracting {zip_path}: {e}")
+        print(f"Error: {e}")
+        raise
+    finally:
+        for file_name in extracted_files:
+            if os.path.exists(file_name):
+                os.remove(file_name)
+                print(f"Removed {file_name}")
 
 
     file_paths = [

@@ -1015,11 +1015,11 @@ ES,A,Alicante / Alacant,Province
 ES,AB,Albacete,Province
 ES,AL,Almería,Province
 ES,AV,Ávila,Province
-ES,B,Barcelona  [Barcelona],Province
+ES,B,Barcelona [Barcelona],Province
 ES,BA,Badajoz,Province
 ES,BI,Biskaia,Province
 ES,BU,Burgos,Province
-ES,C,A Coruña  [La Coruña],Province
+ES,C,A Coruña [La Coruña],Province
 ES,CA,Cádiz,Province
 ES,CC,Cáceres,Province
 ES,CE,Ceuta,Autonomous city in North Africa
@@ -1028,33 +1028,33 @@ ES,CR,Ciudad Real,Province
 ES,CS,Castellón / Castelló,Province
 ES,CU,Cuenca,Province
 ES,GC,Las Palmas,Province
-ES,GI,Girona  [Gerona],Province
+ES,GI,Girona [Gerona],Province
 ES,GR,Granada,Province
 ES,GU,Guadalajara,Province
 ES,H,Huelva,Province
 ES,HU,Huesca,Province
 ES,J,Jaén,Province
-ES,L,Lleida  [Lérida],Province
+ES,L,Lleida [Lérida],Province
 ES,LE,León,Province
 ES,LO,La Rioja,Province
-ES,LU,Lugo  [Lugo],Province
+ES,LU,Lugo [Lugo],Province
 ES,M,Madrid,Province
 ES,MA,Málaga,Province
 ES,ML,Melilla,Autonomous city in North Africa
 ES,MU,Murcia,Province
 ES,NA,Navarra / Nafarroa,Province
 ES,O,Asturias,Province
-ES,OR,Ourense  [Orense],Province
+ES,OR,Ourense [Orense],Province
 ES,P,Palencia,Province
 ES,PM,Illes Balears [Islas Baleares],Province
-ES,PO,Pontevedra  [Pontevedra],Province
+ES,PO,Pontevedra [Pontevedra],Province
 ES,S,Cantabria,Province
 ES,SA,Salamanca,Province
 ES,SE,Sevilla,Province
 ES,SG,Segovia,Province
 ES,SO,Soria,Province
 ES,SS,Gipuzkoa,Province
-ES,T,Tarragona  [Tarragona],Province
+ES,T,Tarragona [Tarragona],Province
 ES,TE,Teruel,Province
 ES,TF,Santa Cruz de Tenerife,Province
 ES,TO,Toledo,Province
@@ -2470,6 +2470,8 @@ MA,JDI,El Jadida,Province
 MA,JRA,Jerada,Province
 MA,KEN,Kénitra,Province
 MA,KES,El Kelâa des Sraghna,Province
+MA,KES,El Kelâa des Sraghna,Province
+MA,KES,Kelaat Sraghna,Province
 MA,KES,Kelaat Sraghna,Province
 MA,KHE,Khémisset,Province
 MA,KHN,Khénifra,Province

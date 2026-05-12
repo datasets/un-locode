@@ -6,30 +6,44 @@ The United Nations Code for Trade and Transport Locations is a code list maintai
 
 Data comes from the [UNECE UN/LOCODE Download page](https://unece.org/trade/cefact/UNLOCODE-Download), released at least once a year.
 
-## Preparation
+## Updating the data
 
-As the original release files have encoding problems, we need to process both the mdb and the csv release.
-To build the dataset we use the csv version of the current edition.
+When UNECE publishes a new edition, update the data by running the pipeline locally and committing the result.
 
-Tools needed: [MDBTools](http://mdbtools.sourceforge.net/) and [CSVKit](https://github.com/onyxfish/csvkit).
-Download the current edition from [UNECE](https://unece.org/trade/cefact/UNLOCODE-Download) and put it into the root directory.
-Then execute `bash scripts/prepare_edition_mdb.sh loc{ed}mdb.zip`, where `{ed}` identify the release.
-
-To integrate the data from the csv then run the python file
-
-Prerequisites:
+Install the required tools (macOS):
 
 ```
-pip install pandas titlecase
+brew install mdbtools csvkit gawk
+pip install -r scripts/requirements.txt
 ```
 
-Run:
+Download the latest edition from [https://unece.org/trade/cefact/UNLOCODE-Download](https://unece.org/trade/cefact/UNLOCODE-Download) — click the **Download** link on the new release row. Extract the zip into a `release/` folder in the repo root so it has this structure:
 
 ```
-python scripts/integrate.py loc232csv.zip
+release/
+  UNLOCODE CodeList.mdb
+  csv/
+    SubdivisionCodes.csv
+    UNLOCODE CodeListPart1.csv
+    UNLOCODE CodeListPart2.csv
+    UNLOCODE CodeListPart3.csv
 ```
 
-The provided `prepare.py` file would work alone when the original csv file will be fixed upstream.
+> **Note:** the scripts assume this folder structure and file naming. If UNECE changes the release packaging in a future edition, the scripts may need to be adjusted before running.
+
+Then run:
+
+```
+make
+```
+
+Then commit the updated files:
+
+```
+git add data/
+git commit -m "Update to edition YYYY-N"
+git push
+```
 
 ## License
 

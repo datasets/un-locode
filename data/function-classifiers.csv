@@ -1,11 +1,12 @@
 FunctionCode,FunctionDescription
-0,"Function not known, to be specified"
-1,"Port, as defined in Rec 16"
-2,Rail Terminal
-3,Road Terminal
-4,Airport
-5,Postal Exchange Office
-6,"Multimodal Functions (ICDs, etc.)"
-7,Fixed Transport Functions (e.g. Oil platform)
-8,Inland Port
-B,Border Crossing
+0,Not officially functional
+1,Maritime transport (sea port or maritime port)
+2,Rail transport
+3,Road transport
+4,Air transport (airport) or space transport (spaceport)
+5,International Mail Processing Centre (IMPC) recognized by the Universal Postal Union (UPU)
+6,Multimodal transport facility
+7,"Fixed Transport Installation (oil pipeline terminal, electric power lines, ropeway terminals, etc.)"
+8,"Inland water transport (river ports, and lake ports)"
+A,Special Economic Zone (SEZ)
+B,Cross Border (former code; not to be used)
