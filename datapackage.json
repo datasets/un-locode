@@ -209,5 +209,10 @@
       }
     }
   ],
-  "collection": "logistics-data"
+  "collection": "logistics-data",
+  "has_solutions": [
+    "global-country-region-reference-data",
+    "logistics",
+    "worldwide-postal-code-database"
+  ]
 }
