@@ -2,19 +2,18 @@
   "name": "un-locode",
   "title": "UN-LOCODE Codelist",
   "description": "UN/LOCODE is a geographic coding scheme developed and maintained by the United Nations Economic Commission for Europe (UNECE). It provides codes for locations used in international trade and transport, covering ports, airports, rail terminals, road terminals, and other transport-related locations worldwide.",
-  "version": "2024.2.0",
   "licenses": [
     {
       "name": "ODC-PDDL-1.0",
-      "path": "http://opendatacommons.org/licenses/pddl/",
-      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+      "path": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0. Applies only to the maintainers' own work (the scripts, the column definitions and the file layout). It does not cover the UN/LOCODE data itself; the licence of that is unclear, see README.md and ATTRIBUTION.txt."
     }
   ],
   "sources": [
     {
       "name": "UNECE",
-      "path": "https://unece.org/trade/cefact/UNLOCODE-Download",
-      "title": "UN/LOCODE Download page (UNECE)"
+      "path": "https://unlocode.unece.org/downloads/unlocode-latest.zip",
+      "title": "UN/LOCODE Pre-Release (Latest), published by UNECE (see https://unlocode.unece.org/publications)"
     }
   ],
   "resources": [
@@ -22,6 +21,7 @@
       "path": "data/code-list.csv",
       "name": "code-list",
       "description": "Main UN/LOCODE codelist. Each row is a location entry identified by a 2-letter country code and a 3-character location code. Rows with an empty Location field are country-name header rows or alias rows and are excluded from this file.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -97,6 +97,7 @@
       "path": "data/country-codes.csv",
       "name": "country-codes",
       "description": "Lookup table mapping ISO 3166 alpha-2 country codes to country names, as used in the UN/LOCODE codelist.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -117,6 +118,7 @@
       "path": "data/function-classifiers.csv",
       "name": "function-classifiers",
       "description": "Lookup table defining the meaning of each position in the Function field of the code-list. Each code corresponds to a transport or logistics function.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -137,6 +139,7 @@
       "path": "data/status-indicators.csv",
       "name": "status-indicators",
       "description": "Lookup table defining the meaning of the Status field in the code-list. Status codes indicate the approval or verification level of each location entry.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -157,6 +160,7 @@
       "path": "data/subdivision-codes.csv",
       "name": "subdivision-codes",
       "description": "Lookup table of ISO 3166-2 subdivision codes (states, provinces, regions, etc.) referenced by the Subdivision field of the code-list.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [
@@ -187,6 +191,7 @@
       "path": "data/alias.csv",
       "name": "alias",
       "description": "Alternative names (aliases) for countries, extracted from UN/LOCODE source files. These are rows in the source data with Change code '=' and no location code.",
+      "format": "csv",
       "mediatype": "text/csv",
       "schema": {
         "fields": [

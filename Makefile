@@ -1,14 +1,16 @@
+PYTHON ?= python3
+
 all: prepare process
 
 prepare:
-	@test -d release || (echo "Error: release/ not found. Download from https://unece.org/trade/cefact/UNLOCODE-Download and extract here."; exit 1)
+	@test -d release || (echo "Error: release/ not found. Run scripts/fetch_release.sh first."; exit 1)
 	zip -j loc_mdb.zip "release/UNLOCODE CodeList.mdb"
 	bash scripts/prepare_edition_mdb.sh loc_mdb.zip
 	rm -f loc_mdb.zip
 
 process:
 	zip -j loc0csv.zip release/csv/*.csv
-	.venv/bin/python3.12 scripts/prepare.py
+	$(PYTHON) scripts/prepare.py
 	rm -f loc0csv.zip
 
 clean:

@@ -1,0 +1,50 @@
+name: Update UN/LOCODE data
+
+on:
+  # Monthly. A scheduled run also keeps GitHub from switching the schedule off for inactivity.
+  schedule:
+    - cron: '0 3 1 * *'
+  # Allows manual triggering of the workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y mdbtools gawk
+        pip install -r scripts/requirements.txt csvkit
+
+    - name: Download the release and build the data
+      run: ./scripts/fetch_release.sh && make
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "Automated commit"
+        git config user.email "actions@users.noreply.github.com"
+        git diff --quiet -- data && echo "No changes to commit" || (
+          git add data &&
+          git commit -m "Update data from the UNECE release" &&
+          git push origin main
+        )
+
+    - name: Keep the schedule enabled
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: gh workflow enable "${{ github.workflow }}" --repo "${{ github.repository }}" || true

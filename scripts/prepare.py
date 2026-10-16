@@ -20,7 +20,7 @@ def fix_empty_quotes(file):
             rows.append(row)
 
     with open(file, mode="w", encoding="utf-8", newline="") as outfile:
-        writer = csv.writer(outfile)
+        writer = csv.writer(outfile, lineterminator='\n')
         writer.writerows(rows)
 
 def fix_multiline_csv(file_path):
@@ -74,7 +74,7 @@ def remove_double_quotes(file_path):
 
     # Write the CSV back with minimal quoting (preserving quotes where necessary)
     with open(file_path, 'w', encoding='utf-8', newline='') as outfile:
-        writer = csv.writer(outfile, quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(outfile, quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
         writer.writerows(rows)
 
 def process(extracted_files):
@@ -92,7 +92,9 @@ def process(extracted_files):
                                              usecols=[0, 1, 2, 3], names=['SUCountry', 'SUCode', 'SUName', 'SUType'])
                 subdivision_df_main = pd.read_csv(data_file_path, dtype=str)
                 subdivision_df_main = subdivision_df_main[['SUCountry', 'SUCode', 'SUName']]
-                subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']],
+                # The release file repeats some (SUCountry, SUCode) lines (IN JK, MA CHT, MA KES, MK 205).
+                # Without drop_duplicates() the merge copies a row once for each repeat.
+                subdivision_df_main = pd.merge(subdivision_df_main, subdivision_df[['SUCountry', 'SUCode', 'SUType']].drop_duplicates(),
                                on=['SUCountry', 'SUCode'], how='left')
                 subdivision_df_main['SUCode'] = subdivision_df_main['SUCode'].fillna("NA")
                 subdivision_df_main['SUCountry'] = subdivision_df_main['SUCountry'].fillna("NA")

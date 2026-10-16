@@ -1,0 +1,9 @@
+Attribution for un-locode
+
+Contains information from UN/LOCODE, the United Nations Code for Trade and Transport Locations, maintained by the United Nations Economic Commission for Europe (UNECE) and published at https://unlocode.unece.org/publications (file used: https://unlocode.unece.org/downloads/unlocode-latest.zip, the "Pre-Release (Latest)"). Licence: unclear. The terms of the site (https://unlocode.unece.org/terms) allow personal, non-commercial use without any right to resell or redistribute or to create derivative works, "subject to ... more specific restrictions". The footer of the same site says "All UN/CEFACT standards are free to use under CC By 4.0 license". We could not establish which applies to the code list.
+
+Changes made to the source data: the script reads the release's Access database for the lookup tables and its three CSV parts for the code list. For code-list.csv it joins the three parts, moves the alias rows to alias.csv, drops the country-name rows, swaps Status and Function where the release has them the wrong way round, removes duplicate rows (same country, location, name, subdivision, date and coordinates), and writes the columns in a fixed order. For subdivision-codes.csv it adds the subdivision type from the release's CSV file, collapses extra spaces and removes repeated lines.
+
+The United Nations provides the materials "as is", without warranty, and does not guarantee their accuracy or completeness.
+
+Not endorsed by, or affiliated with, UNECE or the United Nations.
